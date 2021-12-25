@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "required": [
+    "DeadlockQueue",
+    "EndQueue",
+    "Machine",
+    "MachineQueue",
+    "Position",
+    "ProcessQueue",
+    "Product",
+    "ProductType",
+    "StartQueue",
+    "Task",
+    "Transporter",
+    "TransporterQueue"
+  ],
+  "properties": {
+    "DeadlockQueue": {
+      "$ref": "../Production/DeadlockQueue.json"
+    },
+    "EndQueue": {
+      "$ref": "../Production/EndQueue.json"
+    },
+    "Machine": {
+      "$ref": "../Production/Machine.json"
+    },
+    "MachineQueue": {
+      "$ref": "../Production/MachineQueue.json"
+    },
+    "Position": {
+      "$ref": "../Production/Position.json"
+    },
+    "ProcessQueue": {
+      "$ref": "../Production/ProcessQueue.json"
+    },
+    "Product": {
+      "$ref": "../Production/Product.json"
+    },
+    "ProductType": {
+      "$ref": "../Production/ProductType.json"
+    },
+    "StartQueue": {
+      "$ref": "../Production/StartQueue.json"
+    },
+    "Task": {
+      "$ref": "../Production/Task.json"
+    },
+    "Transporter": {
+      "$ref": "../Production/Transporter.json"
+    },
+    "TransporterQueue": {
+      "$ref": "../Production/TransporterQueue.json"
+    }
+  }
+}

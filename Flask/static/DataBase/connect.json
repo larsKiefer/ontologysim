@@ -1,0 +1,39 @@
+
+{
+      "get": {
+        "tags": [
+          "DataBase"
+        ],
+        "summary": "connect to db",
+        "operationId": "db",
+        "requestBody": {
+
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "message"
+                  ],
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "value": {
+                    "message": "OK"
+                  }
+                }
+              }
+              }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    }

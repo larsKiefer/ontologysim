@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  ontologysim:
+    container_name: onto_be
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+    ports:
+      - "5000:5000"

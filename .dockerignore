@@ -1,0 +1,6 @@
+venv
+doc
+docs
+.git
+.idea
+.gitignore

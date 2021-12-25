@@ -1,0 +1,109 @@
+
+{
+  "get": {
+    "tags": [
+      "Other"
+    ],
+    "summary": "getting information over any owl object on how it is build up",
+    "operationId": "componentID",
+    "parameters":
+      [
+        {
+          "in": "path",
+          "name": "id",
+          "description": "label of owl-object",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+    "responses": {
+      "200": {
+        "description": "the example is the only possible output",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "owl_Group name": {"type": "object",
+                  "properties": {
+                    "id_label": {"type": "object"}
+                  }
+                }
+              }
+            },
+            "example":{
+                "Machine": {
+                  "m0": {
+                    "input_queue": [
+                      "q0"
+                    ],
+                    "location": {
+                      "coordinates": [
+                        10,
+                        10,
+                        0
+                      ],
+                      "queue": "q1"
+                    },
+                    "output_queue": [
+                      "q0"
+                    ],
+                    "process_queue": [
+                      "q1"
+                    ],
+                    "prod_process": {
+                      "ppr0": {
+                        "deviation": 0,
+                        "label": "ppr0",
+                        "mean": 5,
+                        "type": "normal"
+                      },
+                      "ppr1": {
+                        "deviation": 2,
+                        "label": "ppr1",
+                        "mean": 10,
+                        "type": "normal"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+      },
+      "400": {
+        "description": "error output, when type not defined",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": ["code","name","description"
+              ],
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "name": {"type": "string"},
+                "description": {"type": "string"}
+
+              }
+            },
+            "examples": {
+              "value": {
+                "default": {
+                  "code": "400",
+                  "name": "getID",
+                  "description": "type is not defined or programmed: 'parameter_name'"
+                }
+              }
+
+            }
+          }
+        }
+      }
+    },
+    "x-codegen-request-body-name": "body"
+  }
+}

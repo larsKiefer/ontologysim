@@ -1,0 +1,152 @@
+
+{
+      "post": {
+        "tags": [
+          "CheckProductType"
+        ],
+        "summary": "check creation of product type",
+        "operationId": "checkProductType",
+        "requestBody": {
+          "description": "provides id list of process",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "list"
+                ],
+                "properties": {
+                  "list": {
+                    "type": "list"
+                  }
+                }
+              },
+              "example": {
+                "value": {
+                  "list": [
+                    [
+                      1,
+                      2,
+                      3
+                    ]
+                  ]
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "request body is not correct",
+            "content": {}
+          },
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "max_state",
+                    "name",
+                    "path"
+                  ],
+                  "properties": {
+                    "max_state": {
+                      "type": "int"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "path": {
+                      "type": "object",
+                      "required": [
+                        "forward_process",
+                        "reverse_process",
+                        "state"
+                      ],
+                      "properties": {
+                        "forward_process": {
+                          "type": "list"
+                        },
+                        "reverse_process": {
+                          "type": "list"
+                        },
+                        "state": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "value": {
+                    "max_state": 4,
+                    "name": "p_t0",
+                    "path": [
+                      {
+                        "forward_process": [],
+                        "reverse_process": [
+                          "ptpr2"
+                        ],
+                        "state": "state0"
+                      },
+                      {
+                        "forward_process": [
+                          "ptpr0"
+                        ],
+                        "reverse_process": [],
+                        "state": "state1"
+                      },
+                      {
+                        "forward_process": [
+                          "ptpr1"
+                        ],
+                        "reverse_process": [
+                          "ptpr0"
+                        ],
+                        "state": "state2"
+                      },
+                      {
+                        "forward_process": [
+                          "ptpr2"
+                        ],
+                        "reverse_process": [
+                          "ptpr1"
+                        ],
+                        "state": "state3"
+                      }
+                    ],
+                    "process_info": [
+                      {
+                        "name": "pr1",
+                        "process_id": 1,
+                        "product_type_process_name": "ptpr0",
+                        "state_onto": "state2"
+                      },
+                      {
+                        "name": "pr3",
+                        "process_id": 3,
+                        "product_type_process_name": "ptpr1",
+                        "state_onto": "state3"
+                      },
+                      {
+                        "name": "pr3",
+                        "process_id": 3,
+                        "product_type_process_name": "ptpr2",
+                        "state_onto": "state0"
+                      }
+                    ],
+                    "source_state": [
+                      "state1"
+                    ]
+                  }
+                }
+              }
+              }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    }

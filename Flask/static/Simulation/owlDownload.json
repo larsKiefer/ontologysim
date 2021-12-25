@@ -1,0 +1,65 @@
+{
+  "get": {
+    "tags": [
+      "Simulation"
+    ],
+    "summary": "download owl file of current simulation",
+    "operationId": "owlDownload",
+    "request": {
+
+    },
+    "responses": {
+      "200": {
+        "description": "owl file data",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "file"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string"
+                }
+              }
+            },
+        "example":
+        {
+          "file":"<?xml version=\"1.0\"?>\n<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/..."
+        }
+          }
+        }
+
+  },
+  "400": {
+    "description": "error output, when input wrong",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": [
+            "message"
+          ],
+          "properties": {
+            "message": {
+              "type": "string"
+            }
+          }
+        },
+        "examples": {
+
+          "error2": {
+            "message": {
+              "description": "simulation not started"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+
+    "x-codegen-request-body-name": "body"
+  }
+}

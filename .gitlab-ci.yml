@@ -1,0 +1,21 @@
+
+image: python:3.8
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+before_script:
+  - python -V  # Print out python version for debugging
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+
+
+stages:
+    - test
+    - dummy
+test:
+    script:
+        - python -m unittest tests/testCases/ConfigTest.py
+dummy:
+    script:
+        - echo "Pipeline finished"

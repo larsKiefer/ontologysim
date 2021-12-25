@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+    "source_state",
+    "state"
+  ],
+  "properties": {
+    "source_state": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

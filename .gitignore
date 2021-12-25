@@ -1,0 +1,12 @@
+/venv/
+/.idea/*
+/example/log/*
+*__pycache__*
+/example/owl/*
+/.idea
+/doc/*
+.idea/*
+.idea/workspace.xml
+ci/
+ci/*
+/ProductionSimulation/database/SimulationRun.db

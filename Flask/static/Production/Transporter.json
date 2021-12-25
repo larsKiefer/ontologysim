@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "input_queue",
+    "kpi",
+    "location",
+    "output_queue",
+    "process_queue",
+    "prod_process",
+    "state"
+  ],
+  "properties": {
+    "queue": {
+      "type": "string"
+    },
+    "kpi": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "float"
+        }
+      }
+    },
+    "route_type": {"type": "string"},
+    "speed": {"type": "int"},
+    "location":  {
+      "type": "object",
+      "properties": {
+        "coordinates": {
+          "type": "array",
+            "items": {
+              "type": "string"
+            }
+        },
+        "queue": {"type": "string"}
+
+      }
+    },
+    "state": {
+      "type": "object"
+    }
+  }
+}

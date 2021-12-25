@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "blockedSpace",
+    "product_name"
+  ],
+  "properties": {
+    "current_size": {
+      "type": "int"
+    },
+    "positions":  {
+      "type": "string"
+    }
+  }
+}

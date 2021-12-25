@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "required": ["summarized","time"],
+  "properties": {
+    "summarized": {
+      "type":"object",
+      "required": ["all"],
+      "properties": {
+        "production_object": {
+          "type": "object",
+          "properties": {
+            "kpi_name": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "time": {
+      "type":"object",
+      "required": ["all"],
+      "properties": {
+        "production_object": {
+          "type": "object",
+          "properties": {
+            "kpi_name": {
+              "type": "array",
+              "items": {"type": "number"}
+            }
+          }
+        },
+        "time": {
+          "type": "array",
+          "items": {"type": "number"}
+        }
+      }
+
+    }
+  }
+}

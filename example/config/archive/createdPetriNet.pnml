@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      </place>
+      <place id="p_1">
+        <name>
+          <text>p_1</text>
+        </name>
+      </place>
+      <place id="p_2">
+        <name>
+          <text>p_2</text>
+        </name>
+      </place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      </place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      </place>
+      <transition id="name_4">
+        <name>
+          <text>4</text>
+        </name>
+      </transition>
+      <transition id="name_5">
+        <name>
+          <text>5</text>
+        </name>
+      </transition>
+      <transition id="name_6">
+        <name>
+          <text>6</text>
+        </name>
+      </transition>
+      <transition id="name_1">
+        <name>
+          <text>1</text>
+        </name>
+      </transition>
+      <transition id="name_3">
+        <name>
+          <text>2</text>
+        </name>
+      </transition>
+      <transition id="name_2">
+        <name>
+          <text>2</text>
+        </name>
+      </transition>
+      <arc id="-9223371918940427744" source="p_1" target="name_3"/>
+      <arc id="-9223371918907335516" source="name_1" target="p_1"/>
+      <arc id="-9223371918906886396" source="name_5" target="p_4"/>
+      <arc id="-9223371918906886664" source="name_2" target="p_2"/>
+      <arc id="-9223371918906882196" source="name_6" target="sink"/>
+      <arc id="-9223371918906875440" source="p_3" target="name_5"/>
+      <arc id="-9223371918906886192" source="p_4" target="name_6"/>
+      <arc id="-9223371918907442124" source="source" target="name_1"/>
+      <arc id="-9223371918906886668" source="p_2" target="name_4"/>
+      <arc id="-9223371918906886188" source="name_4" target="p_4"/>
+      <arc id="-9223371918906899048" source="p_1" target="name_2"/>
+      <arc id="-9223371918906886692" source="name_3" target="p_3"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

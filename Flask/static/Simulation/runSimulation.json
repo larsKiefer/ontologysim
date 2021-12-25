@@ -1,0 +1,159 @@
+{
+  "post": {
+    "tags": [
+      "Simulation"
+    ],
+    "summary": "rum simulation at once",
+    "operationId": "runSimulation",
+    "requestBody": {
+      "description": "either using default files or selecting both files",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type":  "object" ,
+            "required": ["defaultFiles","files","isDefaultSelected","isDragDropSelected"],
+            "properties":{
+              "defaultFiles" : { "type": "array", "items": {"type":  "string"}},
+              "files": {},
+              "isDefaultSelected": {"type": "boolean"},
+              "isDragDropSelected": {"type": "boolean"},
+              "eventData": {"type": "boolean"}
+            }
+
+          },
+          "examples": {
+            "defaultFiles": {
+              "value": {
+                "defaultFiles": [
+                  "controller_config.ini",
+                  "logger_config_lvl3.ini",
+                  "owl_config.ini",
+                  "production_config_lvl3.ini"
+                ],
+                "eventData": "false",
+                "files": [],
+                "isDefaultSelected": "true",
+                "isDragDropSelected": "false"
+              }
+            },
+            "dragDrop": {
+              "value": {
+                "defaultFiles": [],
+                "eventData": "false",
+                "files": [
+                  {
+                    "path": "controller_config.ini",
+                    "content": "..."
+                  },
+                  {
+                    "path": "logger_config_lvl3.ini",
+                    "content": "..."
+                  },
+                  {
+                    "path": "owl_config.ini",
+                    "content": "..."
+                  },
+                  {
+                    "path": "production_config.ini",
+                    "content": "..."
+                  }
+                ],
+                "isDefaultSelected": "false",
+                "isDragDropSelected": "true"
+              }
+            }
+
+          }
+        }
+      }
+    },
+    "responses": {
+      "200": {
+        "description": "owl file data",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "eventOntoList","simulationFinished"
+              ],
+              "properties": {
+                "eventOntoList": {
+                  "type": "array",
+                  "items": { "$ref": "./eventModel.json"}
+                },
+                "simulationFinished": {
+                  "type": "boolean"
+                }
+              }
+            },
+        "examples":
+        {
+          "withEventData": {
+              "value": {
+                "eventOntoList": [{
+                                  "additional_type": "",
+                                  "location": "",
+                                  "machine": "",
+                                  "name": "e0",
+                                  "number_of_parts": "",
+                                  "position": "",
+                                  "position_info": "",
+                                  "process_id": "",
+                                  "product": "",
+                                  "task": "",
+                                  "time": 0,
+                                  "time_diff": 0,
+                                  "transport": "",
+                                  "type_logger": "Machine"
+                                },"..."],
+                "simulationFinished": "true"
+              }
+          },
+          "withoutEventData": {"value":
+            {"eventOntoList": [], "simulationFinished": true}
+          }
+        }
+          }
+        }
+
+  },
+  "400": {
+    "description": "error output, when input wrong",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": [
+            "message"
+          ],
+          "properties": {
+            "message": {
+              "type": "string"
+            }
+          }
+        },
+        "examples": {
+          "error1": {
+            "value": {
+              "message": {
+                "description": "request body is not correct "
+              }
+            }
+          },
+          "error2": {
+            "value": {
+              "message": {
+                "description": "no selection "
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+},
+
+    "x-codegen-request-body-name": "body"
+  }
+}

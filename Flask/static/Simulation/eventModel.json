@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "time": {
+      "type": "number"
+    },
+    "time_diff": {
+      "type": "number"
+    },
+    "type_logger": {
+      "type": "string"
+    },
+    "additional_type": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+     "position": {
+      "type": "string"
+    },
+     "position_info": {
+      "type": "string"
+    },
+    "machine": {
+      "type": "string"
+    },
+     "transport": {
+      "type": "string"
+    },
+    "process_id": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "task": {
+      "type": "string"
+    },
+    "number_of_parts": {
+      "type": "integer"
+    }
+  }
+}

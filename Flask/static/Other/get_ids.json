@@ -1,0 +1,119 @@
+
+{
+  "get": {
+    "tags": [
+      "Other"
+    ],
+    "summary": "getting labels of ontologysim",
+    "operationId": "getIDs",
+    "description": "simulation has to be started already",
+    "parameters":
+            [
+              {
+                "in": "path",
+                "name": "type",
+                "description": "object type",
+                "required": false,
+                "schema": {
+                  "type": "string",
+                  "enum": ["all","transporter","machine","start_queue","deadlock_queue","end_queue","machine_queue","end_queue","machine_queue","transporter_queue"]
+                }
+              }
+
+            ],
+    "responses": {
+      "200": {
+        "description": "the example is the only possible output",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+              ],
+              "properties": {
+                "type": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+
+              }
+            },
+            "examples": {
+              "deadlock_queue": {
+                "value": {
+                "deadlock_queue": [
+                  "deadlock_q7"
+                ]
+                }
+              },
+              "default/ all": {
+                "value": {
+                  "deadlock_queue": [
+                    "deadlock_q7"
+                  ],
+                  "end_queue": [
+                    "end_q9"
+                  ],
+                  "machine": [
+                    "m0",
+                    "m1"
+                  ],
+                  "machine_queue": [
+                    "q0",
+                    "q2"
+                  ],
+                  "start_queue": [
+                    "start_q11"
+                  ],
+                  "transporter": [
+                    "t0",
+                    "t1",
+                    "t2"
+                  ],
+                  "transporter_queue": [
+                    "q4",
+                    "q5",
+                    "q6"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "400": {
+        "description": "error output, when type not defined",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": ["code","name","description"
+              ],
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "name": {"type": "string"},
+                "description": {"type": "string"}
+
+              }
+            },
+            "examples": {
+              "value": {
+                "default": {
+                  "code": "400",
+                  "name": "getID",
+                  "description": "type is not defined: 'parameter_name'"
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+    },
+    "x-codegen-request-body-name": "body"
+  }

@@ -1,0 +1,46 @@
+
+{
+  "get": {
+    "tags": [
+      "Other"
+    ],
+    "summary": "resetting the backend, new init of simCore",
+    "operationId": "resetBe",
+    "responses": {
+      "200": {
+        "description": "the example is the only possible output",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "alreadyStarted",
+                "run",
+                "production"
+              ],
+              "properties": {
+                "alreadyStarted": {
+                  "type": "boolean"
+                },
+                "run": {
+                  "type": "boolean"
+                },
+                "production": {
+                  "type": "object"
+                }
+                }
+              },
+            "examples":{
+              "value":
+
+                {"alreadyStarted": "False",
+                  "run": "False", "production": {}
+              }
+            }
+
+          }
+      }
+    },
+    "x-codegen-request-body-name": "body"
+  }
+}

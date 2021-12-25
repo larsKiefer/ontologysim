@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "start": {
+      "type": "date"
+    },
+    "number_or_parts": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

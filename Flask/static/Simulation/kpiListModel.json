@@ -1,0 +1,35 @@
+{
+
+      "type": "object",
+      "required": [
+        "summarized",
+        "time"
+      ],
+      "properties": {
+        "summarized": {
+          "type": "object",
+          "properties": {
+            "production_object": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "time": {
+          "type": "object",
+          "properties": {
+            "production_object": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    }

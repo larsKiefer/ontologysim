@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "required": [
+    "input_queue",
+    "kpi",
+    "location",
+    "output_queue",
+    "process_queue",
+    "prod_process",
+    "state"
+  ],
+  "properties": {
+    "input_queue": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_queue": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "process_queue": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "kpi": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "float"
+        }
+      }
+    },
+    "location":  {
+      "type": "array",
+      "items": {
+        "type": "int"
+      }
+    },
+    "prod_process": {
+      "type": "object",
+      "properties": {
+        "deviation": "float",
+        "label": "string",
+        "mean": "float",
+        "type": "string"
+      }
+    },
+    "state": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Ontologysim Flask API",
+    "description": "This a documentation of the flask API from ontologysim",
+    "termsOfService": "",
+    "contact": {
+      "email": "marvin.may@kit.edu"
+    },
+    "license": {
+      "name": "GPLv3",
+      "url": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+    },
+    "version": "1.0.0"
+  },
+  "externalDocs": {
+    "description": "Find out more about Ontologysim",
+    "url": ""
+  },
+  "servers": [
+  ],
+  "tags": [
+    {
+      "name": "CheckProduction",
+      "description": "all about checking the production ini "
+    },
+    {
+      "name": "CheckProductType",
+      "description": "all about checking the process tree"
+    },
+    {
+      "name": "DataBase",
+      "description": "connection to data base and accessing data"
+    },
+    {
+      "name": "Simulation",
+      "description": "handling data request for simulation"
+    },
+    {
+      "name": "Other",
+      "description": "all other requests"
+    }
+  ],
+  "paths": {
+    "/production": { "$ref": "./CheckProduction/checkProduction.json"},
+    "/process": { "$ref": "./CheckProductionType/checkProductionType.json"},
+    "/database/connect":  { "$ref": "./DataBase/connect.json"},
+    "/database/simulationrun":  { "$ref": "./DataBase/simulationrun.json"},
+    "/rest_be":  { "$ref": "./Other/reset_be.json"},
+    "/test":  { "$ref": "./Other/test.json"},
+    "/component":  { "$ref": "./Other/component.json"},
+    "/component/id":  { "$ref": "./Other/component_id.json"},
+    "/getIds": {"$ref": "./Other/get_ids.json"},
+    "/nextEvent": {"$ref": "./Simulation/event.json"},
+    "/kpi": {"$ref": "./Simulation/kpi.json"},
+    "/kpiList": {"$ref": "./Simulation/kpiList.json"},
+    "/simulation/download/owl": {"$ref": "./Simulation/owlDownload.json"},
+    "/runSimulation": {"$ref": "./Simulation/runSimulation.json"},
+    "/load_files": {"$ref": "./Simulation/loadFiles.json"},
+    "/start": {"$ref": "./Simulation/startAction.json"},
+    "/startUntilTime": {"$ref": "./Simulation/startUntilTime.json"}
+  },
+  "components": {
+    "schemas": {
+      "SimulationRun": {
+        "$ref": "./DataBase/simulationRunModel.json"
+      },
+      "Event": {
+        "$ref": "./Simulation/eventModel.json"
+      },
+      "DeadlockQueue": {
+        "$ref": "./Production/DeadlockQueue.json"
+      },
+      "EndQueue": {
+        "$ref": "./Production/EndQueue.json"
+      },
+      "Machine": {
+        "$ref": "./Production/Machine.json"
+      },
+      "MachineQueue": {
+        "$ref": "./Production/MachineQueue.json"
+      },
+      "Position": {
+        "$ref": "./Production/Position.json"
+      },
+      "ProcessQueue": {
+        "$ref": "./Production/ProcessQueue.json"
+      },
+      "Product": {
+        "$ref": "./Production/Product.json"
+      },
+      "ProductType": {
+        "$ref": "./Production/ProductType.json"
+      },
+      "StartQueue": {
+        "$ref": "./Production/StartQueue.json"
+      },
+      "Task": {
+        "$ref": "./Production/Task.json"
+      },
+      "Transporter": {
+        "$ref": "./Production/Transporter.json"
+      },
+      "TransporterQueue": {
+        "$ref": "./Production/TransporterQueue.json"
+      }
+    },
+    "securitySchemes": {
+
+    }
+  }
+}

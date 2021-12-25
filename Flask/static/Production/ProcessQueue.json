@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "current_size",
+    "positions",
+    "size"
+  ],
+  "properties": {
+    "current_size": {
+      "type": "int"
+    },
+    "positions":  {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "size": {
+      "type": "int"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "get": {
+    "tags": [
+      "Simulation"
+    ],
+    "summary": "all file names from default directory",
+    "operationId": "loadFiles",
+    "responses": {
+      "200": {
+        "description": "file names from default directory",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "files"
+              ],
+              "properties": {
+                "files": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+        "example":
+        {
+              "files": [
+                  "controller_config.ini",
+                  "logger_config_lvl3.ini",
+                  "owl_config.ini",
+                  "production_config_lvl3.ini"
+              ]
+          }
+          }
+        }
+      }
+
+
+},
+
+    "x-codegen-request-body-name": "body"
+  }
+}

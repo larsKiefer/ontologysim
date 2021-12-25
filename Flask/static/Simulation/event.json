@@ -1,0 +1,664 @@
+{
+  "get": {
+    "tags": [
+      "Simulation"
+    ],
+    "summary": "returning next event and production state",
+    "operationId": "nextEvent",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "number",
+        "description": "number_of_events returned at once",
+        "required": false,
+        "schema": {
+          "type": "integer",
+          "default": 1
+        }
+      },
+      {
+        "in": "path",
+        "name": "full",
+        "description": "if all event columns are returned or not, FALSE = all empty values are removed",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "default": "TRUE",
+          "enum": [
+            "TRUE",
+            "FALSE"
+          ]
+        }
+      },
+      {
+        "in": "path",
+        "name": "production",
+        "description": "if the production state is returned",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "default": "TRUE",
+          "enum": [
+            "TRUE",
+            "FALSE"
+          ]
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "the example is the only possible output",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "eventOntoList",
+                "simulationFinished"
+              ],
+              "properties": {
+                "eventOntoList": {
+                  "type": "array",
+                  "items": {
+                       "$ref": "./eventModel.json"
+
+                  }
+                },
+                "simulationFinished": {
+                  "type": "boolean"
+                },
+                "productionDict": {
+                  "$ref": "./productionModel.json"
+                }
+              }
+            },
+        "examples": {
+          "default": {
+            "value": {
+    "eventOntoList": [
+        {
+            "additional_type": "",
+            "location": "",
+            "machine": "",
+            "name": "e11",
+            "number_of_parts": "",
+            "position": "",
+            "position_info": "",
+            "process_id": "",
+            "product": "",
+            "task": "",
+            "time": 5,
+            "time_diff": 0,
+            "transport": "",
+            "type_logger": "Transporter"
+        }
+    ],
+    "productionDict": {
+        "DeadlockQueue": {
+            "deadlock_q7": {
+                "current_size": 0,
+                "positions": [
+                    "po17",
+                    "po18",
+                    "po19",
+                    "po20",
+                    "po21"
+                ],
+                "size": 5
+            }
+        },
+        "EndQueue": {
+            "end_q9": {
+                "current_size": 0,
+                "positions": [
+                    "po25",
+                    "po26",
+                    "po27",
+                    "po28",
+                    "po29",
+                    "po30",
+                    "po31",
+                    "po32",
+                    "po33"
+                ],
+                "size": 0
+            }
+        },
+        "Machine": {
+            "m0": {
+                "input_queue": [
+                    "q0"
+                ],
+                "kpi": {
+                    "APTp": 0,
+                    "ASTp": 0
+                },
+                "location": {
+                    "coordinates": [
+                        10,
+                        10,
+                        0
+                    ],
+                    "queue": "q1"
+                },
+                "output_queue": [
+                    "q0"
+                ],
+                "process_queue": [
+                    "q1"
+                ],
+                "prod_process": {
+                    "ppr0": {
+                        "deviation": 0,
+                        "label": "ppr0",
+                        "mean": 5,
+                        "type": "normal"
+                    },
+                    "ppr1": {
+                        "deviation": 2,
+                        "label": "ppr1",
+                        "mean": 10,
+                        "type": "normal"
+                    }
+                },
+                "state": {
+                    "state": "Machine",
+                    "timeDiff": 0
+                }
+            },
+            "m1": {
+                "input_queue": [
+                    "q2"
+                ],
+                "kpi": {
+                    "APTp": 0,
+                    "ASTp": 0
+                },
+                "location": {
+                    "coordinates": [
+                        0,
+                        5,
+                        0
+                    ],
+                    "queue": "q3"
+                },
+                "output_queue": [
+                    "q2"
+                ],
+                "process_queue": [
+                    "q3"
+                ],
+                "prod_process": {
+                    "ppr2": {
+                        "deviation": 0,
+                        "label": "ppr2",
+                        "mean": 5,
+                        "type": "normal"
+                    },
+                    "ppr3": {
+                        "deviation": 2,
+                        "label": "ppr3",
+                        "mean": 10,
+                        "type": "normal"
+                    }
+                },
+                "state": {
+                    "state": "Machine",
+                    "timeDiff": 0
+                }
+            }
+        },
+        "MachineQueue": {
+            "q0": {
+                "current_size": 0,
+                "positions": [
+                    "po0",
+                    "po1",
+                    "po2"
+                ],
+                "size": 3
+            },
+            "q2": {
+                "current_size": 0,
+                "positions": [
+                    "po3",
+                    "po4",
+                    "po5"
+                ],
+                "size": 3
+            }
+        },
+        "Position": {
+            "po0": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po1": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po10": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po11": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po12": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po13": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po14": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po15": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po16": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po17": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po18": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po19": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po2": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po20": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po21": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po22": {
+                "blockedSpace": 1,
+                "product_name": "p0"
+            },
+            "po23": {
+                "blockedSpace": 1,
+                "product_name": "p1"
+            },
+            "po24": {
+                "blockedSpace": 1,
+                "product_name": "p2"
+            },
+            "po25": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po26": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po27": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po28": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po29": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po3": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po30": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po31": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po32": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po33": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po4": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po5": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po6": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po7": {
+                "blockedSpace": 0,
+                "product_name": ""
+            },
+            "po8": {
+                "blockedSpace": 1,
+                "product_name": ""
+            },
+            "po9": {
+                "blockedSpace": 0,
+                "product_name": ""
+            }
+        },
+        "ProcessQueue": {
+            "q1": {
+                "current_size": 0,
+                "positions": [
+                    "po6"
+                ],
+                "size": 1
+            },
+            "q3": {
+                "current_size": 0,
+                "positions": [
+                    "po7"
+                ],
+                "size": 1
+            }
+        },
+        "Product": {
+            "p0": {
+                "blocked_for_machine": 1,
+                "blocked_for_transporter": 1,
+                "end_of_production_time": 0,
+                "percentage": 0,
+                "product_type": "p_t0",
+                "queue_input_time": 6.737204520791032,
+                "start_of_production_time": 0,
+                "state": "source"
+            },
+            "p1": {
+                "blocked_for_machine": 0,
+                "blocked_for_transporter": 0,
+                "end_of_production_time": 0,
+                "percentage": 0,
+                "product_type": "p_t0",
+                "queue_input_time": null,
+                "start_of_production_time": 0,
+                "state": "source"
+            },
+            "p2": {
+                "blocked_for_machine": 0,
+                "blocked_for_transporter": 0,
+                "end_of_production_time": 0,
+                "percentage": 0,
+                "product_type": "p_t0",
+                "queue_input_time": null,
+                "start_of_production_time": 0,
+                "state": "source"
+            }
+        },
+        "ProductType": {
+            "p_t0": {
+                "source_state": [
+                    "state1"
+                ],
+                "state": [
+                    "state0",
+                    "state1",
+                    "state2"
+                ]
+            },
+            "p_t1": {
+                "source_state": [
+                    "state4"
+                ],
+                "state": [
+                    "state3",
+                    "state4",
+                    "state5"
+                ]
+            }
+        },
+        "StartQueue": {
+            "start_q11": {
+                "current_size": 3,
+                "positions": [
+                    "po22",
+                    "po23",
+                    "po24"
+                ],
+                "size": 3
+            }
+        },
+        "Task": {
+            "task0": {
+                "number": 5,
+                "product_type": "p_t0",
+                "start_time": 0,
+                "task_type": 2,
+                "todo_number": 2
+            },
+            "task1": {
+                "number": 5,
+                "product_type": "p_t1",
+                "start_time": 0,
+                "task_type": 5,
+                "todo_number": 5
+            },
+            "task2": {
+                "number": 100,
+                "product_type": "p_t0",
+                "start_time": 0,
+                "task_type": 100,
+                "todo_number": 100
+            },
+            "task3": {
+                "number": 100,
+                "product_type": "p_t1",
+                "start_time": 0,
+                "task_type": 100,
+                "todo_number": 100
+            },
+            "task4": {
+                "number": 5,
+                "product_type": "p_t0",
+                "start_time": 0,
+                "task_type": 5,
+                "todo_number": 5
+            },
+            "task5": {
+                "number": 5,
+                "product_type": "p_t1",
+                "start_time": 0,
+                "task_type": 5,
+                "todo_number": 5
+            }
+        },
+        "Transporter": {
+            "t0": {
+                "kpi": {
+                    "AUSTp": 0,
+                    "AUTTp": 0
+                },
+                "location": {
+                    "coordinates": [
+                        1,
+                        1,
+                        0
+                    ],
+                    "queue": "q6"
+                },
+                "queue": "q4",
+                "route_type": "free",
+                "speed": 3,
+                "state": {
+                    "state": "Transporter",
+                    "timeDiff": 0
+                }
+            },
+            "t1": {
+                "kpi": {
+                    "AUSTp": 0,
+                    "AUTTp": 0
+                },
+                "location": {
+                    "coordinates": [
+                        1,
+                        1,
+                        0
+                    ],
+                    "queue": "q6"
+                },
+                "queue": "q5",
+                "route_type": "free",
+                "speed": 3,
+                "state": {
+                    "state": "Transporter",
+                    "timeDiff": 0
+                }
+            },
+            "t2": {
+                "kpi": {
+                    "AUSTp": 0,
+                    "AUTTp": 0
+                },
+                "location": {
+                    "coordinates": [
+                        1,
+                        1,
+                        0
+                    ],
+                    "queue": "q6"
+                },
+                "queue": "q6",
+                "route_type": "free",
+                "speed": 3,
+                "state": {
+                    "state": "Transporter",
+                    "timeDiff": 0
+                }
+            }
+        },
+        "TransporterQueue": {
+            "q4": {
+                "current_size": 0,
+                "positions": [
+                    "po8",
+                    "po9",
+                    "po10"
+                ],
+                "size": 3
+            },
+            "q5": {
+                "current_size": 0,
+                "positions": [
+                    "po11",
+                    "po12",
+                    "po13"
+                ],
+                "size": 3
+            },
+            "q6": {
+                "current_size": 0,
+                "positions": [
+                    "po14",
+                    "po15",
+                    "po16"
+                ],
+                "size": 3
+            }
+        }
+    },
+    "simulationFinished": false
+}
+          },
+          "production=FALSE&full=FALSE": {
+            "value": {
+    "eventOntoList": [
+        {
+            "name": "e12",
+            "time": 5,
+            "time_diff": 5,
+            "transport": "t1",
+            "type_logger": "Wait_Transport"
+        }
+    ],
+    "simulationFinished": false
+}
+          },
+          "production=FALSE&full=TRUE": {
+            "value":{
+                  "eventOntoList": [
+                      {
+                          "additional_type": "",
+                          "location": "",
+                          "machine": "",
+                          "name": "e13",
+                          "number_of_parts": "",
+                          "position": "",
+                          "position_info": "",
+                          "process_id": "",
+                          "product": "",
+                          "task": "",
+                          "time": 5,
+                          "time_diff": 0,
+                          "transport": "",
+                          "type_logger": "Transporter"
+                      }
+                  ],
+                  "simulationFinished": false
+              }
+          }
+
+        }
+          }
+        }
+
+  },
+  "400": {
+    "description": "error output, when simulation not started",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required": [
+            "message"
+          ],
+          "properties": {
+            "message": {
+              "type": "string"
+            }
+          }
+        },
+        "examples": {
+          "value": {
+            "message": {
+              "description": "simulation not started"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+
+    "x-codegen-request-body-name": "body"
+  }
+}

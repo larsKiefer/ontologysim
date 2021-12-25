@@ -1,0 +1,332 @@
+
+{
+  "get": {
+    "tags": [
+      "Other"
+    ],
+    "summary": "get all objects from one type, similar to checkProduction",
+    "operationId": "component",
+    "parameters":
+      [
+        {
+          "in": "path",
+          "name": "type",
+          "description": "group of owl-object",
+          "required": false,
+          "schema": {
+            "type": "string",
+            "enum": ["all","DeadlockQueue",
+                    "EndQueue",
+                    "Machine",
+                    "MachineQueue",
+                    "StartQueue",
+                    "Transporter",
+                    "TransporterQueue"]
+          }
+        }
+      ],
+    "responses": {
+      "200": {
+        "description": "the example is the only possible output",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "owl_Group name": {
+                  "type": "object",
+                  "properties": {
+                    "id_label": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            },
+            "examples": {
+              "Machine": {
+                "value": {
+                  "Machine": {
+                    "m0": {
+                      "input_queue": [
+                        "q0"
+                      ],
+                      "location": {
+                        "coordinates": [
+                          10,
+                          10,
+                          0
+                        ],
+                        "queue": "q1"
+                      },
+                      "output_queue": [
+                        "q0"
+                      ],
+                      "process_queue": [
+                        "q1"
+                      ],
+                      "prod_process": {
+                        "ppr0": {
+                          "deviation": 0,
+                          "label": "ppr0",
+                          "mean": 5,
+                          "type": "normal"
+                        },
+                        "ppr1": {
+                          "deviation": 2,
+                          "label": "ppr1",
+                          "mean": 10,
+                          "type": "normal"
+                        }
+                      }
+                    },
+                    "m1": {
+                      "input_queue": [
+                        "q2"
+                      ],
+                      "location": {
+                        "coordinates": [
+                          0,
+                          5,
+                          0
+                        ],
+                        "queue": "q3"
+                      },
+                      "output_queue": [
+                        "q2"
+                      ],
+                      "process_queue": [
+                        "q3"
+                      ],
+                      "prod_process": {
+                        "ppr2": {
+                          "deviation": 0,
+                          "label": "ppr2",
+                          "mean": 5,
+                          "type": "normal"
+                        },
+                        "ppr3": {
+                          "deviation": 2,
+                          "label": "ppr3",
+                          "mean": 10,
+                          "type": "normal"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "all": {
+                "value": {
+                  "DeadlockQueue": {
+                    "deadlock_q7": {
+                      "current_size": 0,
+                      "positions": [
+                        "po17",
+                        "po18",
+                        "po19",
+                        "po20",
+                        "po21"
+                      ],
+                      "size": 5
+                    }
+                  },
+                  "EndQueue": {
+                    "end_q9": {
+                      "current_size": 0,
+                      "positions": [
+                        "po25",
+                        "po26",
+                        "po27",
+                        "po28",
+                        "po29",
+                        "po30",
+                        "po31",
+                        "po32",
+                        "po33"
+                      ],
+                      "size": 0
+                    }
+                  },
+                  "Machine": {
+                    "m0": {
+                      "input_queue": [
+                        "q0"
+                      ],
+                      "location": {
+                        "coordinates": [
+                          10,
+                          10,
+                          0
+                        ],
+                        "queue": "q1"
+                      },
+                      "output_queue": [
+                        "q0"
+                      ],
+                      "process_queue": [
+                        "q1"
+                      ],
+                      "prod_process": {
+                        "ppr0": {
+                          "deviation": 0,
+                          "label": "ppr0",
+                          "mean": 5,
+                          "type": "normal"
+                        },
+                        "ppr1": {
+                          "deviation": 2,
+                          "label": "ppr1",
+                          "mean": 10,
+                          "type": "normal"
+                        }
+                      }
+                    },
+                    "m1": {
+                      "input_queue": [
+                        "q2"
+                      ],
+                      "location": {
+                        "coordinates": [
+                          0,
+                          5,
+                          0
+                        ],
+                        "queue": "q3"
+                      },
+                      "output_queue": [
+                        "q2"
+                      ],
+                      "process_queue": [
+                        "q3"
+                      ],
+                      "prod_process": {
+                        "ppr2": {
+                          "deviation": 0,
+                          "label": "ppr2",
+                          "mean": 5,
+                          "type": "normal"
+                        },
+                        "ppr3": {
+                          "deviation": 2,
+                          "label": "ppr3",
+                          "mean": 10,
+                          "type": "normal"
+                        }
+                      }
+                    }
+                  },
+                  "MachineQueue": {
+                    "q2": {
+                      "current_size": 0,
+                      "positions": [
+                        "po3",
+                        "po4",
+                        "po5"
+                      ],
+                      "size": 3
+                    }
+                  },
+                  "StartQueue": {
+                    "start_q11": {
+                      "current_size": 3,
+                      "positions": [
+                        "po22",
+                        "po23",
+                        "po24"
+                      ],
+                      "size": 3
+                    }
+                  },
+                  "Transporter": {
+                    "t0": {
+                      "location": {
+                        "coordinates": [
+                          1,
+                          1,
+                          0
+                        ],
+                        "queue": "q6"
+                      },
+                      "queue": "q4",
+                      "route_type": "free",
+                      "speed": 3
+                    },
+                    "t1": {
+                      "location": {
+                        "coordinates": [
+                          1,
+                          1,
+                          0
+                        ],
+                        "queue": "q6"
+                      },
+                      "queue": "q5",
+                      "route_type": "free",
+                      "speed": 3
+                    },
+                    "t2": {
+                      "location": {
+                        "coordinates": [
+                          1,
+                          1,
+                          0
+                        ],
+                        "queue": "q6"
+                      },
+                      "queue": "q6",
+                      "route_type": "free",
+                      "speed": 3
+                    }
+                  },
+                  "TransporterQueue": {
+                    "q6": {
+                      "current_size": 0,
+                      "positions": [
+                        "po14",
+                        "po15",
+                        "po16"
+                      ],
+                      "size": 3
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "400": {
+        "description": "error output, when type not defined",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": ["code","name","description"
+              ],
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "name": {"type": "string"},
+                "description": {"type": "string"}
+
+              }
+            },
+            "examples": {
+              "value": {
+                "default": {
+                  "code": "400",
+                  "name": "getID",
+                  "description": "type is not defined or programmed: 'parameter_name'"
+                }
+              }
+
+            }
+          }
+        }
+      }
+    },
+    "x-codegen-request-body-name": "body"
+  }
+}

@@ -1,0 +1,48 @@
+
+{
+      "get": {
+        "tags": [
+          "DataBase"
+        ],
+        "summary": "get simulation table",
+        "operationId": "get simulation",
+        "requestBody": {
+          "description": "provides id list of process",
+          "content": {
+            "application/json": {
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "request body is not correct",
+            "content": {}
+          },
+          "200": {
+            "description": "request body is not correct",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "./SimulationRunModel.json"
+                  }
+                },
+                "examples": {
+                  "value": {
+                    "result": [
+                      {
+                        "id": 1,
+                        "start": "20.01.2021",
+                        "number_of_parts": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
