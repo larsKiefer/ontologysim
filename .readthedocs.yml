@@ -8,8 +8,8 @@ version: 2
 
 sphinx:
   builder: html
-  configuration: conf.py
-  fail_on_warning: true
+  configuration: docs/source/conf.py
+  fail_on_warning: false
 """
 # Set the version of Python and other tools you might need
 build:
