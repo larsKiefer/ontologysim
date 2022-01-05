@@ -18,7 +18,7 @@ assert len(install_requires) > 0
 
 setup(
     name='ontologysim',
-    version='1.0',
+    version='1.0.1',
     license='GPLv3',
     author="Lars Kiefer, Marvin Carl May",
     author_email='lars.kiefer@alumni.kit.edu',

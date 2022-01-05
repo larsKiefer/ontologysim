@@ -54,8 +54,10 @@ import datetime
 
 from ontologysim.ProductionSimulation.logger.EventLogger import EventLogger
 #add new lines here add new lines of code
-from example.controller.MachineController_FIFO2 import MachineController_FIFO2
-
+try:
+    from example.controller.MachineController_FIFO2 import MachineController_FIFO2
+except:
+    pass
 class Initializer:
     """
         The intitializer is the main connection for the use from outside
