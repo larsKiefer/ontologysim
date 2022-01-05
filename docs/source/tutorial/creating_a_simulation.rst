@@ -114,14 +114,14 @@ The file can be found in ``/èxample/Main.py``
     import sys
     import owlready2
 
-    from ProductionSimulation.analyse.TimeAnalyse import TimeAnalyse
+    from ontologysim.ProductionSimulation.analyse.TimeAnalyse import TimeAnalyse
 
     current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
     parent_dir = os.path.dirname(current_dir)
     sys.path.insert(0, parent_dir)
 
 
-    from ProductionSimulation.init.Initializer import Initializer
+    from ontologysim.ProductionSimulation.init.Initializer import Initializer
     from example.controller import MachineController_FIFO2
 
     #path to config

@@ -9,7 +9,7 @@ Start
 --------
 ````bash
 cd ontologysim
-py Flask/FlaskMain.py
+py ontologysim/Flask/FlaskMain.py
 ````
 
 Test connection

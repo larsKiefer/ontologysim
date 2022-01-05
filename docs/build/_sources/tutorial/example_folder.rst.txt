@@ -65,8 +65,8 @@ the complete code can be found under ``/example/MainPlot.py``
     import os
     import sys
 
-    from ProductionSimulation.plot.Log_plot import Plot
-    from ProductionSimulation.utilities.path_utilities import PathTest
+    from ontologysim.ProductionSimulation.plot.Log_plot import Plot
+    from ontologysim.ProductionSimulation.utilities.path_utilities import PathTest
 
     current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
     parent_dir = os.path.dirname(current_dir)

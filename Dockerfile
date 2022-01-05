@@ -26,4 +26,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python3", "Flask/FlaskMain.py"]
+CMD ["python3", "src/Flask/FlaskMain.py"]

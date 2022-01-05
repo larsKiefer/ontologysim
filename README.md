@@ -17,13 +17,22 @@ Ontologysim follows a set of high-level design choices which differentiate it fr
 Installation
 ==============
 
-git lab
+pip
+-----------
+
+A stable version of Production simulation is periodically updated on pyPi and installed as follows:
+
+````bash
+pip install ontologysim
+````
+
+github
 -----------
 
 A stable version of Production simulation is periodically updated on the master and installed as follows:
 
 ````bash
-git clone https://git.scc.kit.edu/ov0653/ontologysim.git
+git clone https://github.com/larsKiefer/ontologysim
 cd ontologysim
 pip3 install -r requirements.txt
 ````
@@ -41,7 +50,7 @@ Flask
 to start the Flask server run:
 
 ````bash
-py Flask/FlaskMain.py
+py ontologysim/Flask/FlaskMain.py
 ````
 
 
@@ -50,7 +59,7 @@ Problem handling
 
 Owlready2.0
 ---------------
-**Java Path**``
+**Java Path**
 
 * to use owlready correctly, your java path needs to be set in the ``owl_config.ini`` 
     * [owl introduction](../configs/owl/owl_config)

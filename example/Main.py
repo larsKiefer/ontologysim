@@ -9,8 +9,8 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
 
-from ProductionSimulation.analyse.TimeAnalyse import TimeAnalyse
-from ProductionSimulation.init.Initializer import Initializer
+from ontologysim.ProductionSimulation.analyse.TimeAnalyse import TimeAnalyse
+from ontologysim.ProductionSimulation.init.Initializer import Initializer
 
 #path to example
 def main():

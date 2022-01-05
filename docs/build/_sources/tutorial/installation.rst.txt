@@ -1,16 +1,26 @@
 Installation
 ==============
 
-git lab
+pip
+-----------
+
+A stable version of Production simulation is periodically updated on pyPi and installed as follows:
+
+.. code-block:: console
+
+   pip install ontologysim
+
+
+github
 -----------
 
 A stable version of Production simulation is periodically updated on the master and installed as follows:
 
 .. code-block:: console
 
-   git clone https://git.scc.kit.edu/ov0653/ontologysim.git
+   git clone https://github.com/larsKiefer/ontologysim
    cd ontologysim
-   pip3 install -r requiirements.txt
+   pip3 install -r requirements.txt
 
 
 

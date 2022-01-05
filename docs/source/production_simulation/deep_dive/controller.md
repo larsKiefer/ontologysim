@@ -25,7 +25,7 @@ Types of controller:
 
 1. Create your own controller class
     * which has the same entry method as described in the table.
-    * to override the current controller import them from `from ProductionSimulation.controller.machine_controller.*`
+    * to override the current controller import them from `from ontologysim.ProductionSimulation.controller.machine_controller.*`
 2. add your controller to your main
     * Attention: pay attention to the same import method as in the example
     * filename and class are equal

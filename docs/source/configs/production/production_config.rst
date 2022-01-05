@@ -16,7 +16,7 @@ Lvl3 - Basic
 --------------
 
 A complete example can be viewed under: ``/example/config/for_docu/production_config_lvl3.ini``.
-The most values are set via ``/ProductionSimulation/init/defaultValue.init``
+The most values are set via ontologysim site packages ``ontologysim/ProductionSimulation/init/defaultValue.init``
 
 Machine
 ++++++++

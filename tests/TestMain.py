@@ -10,10 +10,7 @@ parent_parent_dir = os.path.dirname(parent_dir)
 sys.path.insert(0, parent_dir)
 sys.path.insert(0,parent_parent_dir)
 
-from tests.testCases import MultipleRunTests
-from tests.testCases import FlaskAPITest
-from tests.testCases import MainTest
-
+from tests.testCases import FlaskAPITest, MainTest, MultipleRunTests
 
 # load all testcases from given module
 suite = unittest.TestSuite()

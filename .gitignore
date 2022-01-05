@@ -9,4 +9,9 @@
 .idea/workspace.xml
 ci/
 ci/*
-/ProductionSimulation/database/SimulationRun.db
+/ontologysim/ProductionSimulation/database/SimulationRun.db
+/dist
+/dist/*
+/ontologysim/testPlayground/
+/ontologysim.egg-info/
+/ontologysim/ontologysim.egg-info/

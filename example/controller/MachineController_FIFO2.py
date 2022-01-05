@@ -1,7 +1,7 @@
 from collections import defaultdict
 
-from ProductionSimulation.controller.machine_controller.MachineController import MachineController
-from ProductionSimulation.sim.Enum import Queue_Enum
+from ontologysim.ProductionSimulation.controller.machine_controller.MachineController import MachineController
+from ontologysim.ProductionSimulation.sim.Enum import Queue_Enum
 
 
 class MachineController_FIFO2(MachineController):

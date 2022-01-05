@@ -12,9 +12,7 @@ parent_parent_dir = os.path.dirname(parent_dir)
 sys.path.insert(0, parent_dir)
 sys.path.insert(0, parent_parent_dir)
 
-from ProductionSimulation.init.Initializer import Initializer
-
-from example.controller import MachineController_FIFO2
+from ontologysim.ProductionSimulation.init.Initializer import Initializer
 
 
 def main():

@@ -3,15 +3,8 @@ import subprocess
 import unittest
 import inspect
 import sys
-from importlib import reload
 from os import listdir
 from os.path import isfile
-
-import owlready2
-from owlready2 import Construct, close_world
-
-
-from subprocess import Popen, PIPE
 
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
@@ -20,13 +13,8 @@ sys.path.insert(0, parent_dir)
 sys.path.insert(0,parent_parent_dir)
 
 
-from ProductionSimulation.utilities import init_utilities
-from ProductionSimulation.utilities.init_utilities import Init
+from ontologysim.ProductionSimulation.utilities import init_utilities
 
-from ProductionSimulation.init.Initializer import Initializer
-
-from example.Main import main
-from tests.util.Timeout import timeoutTestCase
 
 class MainTest(unittest.TestCase):
     """
@@ -176,15 +164,16 @@ class MainTest(unittest.TestCase):
             output = subprocess.check_output(
                 'python ' + parent_parent_dir + '/tests/processes/MainProcess.py ' + ' "' + str(listConfig) + '"',
                 shell=True, stderr=subprocess.STDOUT, timeout=self.timeoutMiddle)
+            print(output)
 
             self.assertTrue(output)
 
     def test_flaskDefaultFiles(self):
         """
-        test file in "/Flask/Assets/DefaultFiles/"
+        test file in "/ontologysim/Flask/Assets/DefaultFiles/"
         :return:
         """
-        defaultTestPath = "/Flask/Assets/DefaultFiles/"
+        defaultTestPath = "/ontologysim/Flask/Assets/DefaultFiles/"
 
         onlyfiles = [f for f in listdir(parent_parent_dir + defaultTestPath) if
                      isfile(os.path.join(parent_parent_dir + defaultTestPath, f))]

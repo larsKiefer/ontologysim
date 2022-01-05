@@ -1,0 +1,64 @@
+<div id="ontologysim-a-owlready2-library-for-applied-production-simulation">
+<h2>Ontologysim: a Owlready2 library for applied production simulation</h2>
+<p>Ontologysim is an open-source deep production simulation framework, with an emphasis on modularized flexible library design and straightforward usability for applications in research and practice. Ontologysim is built on top of Owlready2 framework and requires Python &gt;3.7.</p>
+<p>Ontologysim follows a set of high-level design choices which differentiate it from other similar libraries:</p>
+<ul>
+<li>the simulation can be saved at any time and started from a defined point</li>
+<li>high degrees of freedom and possibilities due to the ontology</li>
+</ul>
+<p>## Table of Contents
+1. [Installation](#installation)
+2. [First Start](#first-start)
+3. [Flask](#flask)</p>
+</div>
+<div id="installation">
+<h2>Installation</h2>
+<h2 id="git-lab"><span class="section-subtitle">git lab</span></h2>
+<p>A stable version of Production simulation is periodically updated on the master and installed as follows:</p>
+<p><tt>``bash
+git clone <span class="pre">https://git.scc.kit.edu/ov0653/ontologysim.git</span>
+cd ontologysim
+pip3 install <span class="pre">-r</span> requirements.txt
+``</tt></p>
+</div>
+<div id="first-start">
+<h2>First Start</h2>
+<p>Go to the <tt>/example/Main.py</tt> and run this python file.</p>
+</div>
+<div id="flask">
+<h2>Flask</h2>
+<p>to start the Flask server run:</p>
+<p><tt>``bash
+py ontologysim/Flask/FlaskMain.py
+``</tt></p>
+</div>
+<div id="problem-handling">
+<h2>Problem handling</h2>
+<h2 id="owlready2-0"><span class="section-subtitle">Owlready2.0</span></h2>
+<p><strong>Java Path</strong></p>
+<ul>
+<li><dl>
+<dt>to use owlready correctly, your java path needs to be set in the <tt>owl_config.ini</tt></dt>
+<dd><ul>
+<li>[owl introduction](../configs/owl/owl_config)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Java Memory</strong></p>
+<p>if this error occurs</p>
+<p><tt>``bash
+owlready2.base.OwlReadyJavaError: Java error message is:
+Error occurred during initialization of VM
+Could not reserve enough space for 2048000KB object heap
+``</tt></p>
+<p>then you need to reduce the java memory</p>
+<ol>
+<li>got to �site-packagesowlready2reasoning.py�</li>
+<li>reduce the Java Memory variable to 500</li>
+</ol>
+<p><strong>How to check if everything works</strong></p>
+<p>run in the example folder the <cite>Main.py</cite></p>
+</div>
+

@@ -1,23 +1,21 @@
-from copy import deepcopy
 import unittest
 import json
 import inspect
 import os
 import sys
-import owlready2
 
-from ProductionSimulation.utilities.path_utilities import PathTest
+from ontologysim.ProductionSimulation.utilities.path_utilities import PathTest
 from tests.util.ProductionGenerator import ProductionGenerator
 
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
-from ProductionSimulation.init.Initializer import Initializer
+from ontologysim.ProductionSimulation.init.Initializer import Initializer
 
-from Flask.FlaskApp import FlaskAppWrapper
+from ontologysim.Flask.FlaskApp import FlaskAppWrapper
 
-BASE_URL = 'http://127.0.0.1:5000/'
+BASE_URL = 'http://127.0.0.1:5000'
 
 
 
@@ -32,14 +30,15 @@ class TestFlaskApi(unittest.TestCase):
         """
         init = Initializer(current_dir)
         PathTest.current_main_dir = current_dir
-        production_config_path = "/Flask/Assets/DefaultFiles/production_config_lvl3.ini"
-        owl_config_path = "/Flask/Assets/DefaultFiles/owl_config.ini"
-        controller_config_path = "/Flask/Assets/DefaultFiles/controller_config.ini"
-        logger_config_path = "/Flask/Assets/DefaultFiles/logger_config_lvl3.ini"
-        self.flak = FlaskAppWrapper('wrap', init, {'production': production_config_path, 'owl': owl_config_path,
+        production_config_path = "/ontologysim/Flask/Assets/DefaultFiles/production_config_lvl3.ini"
+        owl_config_path = "/ontologysim/Flask/Assets/DefaultFiles/owl_config.ini"
+        controller_config_path = "/ontologysim/Flask/Assets/DefaultFiles/controller_config.ini"
+        logger_config_path = "/ontologysim/Flask/Assets/DefaultFiles/logger_config_lvl3.ini"
+        self.flaskWrapper = FlaskAppWrapper('wrap', init, {'production': production_config_path, 'owl': owl_config_path,
                                            'controller': controller_config_path, 'logger': logger_config_path})
-        self.flak.addSwaggerUI()
-        self.testApp= self.flak.app.test_client()
+        self.flaskWrapper.addSwaggerUI()
+
+        self.testApp= self.flaskWrapper.app.test_client()
 
     def createProductionDict(self):
         """
@@ -47,10 +46,10 @@ class TestFlaskApi(unittest.TestCase):
         :return: list[{path,content}]
         """
         fileList=[]
-        pathProduction = PathTest.check_file_path(self.flak.fileDict["production"])
-        pathOWL = PathTest.check_file_path(self.flak.fileDict["owl"])
-        pathController = PathTest.check_file_path(self.flak.fileDict["controller"])
-        pathLogger = PathTest.check_file_path(self.flak.fileDict["logger"])
+        pathProduction = PathTest.check_file_path(self.flaskWrapper.fileDict["production"])
+        pathOWL = PathTest.check_file_path(self.flaskWrapper.fileDict["owl"])
+        pathController = PathTest.check_file_path(self.flaskWrapper.fileDict["controller"])
+        pathLogger = PathTest.check_file_path(self.flaskWrapper.fileDict["logger"])
         fileOWL = open(pathOWL, "r")
         fileController = open(pathController, "r")
         fileLogger = open(pathLogger, "r")
@@ -86,13 +85,14 @@ class TestFlaskApi(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTrue("productionDict" in data.keys())
         self.assertTrue("eventOntoList" in data.keys())
-        self.assertTrue(self.flak.simCore.getCurrentTimestep() > time)
+        self.assertTrue(self.flaskWrapper.simCore.getCurrentTimestep() > time)
 
     def test_get_test_connection(self):
         """
         test "/test" (connection test)
         :return:
         """
+
         url = BASE_URL + '/test'
         response = self.testApp.get(url)
         data = json.loads(response.get_data())
@@ -158,7 +158,7 @@ class TestFlaskApi(unittest.TestCase):
         item = {"list": [[1]]}
         url = BASE_URL + '/process'
         try:
-            self.flak.init.s.destroyOnto()
+            self.flaskWrapper.init.s.destroyOnto()
         except:
             print("onto not defined")
         response = self.testApp.post(url,
@@ -184,7 +184,7 @@ class TestFlaskApi(unittest.TestCase):
         :return:
         """
         try:
-            self.flak.init.s.destroyOnto()
+            self.flaskWrapper.init.s.destroyOnto()
         except:
             print("onto not defined")
         self.productGenerator = ProductionGenerator(seedParameter=1)
@@ -202,7 +202,7 @@ class TestFlaskApi(unittest.TestCase):
                                  content_type='application/json')
         data = response.get_data()
         data=json.loads(data)
-        print(data)
+
         self.assertEqual(200,response.status_code)
 
     def test_get_default_files(self):
@@ -293,7 +293,7 @@ class TestFlaskApi(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTrue("productionDict" in data.keys())
         self.assertTrue("eventOntoList" in data.keys())
-        self.assertTrue(self.flak.simCore.getCurrentTimestep()>100)
+        self.assertTrue(self.flaskWrapper.simCore.getCurrentTimestep()>100)
 
     def test_startUnitTime(self):
         """
