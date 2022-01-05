@@ -15,3 +15,6 @@ ci/*
 /ontologysim/testPlayground/
 /ontologysim.egg-info/
 /ontologysim/ontologysim.egg-info/
+/run.log
+/tests/run.log
+/ontologysim/Flask/run.log
