@@ -1,8 +1,8 @@
 /venv/
 /.idea/*
-/example/log/*
+/example/log/*/*
+/example/owl/*.owl
 *__pycache__*
-/example/owl/*
 /.idea
 /doc/*
 .idea/*
