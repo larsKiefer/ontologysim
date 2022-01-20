@@ -114,13 +114,14 @@ class SimCore:
         self.save_time = save_time
 
 
-    def save_ontology(self,path="/ontologysim/example/owl/test.owl"):
+    def save_ontology(self,path="./ontologysim/example/owl/test.owl"):
         """
         saves the ontology to owl-file
 
         :param path:
         """
-        self.onto.save(file=PathTest.check_dir_path(path), format="rdfxml")
+        pass
+        #self.onto.save(file=PathTest.check_dir_path(path), format="rdfxml")
 
     def createSimInstance(self):
         """
