@@ -3,7 +3,7 @@
 EventAction
 -------------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.EventAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.EventAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -11,7 +11,7 @@ EventAction
 KPIAction
 -----------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.KPIAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.KPIAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -19,7 +19,7 @@ KPIAction
 KPIListAction
 ---------------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.KPIListAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.KPIListAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -27,7 +27,7 @@ KPIListAction
 OwlDownloadAction
 -------------------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.OwlDonwloadAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.OwlDonwloadAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -37,7 +37,7 @@ OwlDownloadAction
 RunSimulationAction
 ---------------------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.RunSimulationAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.RunSimulationAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -45,7 +45,7 @@ RunSimulationAction
 SimulationLoadAction
 ----------------------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.SimulationLoadAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.SimulationLoadAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -53,7 +53,7 @@ SimulationLoadAction
 StartAction
 -------------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.StartAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.StartAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -61,7 +61,7 @@ StartAction
 StartUntilTimeAction
 ----------------------------------------------------
 
-.. automodule:: Flask.Actions.Simulation.StartUntilTimeAction
+.. automodule:: ontologysim.Flask.Actions.Simulation.StartUntilTimeAction
    :members:
    :undoc-members:
    :show-inheritance:

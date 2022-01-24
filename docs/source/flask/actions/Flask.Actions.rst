@@ -2,7 +2,7 @@
 APIAction
 ------------------------------
 
-.. automodule:: Flask.Actions.APIAction
+.. automodule:: ontologysim.Flask.Actions.APIAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -10,7 +10,7 @@ APIAction
 ComponentIdAction
 ------------------------------------
 
-.. automodule:: Flask.Actions.CommentIdAction
+.. automodule:: ontologysim.Flask.Actions.CommentIdAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -18,7 +18,7 @@ ComponentIdAction
 ComponentAction
 ------------------------------------
 
-.. automodule:: Flask.Actions.ComponentAction
+.. automodule:: ontologysim.Flask.Actions.ComponentAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -26,7 +26,7 @@ ComponentAction
 GetIdsAction
 ---------------------------------
 
-.. automodule:: Flask.Actions.GetIdsAction
+.. automodule:: ontologysim.Flask.Actions.GetIdsAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -35,7 +35,7 @@ GetIdsAction
 TestAction
 -------------------------------
 
-.. automodule:: Flask.Actions.TestAction
+.. automodule:: ontologysim.Flask.Actions.TestAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -43,7 +43,7 @@ TestAction
 ResetBEAction
 ---------------------------------------------
 
-.. automodule:: Flask.Actions.ResetBEAction
+.. automodule:: ontologysim.Flask.Actions.ResetBEAction
    :members:
    :undoc-members:
    :show-inheritance:

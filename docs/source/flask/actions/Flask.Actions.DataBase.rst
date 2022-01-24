@@ -2,7 +2,7 @@
 ConnectDataBaseAction
 ---------------------------------------------------
 
-.. automodule:: Flask.Actions.DataBase.ConnectDataBaseAction
+.. automodule:: ontologysim.Flask.Actions.DataBase.ConnectDataBaseAction
    :members:
    :undoc-members:
    :show-inheritance:
@@ -10,7 +10,7 @@ ConnectDataBaseAction
 GetSimulationRunAction
 ----------------------------------------------------
 
-.. automodule:: Flask.Actions.DataBase.GetSimulationRunAction
+.. automodule:: ontologysim.Flask.Actions.DataBase.GetSimulationRunAction
    :members:
    :undoc-members:
    :show-inheritance:

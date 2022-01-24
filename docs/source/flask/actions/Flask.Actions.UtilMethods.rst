@@ -2,7 +2,7 @@
 ProductionDict
 -----------------------------------------------
 
-.. automodule:: Flask.Actions.UtilMethods.ProductionDict
+.. automodule:: ontologysim.Flask.Actions.UtilMethods.ProductionDict
    :members:
    :undoc-members:
    :show-inheritance:
@@ -10,7 +10,7 @@ ProductionDict
 StateStorage
 ---------------------------------------------
 
-.. automodule:: Flask.Actions.UtilMethods.StateStorage
+.. automodule:: ontologysim.Flask.Actions.UtilMethods.StateStorage
    :members:
    :undoc-members:
    :show-inheritance:
