@@ -10,27 +10,27 @@ It is possible to define and integrate new controllers from outside the package.
 Machine Controller
 --------------------
 .. toctree::
-   :maxdepth: 0
+   :maxdepth: 4
 
    controller/ProductionSimulation.controller.machine_controller
 
 Transporter Controller
 ------------------------
 .. toctree::
-   :maxdepth: 0
+   :maxdepth: 3
 
    controller/ProductionSimulation.controller.transporter_controller
 
 Order Release Controller
 --------------------------
 .. toctree::
-   :maxdepth: 0
+   :maxdepth: 2
 
    controller/ProductionSimulation.controller.order_release_controller
 
 Service Controller
 --------------------
 .. toctree::
-   :maxdepth: 0
+   :maxdepth: 1
 
    controller/ProductionSimulation.controller.service_controller
