@@ -3,7 +3,7 @@
 Transporter Controller
 ------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController
    :members:
    :undoc-members:
    :show-inheritance:
@@ -11,7 +11,7 @@ Transporter Controller
 TransporterController EDD
 -----------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController_EDD
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController_EDD
    :members:
    :undoc-members:
    :show-inheritance:
@@ -19,7 +19,7 @@ TransporterController EDD
 Transporter Controller Enum
 ------------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController_Enum
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController_Enum
    :members:
    :undoc-members:
    :show-inheritance:
@@ -27,7 +27,7 @@ Transporter Controller Enum
 Transporter Controller FIFO
 ------------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController_FIFO
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController_FIFO
    :members:
    :undoc-members:
    :show-inheritance:
@@ -35,7 +35,7 @@ Transporter Controller FIFO
 TransporterController\_Hybrid
 --------------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController_Hybrid
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController_Hybrid
    :members:
    :undoc-members:
    :show-inheritance:
@@ -43,7 +43,7 @@ TransporterController\_Hybrid
 Transporter Controller LIFO
 ------------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController_LIFO
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController_LIFO
    :members:
    :undoc-members:
    :show-inheritance:
@@ -51,7 +51,7 @@ Transporter Controller LIFO
 Transporter Controller NJF
 -----------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController_NJF
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController_NJF
    :members:
    :undoc-members:
    :show-inheritance:
@@ -59,7 +59,7 @@ Transporter Controller NJF
 Transporter Controller SQF
 -----------------------------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.controller.transporter_controller.TransporterController_SQF
+.. automodule:: ontologysim.ProductionSimulation.controller.transporter_controller.TransporterController_SQF
    :members:
    :undoc-members:
    :show-inheritance:

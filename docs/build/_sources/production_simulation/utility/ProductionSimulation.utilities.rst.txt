@@ -3,7 +3,7 @@
 Event utilities
 -----------------------------------------------------
 
-.. automodule:: ProductionSimulation.utilities.event_utilities
+.. automodule:: ontologysim.ProductionSimulation.utilities.event_utilities
    :members:
    :undoc-members:
    :show-inheritance:
@@ -11,7 +11,7 @@ Event utilities
 Init utilities
 -----------------------------------------------------
 
-.. automodule:: ProductionSimulation.utilities.init_utilities
+.. automodule:: ontologysim.ProductionSimulation.utilities.init_utilities
    :members:
    :undoc-members:
    :show-inheritance:
@@ -19,7 +19,7 @@ Init utilities
 Path utilities
 -----------------------------------------------------
 
-.. automodule:: ProductionSimulation.utilities.path_utilities
+.. automodule:: ontologysim.ProductionSimulation.utilities.path_utilities
    :members:
    :undoc-members:
    :show-inheritance:
@@ -27,7 +27,7 @@ Path utilities
 Pnml utilities
 -----------------------------------------------------
 
-.. automodule:: ProductionSimulation.utilities.pnml_utilities
+.. automodule:: ontologysim.ProductionSimulation.utilities.pnml_utilities
    :members:
    :undoc-members:
    :show-inheritance:
@@ -35,7 +35,7 @@ Pnml utilities
 Sub class utilities
 -----------------------------------------------------
 
-.. automodule:: ProductionSimulation.utilities.sub_class_utilities
+.. automodule:: ontologysim.ProductionSimulation.utilities.sub_class_utilities
    :members:
    :undoc-members:
    :show-inheritance:

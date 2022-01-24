@@ -3,7 +3,7 @@
 Event Logger
 ----------------------------------------------
 
-.. automodule:: ProductionSimulation.logger.EventLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.EventLogger
    :members:
    :undoc-members:
    :show-inheritance:

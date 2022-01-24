@@ -60,8 +60,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../simulation.html#machine">Machine</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../simulation.html#subelements">Subelements</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.sim.Queue">Queue</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.sim.Distribution">Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.sim.Queue">Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.sim.Distribution">Distribution</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../simulation.html#order-release-related">Order release related</a></li>
@@ -111,16 +111,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.sim.Location">
-<span id="location"></span><h1>Location<a class="headerlink" href="#module-ProductionSimulation.sim.Location" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.sim.Location">
+<span id="location"></span><h1>Location<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.Location" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.Location.Location">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.Location.</span></code><code class="sig-name descname"><span class="pre">Location</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Location.Location" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Location.Location">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.Location.</span></code><code class="sig-name descname"><span class="pre">Location</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Location.Location" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>python instance which handles the ontologysim location</p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Location.Location.calculateDistance">
-<code class="sig-name descname"><span class="pre">calculateDistance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Location.Location.calculateDistance" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Location.Location.calculateDistance">
+<code class="sig-name descname"><span class="pre">calculateDistance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Location.Location.calculateDistance" title="Permalink to this definition">¶</a></dt>
 <dd><p>airline calculation of distance between to onto locations</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -136,8 +136,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Location.Location.createLocation">
-<code class="sig-name descname"><span class="pre">createLocation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Location.Location.createLocation" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Location.Location.createLocation">
+<code class="sig-name descname"><span class="pre">createLocation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Location.Location.createLocation" title="Permalink to this definition">¶</a></dt>
 <dd><p>create ontologysim location</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -150,15 +150,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Location.Location.init_distance_dict">
-<code class="sig-name descname"><span class="pre">init_distance_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Location.Location.init_distance_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Location.Location.init_distance_dict">
+<code class="sig-name descname"><span class="pre">init_distance_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Location.Location.init_distance_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates for every location the distance to all other location,
 used for better performance</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Location.Location.transformToDict">
-<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Location.Location.transformToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Location.Location.transformToDict">
+<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Location.Location.transformToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>saves onto location to dict</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -173,16 +173,16 @@ used for better performance</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.sim.Queue">
-<span id="queue"></span><h1>Queue<a class="headerlink" href="#module-ProductionSimulation.sim.Queue" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.sim.Queue">
+<span id="queue"></span><h1>Queue<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.Queue" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.Queue.Queue">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.Queue.</span></code><code class="sig-name descname"><span class="pre">Queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.Queue.</span></code><code class="sig-name descname"><span class="pre">Queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>handles the onto queue</p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.addPositions">
-<code class="sig-name descname"><span class="pre">addPositions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queueInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_positions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.addPositions" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.addPositions">
+<code class="sig-name descname"><span class="pre">addPositions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queueInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_positions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.addPositions" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds position onto to queue, creates the positions</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -195,8 +195,8 @@ used for better performance</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.change">
-<code class="sig-name descname"><span class="pre">change</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.change" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.change">
+<code class="sig-name descname"><span class="pre">change</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.change" title="Permalink to this definition">¶</a></dt>
 <dd><p>moves product form one position to another (betweent queues)
 when having only one machine queue, the current position gets blocked, when processing</p>
 <dl class="field-list simple">
@@ -207,8 +207,8 @@ when having only one machine queue, the current position gets blocked, when proc
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.createQueue">
-<code class="sig-name descname"><span class="pre">createQueue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.createQueue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.createQueue">
+<code class="sig-name descname"><span class="pre">createQueue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.createQueue" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a queue in onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -225,8 +225,8 @@ when having only one machine queue, the current position gets blocked, when proc
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.create_change">
-<code class="sig-name descname"><span class="pre">create_change</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">part_onto</span></em>, <em class="sig-param"><span class="pre">new_position_onto</span></em>, <em class="sig-param"><span class="pre">time</span></em>, <em class="sig-param"><span class="pre">event_type=&lt;Queue_Enum.Default:</span> <span class="pre">'Default'&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.create_change" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.create_change">
+<code class="sig-name descname"><span class="pre">create_change</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">part_onto</span></em>, <em class="sig-param"><span class="pre">new_position_onto</span></em>, <em class="sig-param"><span class="pre">time</span></em>, <em class="sig-param"><span class="pre">event_type=&lt;Queue_Enum.Default:</span> <span class="pre">'Default'&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.create_change" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates event for changing position</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -244,8 +244,8 @@ when having only one machine queue, the current position gets blocked, when proc
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.create_change_for_start_queue">
-<code class="sig-name descname"><span class="pre">create_change_for_start_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">part_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_position_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transportation_onto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.create_change_for_start_queue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.create_change_for_start_queue">
+<code class="sig-name descname"><span class="pre">create_change_for_start_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">part_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_position_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transportation_onto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.create_change_for_start_queue" title="Permalink to this definition">¶</a></dt>
 <dd><p>when starting a new production of a part, creating a change event</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -260,8 +260,8 @@ when having only one machine queue, the current position gets blocked, when proc
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.evaluateAddRemove">
-<code class="sig-name descname"><span class="pre">evaluateAddRemove</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_position_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oldPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.evaluateAddRemove" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.evaluateAddRemove">
+<code class="sig-name descname"><span class="pre">evaluateAddRemove</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_position_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oldPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.evaluateAddRemove" title="Permalink to this definition">¶</a></dt>
 <dd><p>currently the waiting time of machine is set to 10s, when now a part is removed or added to the machine queue,
 the waiting machine gets woken up</p>
 <dl class="field-list simple">
@@ -276,8 +276,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.get_free_positions">
-<code class="sig-name descname"><span class="pre">get_free_positions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queue_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.get_free_positions" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.get_free_positions">
+<code class="sig-name descname"><span class="pre">get_free_positions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queue_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.get_free_positions" title="Permalink to this definition">¶</a></dt>
 <dd><p>get all not blocked positions, blockedSpace == 0</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -290,8 +290,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.get_number_of_free_positions">
-<code class="sig-name descname"><span class="pre">get_number_of_free_positions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queue_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.get_number_of_free_positions" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.get_number_of_free_positions">
+<code class="sig-name descname"><span class="pre">get_number_of_free_positions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queue_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.get_number_of_free_positions" title="Permalink to this definition">¶</a></dt>
 <dd><p>number of not blocked positions, blockedSpace == 0</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -304,8 +304,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Queue.Queue.transformToDict">
-<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Queue.Queue.transformToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Queue.Queue.transformToDict">
+<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Queue.Queue.transformToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform the onto and the kpis into dict</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -320,16 +320,16 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.sim.Distribution">
-<span id="distribution"></span><h1>Distribution<a class="headerlink" href="#module-ProductionSimulation.sim.Distribution" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.sim.Distribution">
+<span id="distribution"></span><h1>Distribution<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.Distribution" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.Distribution.Distribution">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.Distribution.</span></code><code class="sig-name descname"><span class="pre">Distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.Distribution.</span></code><code class="sig-name descname"><span class="pre">Distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>managing and creation of distribution onto</p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.add_distribution_dict">
-<code class="sig-name descname"><span class="pre">add_distribution_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.add_distribution_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.add_distribution_dict">
+<code class="sig-name descname"><span class="pre">add_distribution_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.add_distribution_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a distribution onto to the distribution dict</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -342,8 +342,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.createDistribution">
-<code class="sig-name descname"><span class="pre">createDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">onto_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.createDistribution" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.createDistribution">
+<code class="sig-name descname"><span class="pre">createDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">onto_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.createDistribution" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates distribution for ontologysim, currently only normal and random distribution possible</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -360,8 +360,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.getRandomTimefromOnto">
-<code class="sig-name descname"><span class="pre">getRandomTimefromOnto</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">random_distribution_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.getRandomTimefromOnto" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.getRandomTimefromOnto">
+<code class="sig-name descname"><span class="pre">getRandomTimefromOnto</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">random_distribution_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.getRandomTimefromOnto" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates value from distribution function</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -374,8 +374,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.getSumTimefromOnto">
-<code class="sig-name descname"><span class="pre">getSumTimefromOnto</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.getSumTimefromOnto" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.getSumTimefromOnto">
+<code class="sig-name descname"><span class="pre">getSumTimefromOnto</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.getSumTimefromOnto" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates value from distribution function and adds current simulation time</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -388,8 +388,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.getTimefromLabel">
-<code class="sig-name descname"><span class="pre">getTimefromLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.getTimefromLabel" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.getTimefromLabel">
+<code class="sig-name descname"><span class="pre">getTimefromLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.getTimefromLabel" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates value from distribution function</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -402,8 +402,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.getTimefromOnto">
-<code class="sig-name descname"><span class="pre">getTimefromOnto</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.getTimefromOnto" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.getTimefromOnto">
+<code class="sig-name descname"><span class="pre">getTimefromOnto</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.getTimefromOnto" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates value from distribution function</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -416,8 +416,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.ini_dict">
-<code class="sig-name descname"><span class="pre">ini_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.ini_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.ini_dict">
+<code class="sig-name descname"><span class="pre">ini_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.ini_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>every distribution onto has it’s local RandomState, which is saved in the dict</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -427,8 +427,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.transformToDict">
-<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.transformToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.transformToDict">
+<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.transformToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms a onto-instance to dict</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -441,8 +441,8 @@ the waiting machine gets woken up</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Distribution.Distribution.transform_name_to_int">
-<code class="sig-name descname"><span class="pre">transform_name_to_int</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Distribution.Distribution.transform_name_to_int" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Distribution.Distribution.transform_name_to_int">
+<code class="sig-name descname"><span class="pre">transform_name_to_int</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Distribution.Distribution.transform_name_to_int" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms a string to a number, each onto instance has it’s own defined distribution and random state</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

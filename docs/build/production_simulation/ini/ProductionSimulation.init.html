@@ -59,10 +59,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../side_package.html#plot">Plot</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../side_package.html#initialize">Initialize</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Initializer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.init.TransformLoggerIni">Transform Logger ini</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.init.TransformProductionIni">Transform Production ini</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.init.petrinet_generator">Petrinet generator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.init.API.IntitializerProducttypeAPI">API: Initializer Producttype</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.init.TransformLoggerIni">Transform Logger ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.init.TransformProductionIni">Transform Production ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.init.petrinet_generator">Petrinet generator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.init.API.IntitializerProducttypeAPI">API: Initializer Producttype</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../side_package.html#analyse">Analyse</a></li>
@@ -111,26 +111,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.init.Initializer">
-<span id="initializer"></span><h1>Initializer<a class="headerlink" href="#module-ProductionSimulation.init.Initializer" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.init.Initializer">
+<span id="initializer"></span><h1>Initializer<a class="headerlink" href="#module-ontologysim.ProductionSimulation.init.Initializer" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.init.Initializer.Initializer">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.init.Initializer.</span></code><code class="sig-name descname"><span class="pre">Initializer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_main_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.init.Initializer.</span></code><code class="sig-name descname"><span class="pre">Initializer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_main_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>The intitializer is the main connection for the use from outside</p>
 <p>important: all controller from the productionSimulation need to be imported at this position,
 alternatively you can create your own controller</p>
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addDataBaseToLogger">
-<code class="sig-name descname"><span class="pre">addDataBaseToLogger</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addDataBaseToLogger" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addDataBaseToLogger">
+<code class="sig-name descname"><span class="pre">addDataBaseToLogger</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addDataBaseToLogger" title="Permalink to this definition">¶</a></dt>
 <dd><p>add database to logger
 :param dataBase: database object
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addDefect">
-<code class="sig-name descname"><span class="pre">addDefect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addDefect" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addDefect">
+<code class="sig-name descname"><span class="pre">addDefect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addDefect" title="Permalink to this definition">¶</a></dt>
 <dd><p>add defects to the ontology (optional)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -140,47 +140,47 @@ alternatively you can create your own controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addDefectPathGiven">
-<code class="sig-name descname"><span class="pre">addDefectPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addDefectPathGiven" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addDefectPathGiven">
+<code class="sig-name descname"><span class="pre">addDefectPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addDefectPathGiven" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding defect to simulationo, given file path
 :param defect_config_path:
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addLogger">
-<code class="sig-name descname"><span class="pre">addLogger</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addLogger" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addLogger">
+<code class="sig-name descname"><span class="pre">addLogger</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addLogger" title="Permalink to this definition">¶</a></dt>
 <dd><p>add Logger to simulation
 :param log_config_path: Ini object</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBase">
-<code class="sig-name descname"><span class="pre">addLoggerAndDataBase</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBase" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBase">
+<code class="sig-name descname"><span class="pre">addLoggerAndDataBase</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBase" title="Permalink to this definition">¶</a></dt>
 <dd><p>add logger and data base to simulation
 :param log_conf: Ini object
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBasePathGiven">
-<code class="sig-name descname"><span class="pre">addLoggerAndDataBasePathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBasePathGiven" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBasePathGiven">
+<code class="sig-name descname"><span class="pre">addLoggerAndDataBasePathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addLoggerAndDataBasePathGiven" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding logger and database to simulation given path file
 :param log_config_path: string
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addLoggerPathGiven">
-<code class="sig-name descname"><span class="pre">addLoggerPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addLoggerPathGiven" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addLoggerPathGiven">
+<code class="sig-name descname"><span class="pre">addLoggerPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addLoggerPathGiven" title="Permalink to this definition">¶</a></dt>
 <dd><p>add logger to similuation given path
 :param log_config_path: string
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addTask">
-<code class="sig-name descname"><span class="pre">addTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addTask" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addTask">
+<code class="sig-name descname"><span class="pre">addTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addTask" title="Permalink to this definition">¶</a></dt>
 <dd><p>add tasks the ontologysim</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -190,16 +190,16 @@ alternatively you can create your own controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.addTaskPathGiven">
-<code class="sig-name descname"><span class="pre">addTaskPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.addTaskPathGiven" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.addTaskPathGiven">
+<code class="sig-name descname"><span class="pre">addTaskPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.addTaskPathGiven" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding task to simulation, given file path
 :param sim_config_path:
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.createProduction">
-<code class="sig-name descname"><span class="pre">createProduction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owl_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.createProduction" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.createProduction">
+<code class="sig-name descname"><span class="pre">createProduction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owl_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.createProduction" title="Permalink to this definition">¶</a></dt>
 <dd><p>initialize the simulation without tasks and defects
 creates the ontology
 calls the transformation of config files</p>
@@ -214,22 +214,22 @@ calls the transformation of config files</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.initProductionComponents">
-<code class="sig-name descname"><span class="pre">initProductionComponents</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.initProductionComponents" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.initProductionComponents">
+<code class="sig-name descname"><span class="pre">initProductionComponents</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.initProductionComponents" title="Permalink to this definition">¶</a></dt>
 <dd><p>init simulation
 :param sim_conf: Ini object
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.initSimCore">
-<code class="sig-name descname"><span class="pre">initSimCore</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.initSimCore" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.initSimCore">
+<code class="sig-name descname"><span class="pre">initSimCore</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.initSimCore" title="Permalink to this definition">¶</a></dt>
 <dd><p>creating the sim core class</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.loadController">
-<code class="sig-name descname"><span class="pre">loadController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contoller_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.loadController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.loadController">
+<code class="sig-name descname"><span class="pre">loadController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contoller_conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.loadController" title="Permalink to this definition">¶</a></dt>
 <dd><p>loads all controller, which are necessary to run the simulation</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -239,16 +239,16 @@ calls the transformation of config files</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.loadControllerPathGiven">
-<code class="sig-name descname"><span class="pre">loadControllerPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.loadControllerPathGiven" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.loadControllerPathGiven">
+<code class="sig-name descname"><span class="pre">loadControllerPathGiven</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.loadControllerPathGiven" title="Permalink to this definition">¶</a></dt>
 <dd><p>load controller to simulation given path
 :param path: string
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.loadProductionFromOWL">
-<code class="sig-name descname"><span class="pre">loadProductionFromOWL</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">owl_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.loadProductionFromOWL" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.loadProductionFromOWL">
+<code class="sig-name descname"><span class="pre">loadProductionFromOWL</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">owl_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.loadProductionFromOWL" title="Permalink to this definition">¶</a></dt>
 <dd><p>allowes to load a owl file to the simulation, depending on the owl-File it could be necessary to add tasks, defect</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -258,8 +258,8 @@ calls the transformation of config files</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.restart">
-<code class="sig-name descname"><span class="pre">restart</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">production_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owl_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controller_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.restart" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.restart">
+<code class="sig-name descname"><span class="pre">restart</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">production_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owl_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controller_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger_config_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.restart" title="Permalink to this definition">¶</a></dt>
 <dd><p>resets the complete simulation and starts a new one</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -274,20 +274,20 @@ calls the transformation of config files</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.run">
-<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.run" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.run">
+<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.run" title="Permalink to this definition">¶</a></dt>
 <dd><p>starts the simulation run</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.run_until_first_event">
-<code class="sig-name descname"><span class="pre">run_until_first_event</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.run_until_first_event" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.run_until_first_event">
+<code class="sig-name descname"><span class="pre">run_until_first_event</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.run_until_first_event" title="Permalink to this definition">¶</a></dt>
 <dd><p>runs the simulation until the first event, mainly creates the ontolgy world</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.setFillLevel">
-<code class="sig-name descname"><span class="pre">setFillLevel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fill_level</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.setFillLevel" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.setFillLevel">
+<code class="sig-name descname"><span class="pre">setFillLevel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fill_level</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.setFillLevel" title="Permalink to this definition">¶</a></dt>
 <dd><p>defines the maximum number of products in the production in percentage</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -297,8 +297,8 @@ calls the transformation of config files</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.setMachineController">
-<code class="sig-name descname"><span class="pre">setMachineController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controller_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.setMachineController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.setMachineController">
+<code class="sig-name descname"><span class="pre">setMachineController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controller_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.setMachineController" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a scheduling strategy for the machine
 is already included in load controller</p>
 <dl class="field-list simple">
@@ -309,8 +309,8 @@ is already included in load controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.setOrderReleaseController">
-<code class="sig-name descname"><span class="pre">setOrderReleaseController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.setOrderReleaseController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.setOrderReleaseController">
+<code class="sig-name descname"><span class="pre">setOrderReleaseController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.setOrderReleaseController" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a order release strategy
 is already included in load controller</p>
 <dl class="field-list simple">
@@ -321,8 +321,8 @@ is already included in load controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.setServiceControllerMachine">
-<code class="sig-name descname"><span class="pre">setServiceControllerMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.setServiceControllerMachine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.setServiceControllerMachine">
+<code class="sig-name descname"><span class="pre">setServiceControllerMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.setServiceControllerMachine" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a defect handling strategy for the machine, only needed if defect is added
 is already included in load controller</p>
 <dl class="field-list simple">
@@ -333,8 +333,8 @@ is already included in load controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.setServiceControllerTransporter">
-<code class="sig-name descname"><span class="pre">setServiceControllerTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.setServiceControllerTransporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.setServiceControllerTransporter">
+<code class="sig-name descname"><span class="pre">setServiceControllerTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.setServiceControllerTransporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a defect handling strategy for the tranporter, only needed if defect is added
 is already included in load controller</p>
 <dl class="field-list simple">
@@ -345,8 +345,8 @@ is already included in load controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.setTransporterController">
-<code class="sig-name descname"><span class="pre">setTransporterController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controller_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.setTransporterController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.setTransporterController">
+<code class="sig-name descname"><span class="pre">setTransporterController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controller_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.setTransporterController" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a routing strategy for the transporter
 is already included in load controller</p>
 <dl class="field-list simple">
@@ -360,8 +360,8 @@ is already included in load controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.set_save_time">
-<code class="sig-name descname"><span class="pre">set_save_time</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">save_time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.set_save_time" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.set_save_time">
+<code class="sig-name descname"><span class="pre">set_save_time</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">save_time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.set_save_time" title="Permalink to this definition">¶</a></dt>
 <dd><p>the simulation only logs after x-seconds after the start of the simulation</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -371,8 +371,8 @@ is already included in load controller</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.test_production_config">
-<code class="sig-name descname"><span class="pre">test_production_config</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.test_production_config" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.test_production_config">
+<code class="sig-name descname"><span class="pre">test_production_config</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.test_production_config" title="Permalink to this definition">¶</a></dt>
 <dd><p>defines a short test if the owl and pnml files are set up correctly
 currently checked:
 - are all production ids defined
@@ -380,8 +380,8 @@ currently checked:
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.Initializer.Initializer.transformProductionPath">
-<code class="sig-name descname"><span class="pre">transformProductionPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.Initializer.Initializer.transformProductionPath" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.Initializer.Initializer.transformProductionPath">
+<code class="sig-name descname"><span class="pre">transformProductionPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.Initializer.Initializer.transformProductionPath" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform ini input
 :param sim_config_path: path
 :return: Init object</p>
@@ -390,18 +390,18 @@ currently checked:
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.init.TransformLoggerIni">
-<span id="transform-logger-ini"></span><h1>Transform Logger ini<a class="headerlink" href="#module-ProductionSimulation.init.TransformLoggerIni" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.init.TransformLoggerIni">
+<span id="transform-logger-ini"></span><h1>Transform Logger ini<a class="headerlink" href="#module-ontologysim.ProductionSimulation.init.TransformLoggerIni" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.init.TransformLoggerIni.</span></code><code class="sig-name descname"><span class="pre">TransformLoggerIni</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.init.TransformLoggerIni.</span></code><code class="sig-name descname"><span class="pre">TransformLoggerIni</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>there are multiple config structures available,
 currently lvl2 and lvl3
 lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_config_ini">
-<code class="sig-name descname"><span class="pre">transform_config_ini</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_config_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_config_ini" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_config_ini">
+<code class="sig-name descname"><span class="pre">transform_config_ini</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_config_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_config_ini" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the cofing input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -417,8 +417,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_ini">
-<code class="sig-name descname"><span class="pre">transform_ini</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_ini</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_ini" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_ini">
+<code class="sig-name descname"><span class="pre">transform_ini</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_ini</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_ini" title="Permalink to this definition">¶</a></dt>
 <dd><p>main method, which transform the config-file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -431,8 +431,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_kpis">
-<code class="sig-name descname"><span class="pre">transform_kpis</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_kpi_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_kpis" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_kpis">
+<code class="sig-name descname"><span class="pre">transform_kpis</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_kpi_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_kpis" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the kpis input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -448,8 +448,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_plot">
-<code class="sig-name descname"><span class="pre">transform_plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_plot_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_plot" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_plot">
+<code class="sig-name descname"><span class="pre">transform_plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_plot_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the plot input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -465,8 +465,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_save">
-<code class="sig-name descname"><span class="pre">transform_save</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_plot_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_save" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_save">
+<code class="sig-name descname"><span class="pre">transform_save</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_plot_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformLoggerIni.TransformLoggerIni.transform_save" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the kpis input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -484,34 +484,34 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.init.TransformProductionIni">
-<span id="transform-production-ini"></span><h1>Transform Production ini<a class="headerlink" href="#module-ProductionSimulation.init.TransformProductionIni" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.init.TransformProductionIni">
+<span id="transform-production-ini"></span><h1>Transform Production ini<a class="headerlink" href="#module-ontologysim.ProductionSimulation.init.TransformProductionIni" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.init.TransformProductionIni.</span></code><code class="sig-name descname"><span class="pre">TransformProductionIni</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.init.TransformProductionIni.</span></code><code class="sig-name descname"><span class="pre">TransformProductionIni</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>there are multiple config structures available,
 currently lvl2 and lvl1
 lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeMachine">
-<code class="sig-name descname"><span class="pre">checkWaitingTimeMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineList</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeMachine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeMachine">
+<code class="sig-name descname"><span class="pre">checkWaitingTimeMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineList</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeMachine" title="Permalink to this definition">¶</a></dt>
 <dd><p>test if waiting time &gt;0
 :param machineList: list[{},…]
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeTransporter">
-<code class="sig-name descname"><span class="pre">checkWaitingTimeTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">old_transporter_ini_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeTransporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeTransporter">
+<code class="sig-name descname"><span class="pre">checkWaitingTimeTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">old_transporter_ini_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.checkWaitingTimeTransporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>test if waiting time &gt;0
 :param old_transporter_ini_dict: dict
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_deadlock_queue">
-<code class="sig-name descname"><span class="pre">transform_deadlock_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_deadlock_queue_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_deadlock_queue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_deadlock_queue">
+<code class="sig-name descname"><span class="pre">transform_deadlock_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_deadlock_queue_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_deadlock_queue" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the deadlock queue input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -527,8 +527,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_defect">
-<code class="sig-name descname"><span class="pre">transform_defect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_defect_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_defect" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_defect">
+<code class="sig-name descname"><span class="pre">transform_defect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_defect_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_defect" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the defect input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -544,8 +544,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_end_queue">
-<code class="sig-name descname"><span class="pre">transform_end_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_end_queue_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_end_queue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_end_queue">
+<code class="sig-name descname"><span class="pre">transform_end_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_end_queue_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_end_queue" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the end queue input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -561,8 +561,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_ini">
-<code class="sig-name descname"><span class="pre">transform_ini</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">production_ini</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_ini" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_ini">
+<code class="sig-name descname"><span class="pre">transform_ini</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">production_ini</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_ini" title="Permalink to this definition">¶</a></dt>
 <dd><p>main method, which transform the config-file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -575,8 +575,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_machine">
-<code class="sig-name descname"><span class="pre">transform_machine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_machine_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultValues</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changeTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_machine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_machine">
+<code class="sig-name descname"><span class="pre">transform_machine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_machine_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultValues</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changeTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_machine" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the machine input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -592,8 +592,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_process">
-<code class="sig-name descname"><span class="pre">transform_process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_process_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_process" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_process">
+<code class="sig-name descname"><span class="pre">transform_process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_process_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_process" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform the process input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -609,8 +609,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_product_type">
-<code class="sig-name descname"><span class="pre">transform_product_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_product_type_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_product_type" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_product_type">
+<code class="sig-name descname"><span class="pre">transform_product_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_product_type_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_product_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the product type input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -626,8 +626,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_random_seed">
-<code class="sig-name descname"><span class="pre">transform_random_seed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_random_seed_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_random_seed" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_random_seed">
+<code class="sig-name descname"><span class="pre">transform_random_seed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_random_seed_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_random_seed" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the random seed</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -643,8 +643,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_repair">
-<code class="sig-name descname"><span class="pre">transform_repair</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_repair_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_repair" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_repair">
+<code class="sig-name descname"><span class="pre">transform_repair</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_repair_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_repair" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the repair input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -660,8 +660,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_start_queue">
-<code class="sig-name descname"><span class="pre">transform_start_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_start_queue_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_start_queue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_start_queue">
+<code class="sig-name descname"><span class="pre">transform_start_queue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_start_queue_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_start_queue" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the start queue input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -677,8 +677,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_task">
-<code class="sig-name descname"><span class="pre">transform_task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_task_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_task" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_task">
+<code class="sig-name descname"><span class="pre">transform_task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_task_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_task" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the task input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -694,8 +694,8 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_transporter">
-<code class="sig-name descname"><span class="pre">transform_transporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_transporter_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultValues</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changeTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_transporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_transporter">
+<code class="sig-name descname"><span class="pre">transform_transporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lvl2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">old_transporter_ini_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultValues</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changeTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.TransformProductionIni.TransformProductionIni.transform_transporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the transpoter input</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -713,12 +713,12 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.init.petrinet_generator">
-<span id="petrinet-generator"></span><h1>Petrinet generator<a class="headerlink" href="#module-ProductionSimulation.init.petrinet_generator" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.init.petrinet_generator">
+<span id="petrinet-generator"></span><h1>Petrinet generator<a class="headerlink" href="#module-ontologysim.ProductionSimulation.init.petrinet_generator" title="Permalink to this headline">¶</a></h1>
 <p>depriciated</p>
 <dl class="py function">
-<dt id="ProductionSimulation.init.petrinet_generator.create_petrinet">
-<code class="sig-prename descclassname"><span class="pre">ProductionSimulation.init.petrinet_generator.</span></code><code class="sig-name descname"><span class="pre">create_petrinet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">product_paths</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pnml_save_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">visualize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.init.petrinet_generator.create_petrinet" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.petrinet_generator.create_petrinet">
+<code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.init.petrinet_generator.</span></code><code class="sig-name descname"><span class="pre">create_petrinet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">product_paths</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pnml_save_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">visualize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.init.petrinet_generator.create_petrinet" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="simple">
 <dt>creates a Petrinet out of a list possible productways through production given with a list of process_IDs</dt><dd><p>e.g. products=[[‘0’,’1’,’2’],[‘0’,’1’]]</p>
 </dd>
@@ -729,11 +729,11 @@ lvl1 is the most detailed, all config-files are getting converted to lvl1</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.init.API.IntitializerProducttypeAPI">
-<span id="api-initializer-producttype"></span><h1>API: Initializer Producttype<a class="headerlink" href="#module-ProductionSimulation.init.API.IntitializerProducttypeAPI" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.init.API.IntitializerProducttypeAPI">
+<span id="api-initializer-producttype"></span><h1>API: Initializer Producttype<a class="headerlink" href="#module-ontologysim.ProductionSimulation.init.API.IntitializerProducttypeAPI" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.init.API.IntitializerProducttypeAPI.InitializerProducttypeAPI">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.init.API.IntitializerProducttypeAPI.</span></code><code class="sig-name descname"><span class="pre">InitializerProducttypeAPI</span></code><a class="headerlink" href="#ProductionSimulation.init.API.IntitializerProducttypeAPI.InitializerProducttypeAPI" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.init.API.IntitializerProducttypeAPI.InitializerProducttypeAPI">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.init.API.IntitializerProducttypeAPI.</span></code><code class="sig-name descname"><span class="pre">InitializerProducttypeAPI</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.init.API.IntitializerProducttypeAPI.InitializerProducttypeAPI" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>initialize all needed objects to create procudttype</p>
 </dd></dl>

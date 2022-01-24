@@ -107,17 +107,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.plot.Log_plot">
-<span id="log-plot"></span><h1>Log plot<a class="headerlink" href="#module-ProductionSimulation.plot.Log_plot" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.plot.Log_plot">
+<span id="log-plot"></span><h1>Log plot<a class="headerlink" href="#module-ontologysim.ProductionSimulation.plot.Log_plot" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.plot.Log_plot.Plot">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.plot.Log_plot.</span></code><code class="sig-name descname"><span class="pre">Plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.plot.Log_plot.</span></code><code class="sig-name descname"><span class="pre">Plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>runs seperately from the simulation, the goal of this plot class is to plot the log data,
 the class needs an extra plot ini</p>
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.adaptLine">
-<code class="sig-name descname"><span class="pre">adaptLine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.adaptLine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.adaptLine">
+<code class="sig-name descname"><span class="pre">adaptLine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.adaptLine" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding a line to the chart</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -129,8 +129,8 @@ the class needs an extra plot ini</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.adaptLogPath">
-<code class="sig-name descname"><span class="pre">adaptLogPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.adaptLogPath" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.adaptLogPath">
+<code class="sig-name descname"><span class="pre">adaptLogPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.adaptLogPath" title="Permalink to this definition">¶</a></dt>
 <dd><p>the time analyse plots are lying in subfolder, therefore the subfolders were added to the path</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -143,33 +143,33 @@ the class needs an extra plot ini</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.plot">
-<code class="sig-name descname"><span class="pre">plot</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.plot" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot">
+<code class="sig-name descname"><span class="pre">plot</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>main method for plotting, distributes the tasks, different plot tpyes</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.plot_line">
-<code class="sig-name descname"><span class="pre">plot_line</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.plot_line" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot_line">
+<code class="sig-name descname"><span class="pre">plot_line</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot_line" title="Permalink to this definition">¶</a></dt>
 <dd><p>plotting the kpi over time in a line chart</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.plot_multiple_line">
-<code class="sig-name descname"><span class="pre">plot_multiple_line</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.plot_multiple_line" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot_multiple_line">
+<code class="sig-name descname"><span class="pre">plot_multiple_line</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot_multiple_line" title="Permalink to this definition">¶</a></dt>
 <dd><p>allowes to plot multiple kpi’s in one chart, currently restricted to 3 kpi’s
 each chart is plotted in a sub diagramm</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.plot_scatter">
-<code class="sig-name descname"><span class="pre">plot_scatter</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.plot_scatter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot_scatter">
+<code class="sig-name descname"><span class="pre">plot_scatter</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.plot_scatter" title="Permalink to this definition">¶</a></dt>
 <dd><p>plotting a scatte plot with two histogram on each axes</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.read_log">
-<code class="sig-name descname"><span class="pre">read_log</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kpi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.read_log" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.read_log">
+<code class="sig-name descname"><span class="pre">read_log</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kpi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.read_log" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms the csv to a pandas and only returns the suitalbe column</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -186,8 +186,8 @@ each chart is plotted in a sub diagramm</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.scatter_hist">
-<code class="sig-name descname"><span class="pre">scatter_hist</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax_histx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax_histy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.scatter_hist" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.scatter_hist">
+<code class="sig-name descname"><span class="pre">scatter_hist</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax_histx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ax_histy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.scatter_hist" title="Permalink to this definition">¶</a></dt>
 <dd><p>plottin the values in a scattered histogramm</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -203,8 +203,8 @@ each chart is plotted in a sub diagramm</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.plot.Log_plot.Plot.setYLabel">
-<code class="sig-name descname"><span class="pre">setYLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kpi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.plot.Log_plot.Plot.setYLabel" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.plot.Log_plot.Plot.setYLabel">
+<code class="sig-name descname"><span class="pre">setYLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kpi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.plot.Log_plot.Plot.setYLabel" title="Permalink to this definition">¶</a></dt>
 <dd><p>set the kpi y aches</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

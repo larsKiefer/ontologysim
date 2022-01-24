@@ -106,16 +106,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.controller.service_controller.ServiceController">
-<span id="service-controller"></span><h1>Service Controller<a class="headerlink" href="#module-ProductionSimulation.controller.service_controller.ServiceController" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.controller.service_controller.ServiceController">
+<span id="service-controller"></span><h1>Service Controller<a class="headerlink" href="#module-ontologysim.ProductionSimulation.controller.service_controller.ServiceController" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.controller.service_controller.ServiceController.ServiceController">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.controller.service_controller.ServiceController.</span></code><code class="sig-name descname"><span class="pre">ServiceController</span></code><a class="headerlink" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.controller.service_controller.ServiceController.</span></code><code class="sig-name descname"><span class="pre">ServiceController</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>service controller which controls the repair process</p>
 <dl class="py method">
-<dt id="ProductionSimulation.controller.service_controller.ServiceController.ServiceController.evaluateService">
-<code class="sig-name descname"><span class="pre">evaluateService</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceController.evaluateService" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController.evaluateService">
+<code class="sig-name descname"><span class="pre">evaluateService</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController.evaluateService" title="Permalink to this definition">¶</a></dt>
 <dd><p>main class for the evaluation of service for machine and transporter</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -127,13 +127,13 @@
 </dd></dl>
 
 <dl class="py class">
-<dt id="ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.controller.service_controller.ServiceController.</span></code><code class="sig-name descname"><span class="pre">ServiceControllerMachine</span></code><a class="headerlink" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceController" title="ProductionSimulation.controller.service_controller.ServiceController.ServiceController"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductionSimulation.controller.service_controller.ServiceController.ServiceController</span></code></a></p>
+<dt id="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.controller.service_controller.ServiceController.</span></code><code class="sig-name descname"><span class="pre">ServiceControllerMachine</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController" title="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController"><code class="xref py py-class docutils literal notranslate"><span class="pre">ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController</span></code></a></p>
 <p>service controller for machine</p>
 <dl class="py method">
-<dt id="ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine.evaluateService">
-<code class="sig-name descname"><span class="pre">evaluateService</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine.evaluateService" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine.evaluateService">
+<code class="sig-name descname"><span class="pre">evaluateService</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerMachine.evaluateService" title="Permalink to this definition">¶</a></dt>
 <dd><p>distributes the open repairs to the possible service places</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -145,13 +145,13 @@
 </dd></dl>
 
 <dl class="py class">
-<dt id="ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.controller.service_controller.ServiceController.</span></code><code class="sig-name descname"><span class="pre">ServiceControllerTransporter</span></code><a class="headerlink" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceController" title="ProductionSimulation.controller.service_controller.ServiceController.ServiceController"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductionSimulation.controller.service_controller.ServiceController.ServiceController</span></code></a></p>
+<dt id="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.controller.service_controller.ServiceController.</span></code><code class="sig-name descname"><span class="pre">ServiceControllerTransporter</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController" title="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController"><code class="xref py py-class docutils literal notranslate"><span class="pre">ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceController</span></code></a></p>
 <p>service controller for transporter</p>
 <dl class="py method">
-<dt id="ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter.evaluateService">
-<code class="sig-name descname"><span class="pre">evaluateService</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter.evaluateService" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter.evaluateService">
+<code class="sig-name descname"><span class="pre">evaluateService</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.controller.service_controller.ServiceController.ServiceControllerTransporter.evaluateService" title="Permalink to this definition">¶</a></dt>
 <dd><p>distributes the open repairs to the possible service places</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

@@ -2,7 +2,7 @@
 SimCore
 ---------------------------------------
 
-.. automodule:: ProductionSimulation.sim.SimCore
+.. automodule:: ontologysim.ProductionSimulation.sim.SimCore
    :members:
    :undoc-members:
    :show-inheritance:
@@ -10,7 +10,7 @@ SimCore
 Central
 ---------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Central
+.. automodule:: ontologysim.ProductionSimulation.sim.Central
    :members:
    :undoc-members:
    :show-inheritance:
@@ -21,7 +21,7 @@ Central
 Enum Labelling
 ------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Enum
+.. automodule:: ontologysim.ProductionSimulation.sim.Enum
    :members:
    :undoc-members:
    :show-inheritance:
@@ -30,7 +30,7 @@ Enum Labelling
 Task
 ------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Task
+.. automodule:: ontologysim.ProductionSimulation.sim.Task
    :members:
    :undoc-members:
    :show-inheritance:

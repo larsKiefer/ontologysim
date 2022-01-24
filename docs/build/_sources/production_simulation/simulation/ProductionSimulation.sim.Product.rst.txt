@@ -1,7 +1,7 @@
 Product
 ---------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Product
+.. automodule:: ontologysim.ProductionSimulation.sim.Product
    :members:
    :undoc-members:
    :show-inheritance:
@@ -10,7 +10,7 @@ Product
 Product type
 -------------------------------------------
 
-.. automodule:: ProductionSimulation.sim.ProductType
+.. automodule:: ontologysim.ProductionSimulation.sim.ProductType
    :members:
    :undoc-members:
    :show-inheritance:

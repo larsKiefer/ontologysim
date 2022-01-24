@@ -109,15 +109,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.sim.Transporter">
-<span id="transporter"></span><h1>Transporter<a class="headerlink" href="#module-ProductionSimulation.sim.Transporter" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.sim.Transporter">
+<span id="transporter"></span><h1>Transporter<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.Transporter" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.Transporter.Transporter">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.Transporter.</span></code><code class="sig-name descname"><span class="pre">Transporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.Transporter.</span></code><code class="sig-name descname"><span class="pre">Transporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.addLocation">
-<code class="sig-name descname"><span class="pre">addLocation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.addLocation" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.addLocation">
+<code class="sig-name descname"><span class="pre">addLocation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.addLocation" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds a location the queue of the transporter, currently only the queue of the transporter has a location</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -130,8 +130,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.addTransportController">
-<code class="sig-name descname"><span class="pre">addTransportController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transportController</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.addTransportController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.addTransportController">
+<code class="sig-name descname"><span class="pre">addTransportController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transportController</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.addTransportController" title="Permalink to this definition">¶</a></dt>
 <dd><p>combines transport controller with transporter class</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -141,8 +141,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.add_defect">
-<code class="sig-name descname"><span class="pre">add_defect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transporter_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.add_defect" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.add_defect">
+<code class="sig-name descname"><span class="pre">add_defect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transporter_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.add_defect" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds a defect to the transporter onto, this defect onto describes the defect behavior</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -155,8 +155,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.compare_location_product_transporter">
-<code class="sig-name descname"><span class="pre">compare_location_product_transporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.compare_location_product_transporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.compare_location_product_transporter">
+<code class="sig-name descname"><span class="pre">compare_location_product_transporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.compare_location_product_transporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>compare if the location of the product onto is equl to the transporter location</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -172,8 +172,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.createTransportation">
-<code class="sig-name descname"><span class="pre">createTransportation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_location_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.createTransportation" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.createTransportation">
+<code class="sig-name descname"><span class="pre">createTransportation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_location_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.createTransportation" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a transportation event</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -190,8 +190,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.createTransporter">
-<code class="sig-name descname"><span class="pre">createTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.createTransporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.createTransporter">
+<code class="sig-name descname"><span class="pre">createTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.createTransporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a transporter in onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -204,8 +204,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.createWait">
-<code class="sig-name descname"><span class="pre">createWait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waiting_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.createWait" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.createWait">
+<code class="sig-name descname"><span class="pre">createWait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waiting_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.createWait" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a waiting event</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -222,8 +222,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.end_queue_allowed">
-<code class="sig-name descname"><span class="pre">end_queue_allowed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">product_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.end_queue_allowed" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.end_queue_allowed">
+<code class="sig-name descname"><span class="pre">end_queue_allowed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">product_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.end_queue_allowed" title="Permalink to this definition">¶</a></dt>
 <dd><p>checks if the transporter is allowed to go to the end_queue</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -239,8 +239,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.evaluateDefect">
-<code class="sig-name descname"><span class="pre">evaluateDefect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.evaluateDefect" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.evaluateDefect">
+<code class="sig-name descname"><span class="pre">evaluateDefect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.evaluateDefect" title="Permalink to this definition">¶</a></dt>
 <dd><p>checks if the transporter is defect, when yes then defect service is created, otherwise
 the given event onto is exectued in another method</p>
 <dl class="field-list simple">
@@ -254,8 +254,8 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.getAllTransporter">
-<code class="sig-name descname"><span class="pre">getAllTransporter</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.getAllTransporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.getAllTransporter">
+<code class="sig-name descname"><span class="pre">getAllTransporter</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.getAllTransporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>get all transporter onto, for better performance use central class</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -265,8 +265,8 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.getAlowedMachine">
-<code class="sig-name descname"><span class="pre">getAlowedMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suitable_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.getAlowedMachine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.getAlowedMachine">
+<code class="sig-name descname"><span class="pre">getAlowedMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suitable_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.getAlowedMachine" title="Permalink to this definition">¶</a></dt>
 <dd><p>gets the allowed machine for the transporter</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -282,8 +282,8 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.getFreePosition">
-<code class="sig-name descname"><span class="pre">getFreePosition</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.getFreePosition" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.getFreePosition">
+<code class="sig-name descname"><span class="pre">getFreePosition</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.getFreePosition" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates all free position of transporter</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -296,8 +296,8 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.get_queue_transportation_allowed">
-<code class="sig-name descname"><span class="pre">get_queue_transportation_allowed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.get_queue_transportation_allowed" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.get_queue_transportation_allowed">
+<code class="sig-name descname"><span class="pre">get_queue_transportation_allowed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transport_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.get_queue_transportation_allowed" title="Permalink to this definition">¶</a></dt>
 <dd><p>get the allowed queue, where the transporter can drive</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -310,14 +310,14 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.initTransporterDict">
-<code class="sig-name descname"><span class="pre">initTransporterDict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.initTransporterDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.initTransporterDict">
+<code class="sig-name descname"><span class="pre">initTransporterDict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.initTransporterDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>the transporter dict pre calculates which queues are available for the transporter, to provide faster simulation</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.setNextDefectTime">
-<code class="sig-name descname"><span class="pre">setNextDefectTime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transporter_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.setNextDefectTime" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.setNextDefectTime">
+<code class="sig-name descname"><span class="pre">setNextDefectTime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transporter_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.setNextDefectTime" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates next defect and adds this value to the transporter defect</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -330,8 +330,8 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.transformToDict">
-<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.transformToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.transformToDict">
+<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.transformToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform the transporter onto to dit and saves the kpis</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -344,8 +344,8 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.transport">
-<code class="sig-name descname"><span class="pre">transport</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.transport" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.transport">
+<code class="sig-name descname"><span class="pre">transport</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.transport" title="Permalink to this definition">¶</a></dt>
 <dd><p>the transporter drives from location a to location b</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -355,8 +355,8 @@ the given event onto is exectued in another method</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Transporter.Transporter.wait">
-<code class="sig-name descname"><span class="pre">wait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Transporter.Transporter.wait" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Transporter.Transporter.wait">
+<code class="sig-name descname"><span class="pre">wait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Transporter.Transporter.wait" title="Permalink to this definition">¶</a></dt>
 <dd><p>lets the transporter wait for x seconds</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

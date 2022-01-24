@@ -57,10 +57,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../side_package.html">Side package</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../side_package.html#utility">Utility</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Event utilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.utilities.init_utilities">Init utilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.utilities.path_utilities">Path utilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.utilities.pnml_utilities">Pnml utilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.utilities.sub_class_utilities">Sub class utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.utilities.init_utilities">Init utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.utilities.path_utilities">Path utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.utilities.pnml_utilities">Pnml utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.utilities.sub_class_utilities">Sub class utilities</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../side_package.html#plot">Plot</a></li>
@@ -111,28 +111,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.utilities.event_utilities">
-<span id="event-utilities"></span><h1>Event utilities<a class="headerlink" href="#module-ProductionSimulation.utilities.event_utilities" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.utilities.event_utilities">
+<span id="event-utilities"></span><h1>Event utilities<a class="headerlink" href="#module-ontologysim.ProductionSimulation.utilities.event_utilities" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.utilities.event_utilities.</span></code><code class="sig-name descname"><span class="pre">EventUtilities</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.utilities.event_utilities.</span></code><code class="sig-name descname"><span class="pre">EventUtilities</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>transform on event onto to dict or provides additionally info to position</p>
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.calc_position_dict">
-<code class="sig-name descname"><span class="pre">calc_position_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.calc_position_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.calc_position_dict">
+<code class="sig-name descname"><span class="pre">calc_position_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.calc_position_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>gets additional information (queueing) to a position, these information are saved in the position dict</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.calc_process_dict">
-<code class="sig-name descname"><span class="pre">calc_process_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.calc_process_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.calc_process_dict">
+<code class="sig-name descname"><span class="pre">calc_process_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.calc_process_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>gets additional information (machine) to a process, these information are saved in the process dict</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToDict">
-<code class="sig-name descname"><span class="pre">transformEventListToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToDict">
+<code class="sig-name descname"><span class="pre">transformEventListToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform event_list to a dict, empty values are not saved</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -145,8 +145,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToFullDict">
-<code class="sig-name descname"><span class="pre">transformEventListToFullDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToFullDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToFullDict">
+<code class="sig-name descname"><span class="pre">transformEventListToFullDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventListToFullDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform event_list to a dict, empty values are saved</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -159,8 +159,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventLoggerOntoToList">
-<code class="sig-name descname"><span class="pre">transformEventLoggerOntoToList</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventLoggerOntoToList" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventLoggerOntoToList">
+<code class="sig-name descname"><span class="pre">transformEventLoggerOntoToList</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventLoggerOntoToList" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform an event logger onto to a list</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -173,8 +173,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToDict">
-<code class="sig-name descname"><span class="pre">transformEventOntoToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToDict">
+<code class="sig-name descname"><span class="pre">transformEventOntoToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>saves an event_onto to a dict, the empty values are not saved</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -187,8 +187,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToFullDict">
-<code class="sig-name descname"><span class="pre">transformEventOntoToFullDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToFullDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToFullDict">
+<code class="sig-name descname"><span class="pre">transformEventOntoToFullDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transformEventOntoToFullDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>saves an event_onto to a dict, also the empty values are saved</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -201,8 +201,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.event_utilities.EventUtilities.transfromEventOntoToList">
-<code class="sig-name descname"><span class="pre">transfromEventOntoToList</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.event_utilities.EventUtilities.transfromEventOntoToList" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transfromEventOntoToList">
+<code class="sig-name descname"><span class="pre">transfromEventOntoToList</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.event_utilities.EventUtilities.transfromEventOntoToList" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>event_onto</strong> – onto: event_logger (not normal event)</p>
@@ -216,52 +216,52 @@
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.utilities.init_utilities">
-<span id="init-utilities"></span><h1>Init utilities<a class="headerlink" href="#module-ProductionSimulation.utilities.init_utilities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.utilities.init_utilities">
+<span id="init-utilities"></span><h1>Init utilities<a class="headerlink" href="#module-ontologysim.ProductionSimulation.utilities.init_utilities" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.utilities.init_utilities.IniDict">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.utilities.init_utilities.</span></code><code class="sig-name descname"><span class="pre">IniDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dictInformation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.init_utilities.IniDict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#ProductionSimulation.utilities.init_utilities.Init" title="ProductionSimulation.utilities.init_utilities.Init"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductionSimulation.utilities.init_utilities.Init</span></code></a></p>
+<dt id="ontologysim.ProductionSimulation.utilities.init_utilities.IniDict">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.utilities.init_utilities.</span></code><code class="sig-name descname"><span class="pre">IniDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dictInformation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.init_utilities.IniDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ontologysim.ProductionSimulation.utilities.init_utilities.Init" title="ontologysim.ProductionSimulation.utilities.init_utilities.Init"><code class="xref py py-class docutils literal notranslate"><span class="pre">ontologysim.ProductionSimulation.utilities.init_utilities.Init</span></code></a></p>
 <p>read dict and transform into configparser</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="ProductionSimulation.utilities.init_utilities.IniString">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.utilities.init_utilities.</span></code><code class="sig-name descname"><span class="pre">IniString</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">textString</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.init_utilities.IniString" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#ProductionSimulation.utilities.init_utilities.Init" title="ProductionSimulation.utilities.init_utilities.Init"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductionSimulation.utilities.init_utilities.Init</span></code></a></p>
+<dt id="ontologysim.ProductionSimulation.utilities.init_utilities.IniString">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.utilities.init_utilities.</span></code><code class="sig-name descname"><span class="pre">IniString</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">textString</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.init_utilities.IniString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ontologysim.ProductionSimulation.utilities.init_utilities.Init" title="ontologysim.ProductionSimulation.utilities.init_utilities.Init"><code class="xref py py-class docutils literal notranslate"><span class="pre">ontologysim.ProductionSimulation.utilities.init_utilities.Init</span></code></a></p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="ProductionSimulation.utilities.init_utilities.Init">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.utilities.init_utilities.</span></code><code class="sig-name descname"><span class="pre">Init</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.init_utilities.Init" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.init_utilities.Init">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.utilities.init_utilities.</span></code><code class="sig-name descname"><span class="pre">Init</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.init_utilities.Init" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>transforms the ini into a dict</p>
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.init_utilities.Init.identifyType">
-<code class="sig-name descname"><span class="pre">identifyType</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.init_utilities.Init.identifyType" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.init_utilities.Init.identifyType">
+<code class="sig-name descname"><span class="pre">identifyType</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.init_utilities.Init.identifyType" title="Permalink to this definition">¶</a></dt>
 <dd><p>identify type for given path, set type variable
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.init_utilities.Init.read_ini_file">
-<code class="sig-name descname"><span class="pre">read_ini_file</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.init_utilities.Init.read_ini_file" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.init_utilities.Init.read_ini_file">
+<code class="sig-name descname"><span class="pre">read_ini_file</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.init_utilities.Init.read_ini_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>transforms an ini file to a dict, which is saved in the variable configs</p>
 </dd></dl>
 
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.utilities.path_utilities">
-<span id="path-utilities"></span><h1>Path utilities<a class="headerlink" href="#module-ProductionSimulation.utilities.path_utilities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.utilities.path_utilities">
+<span id="path-utilities"></span><h1>Path utilities<a class="headerlink" href="#module-ontologysim.ProductionSimulation.utilities.path_utilities" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.utilities.path_utilities.</span></code><code class="sig-name descname"><span class="pre">PathTest</span></code><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.utilities.path_utilities.</span></code><code class="sig-name descname"><span class="pre">PathTest</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Tests the given paths</p>
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_dir_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_dir_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform a relative path of a dir to a full path</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -274,8 +274,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path_current_dir_given">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_dir_path_current_dir_given</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path_current_dir_given" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path_current_dir_given">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_dir_path_current_dir_given</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_dir_path_current_dir_given" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -290,8 +290,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest.check_file_path">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_file_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest.check_file_path" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_file_path">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_file_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_file_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform a relative path to a full path</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -304,8 +304,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_current_dir_given">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_file_path_current_dir_given</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_current_dir_given" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_current_dir_given">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_file_path_current_dir_given</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_current_dir_given" title="Permalink to this definition">¶</a></dt>
 <dd><p>check file without current_main_dir
 :param path:
 :param current_dir:
@@ -313,13 +313,13 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_libary">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_file_path_libary</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_libary" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_libary">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_file_path_libary</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.check_file_path_libary" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest.create_new_folder">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">create_new_folder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest.create_new_folder" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.create_new_folder">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">create_new_folder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.create_new_folder" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a new folder</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -335,23 +335,23 @@
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="ProductionSimulation.utilities.path_utilities.PathTest.current_main_dir">
-<code class="sig-name descname"><span class="pre">current_main_dir</span></code><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#ProductionSimulation.utilities.path_utilities.PathTest.current_main_dir" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.current_main_dir">
+<code class="sig-name descname"><span class="pre">current_main_dir</span></code><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.path_utilities.PathTest.current_main_dir" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.utilities.pnml_utilities">
-<span id="pnml-utilities"></span><h1>Pnml utilities<a class="headerlink" href="#module-ProductionSimulation.utilities.pnml_utilities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.utilities.pnml_utilities">
+<span id="pnml-utilities"></span><h1>Pnml utilities<a class="headerlink" href="#module-ontologysim.ProductionSimulation.utilities.pnml_utilities" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.utilities.pnml_utilities.PnmlTest">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.utilities.pnml_utilities.</span></code><code class="sig-name descname"><span class="pre">PnmlTest</span></code><a class="headerlink" href="#ProductionSimulation.utilities.pnml_utilities.PnmlTest" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.pnml_utilities.PnmlTest">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.utilities.pnml_utilities.</span></code><code class="sig-name descname"><span class="pre">PnmlTest</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.pnml_utilities.PnmlTest" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Tests a given Pnml file</p>
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.pnml_utilities.PnmlTest.check_pnml">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_pnml</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">net</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.pnml_utilities.PnmlTest.check_pnml" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.pnml_utilities.PnmlTest.check_pnml">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">check_pnml</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">net</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.pnml_utilities.PnmlTest.check_pnml" title="Permalink to this definition">¶</a></dt>
 <dd><p>deprecated
 checks if the structure of the pnml is correct
 checked:
@@ -378,16 +378,16 @@ checked:
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.utilities.sub_class_utilities">
-<span id="sub-class-utilities"></span><h1>Sub class utilities<a class="headerlink" href="#module-ProductionSimulation.utilities.sub_class_utilities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.utilities.sub_class_utilities">
+<span id="sub-class-utilities"></span><h1>Sub class utilities<a class="headerlink" href="#module-ontologysim.ProductionSimulation.utilities.sub_class_utilities" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.utilities.sub_class_utilities.SubClassUtility">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.utilities.sub_class_utilities.</span></code><code class="sig-name descname"><span class="pre">SubClassUtility</span></code><a class="headerlink" href="#ProductionSimulation.utilities.sub_class_utilities.SubClassUtility" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.sub_class_utilities.SubClassUtility">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.utilities.sub_class_utilities.</span></code><code class="sig-name descname"><span class="pre">SubClassUtility</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.sub_class_utilities.SubClassUtility" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>given a parent class and it finds all sub classes</p>
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">get_all_subclasses</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">get_all_subclasses</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses" title="Permalink to this definition">¶</a></dt>
 <dd><p>Helper function to get all the subclasses of a class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -400,8 +400,8 @@ checked:
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses_dict">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">get_all_subclasses_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">get_all_subclasses_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">python_class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.utilities.sub_class_utilities.SubClassUtility.get_all_subclasses_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Helper function to get all the subclasses of a class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

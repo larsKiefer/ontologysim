@@ -2,7 +2,7 @@
 Time Analyse
 -----------------------------------------------
 
-.. automodule:: ProductionSimulation.analyse.TimeAnalyse
+.. automodule:: ontologysim.ProductionSimulation.analyse.TimeAnalyse
    :members:
    :undoc-members:
    :show-inheritance:

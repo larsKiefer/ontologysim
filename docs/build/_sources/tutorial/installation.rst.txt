@@ -29,6 +29,15 @@ How to check if everything works
 
 run in the example folder the `Main.py`
 
+Additional installation for ubuntu
+---------------------------------------------
+installation of odbc, java and some other packages
+
+.. code-block:: console
+    sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+    sudo apt-get install unixodbc-dev
+    sudo apt install default-jre
+
 
 Problem handling
 --------------------

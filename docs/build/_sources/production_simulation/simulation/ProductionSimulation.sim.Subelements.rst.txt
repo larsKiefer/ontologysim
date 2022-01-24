@@ -1,7 +1,7 @@
 Location
 ----------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Location
+.. automodule:: ontologysim.ProductionSimulation.sim.Location
    :members:
    :undoc-members:
    :show-inheritance:
@@ -10,7 +10,7 @@ Location
 Queue
 -------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Queue
+.. automodule:: ontologysim.ProductionSimulation.sim.Queue
    :members:
    :undoc-members:
    :show-inheritance:
@@ -18,7 +18,7 @@ Queue
 Distribution
 --------------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Distribution
+.. automodule:: ontologysim.ProductionSimulation.sim.Distribution
    :members:
    :undoc-members:
    :show-inheritance:

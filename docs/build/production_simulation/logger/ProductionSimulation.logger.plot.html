@@ -57,7 +57,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../logger.html#event-logger">Event logger</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../logger.html#plot-logger">Plot logger</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Plot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.logger.plot.plot_test">Plot test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.logger.plot.plot_test">Plot test</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../logger.html#depreciated-logger">Depreciated logger</a></li>
@@ -109,14 +109,14 @@
   <div class="section" id="plot">
 <h1>Plot<a class="headerlink" href="#plot" title="Permalink to this headline">¶</a></h1>
 <p>This plot allows the KPIs to be displayed live. The setting of the plot is done via the logger_config.ini</p>
-<span class="target" id="module-ProductionSimulation.logger.plot.Plot"></span><dl class="py class">
-<dt id="ProductionSimulation.logger.plot.Plot.Plot">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.logger.plot.Plot.</span></code><code class="sig-name descname"><span class="pre">Plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.Plot.Plot" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-ontologysim.ProductionSimulation.logger.plot.Plot"></span><dl class="py class">
+<dt id="ontologysim.ProductionSimulation.logger.plot.Plot.Plot">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.logger.plot.Plot.</span></code><code class="sig-name descname"><span class="pre">Plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.Plot.Plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>file for plotting kpis during simulation run</p>
 <dl class="py method">
-<dt id="ProductionSimulation.logger.plot.Plot.Plot.initPlot">
-<code class="sig-name descname"><span class="pre">initPlot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plot_config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.Plot.Plot.initPlot" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.Plot.Plot.initPlot">
+<code class="sig-name descname"><span class="pre">initPlot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plot_config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.Plot.Plot.initPlot" title="Permalink to this definition">¶</a></dt>
 <dd><p>init plot and create figure</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -129,8 +129,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.logger.plot.Plot.Plot.startPlot">
-<code class="sig-name descname"><span class="pre">startPlot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.Plot.Plot.startPlot" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.Plot.Plot.startPlot">
+<code class="sig-name descname"><span class="pre">startPlot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.Plot.Plot.startPlot" title="Permalink to this definition">¶</a></dt>
 <dd><p>start plotting</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -143,8 +143,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.logger.plot.Plot.Plot.update_figure_with_new_value">
-<code class="sig-name descname"><span class="pre">update_figure_with_new_value</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yval</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.Plot.Plot.update_figure_with_new_value" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.Plot.Plot.update_figure_with_new_value">
+<code class="sig-name descname"><span class="pre">update_figure_with_new_value</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yval</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.Plot.Plot.update_figure_with_new_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>sub method for updating plot with new data</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -161,8 +161,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.logger.plot.Plot.Plot.update_plot">
-<code class="sig-name descname"><span class="pre">update_plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.Plot.Plot.update_plot" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.Plot.Plot.update_plot">
+<code class="sig-name descname"><span class="pre">update_plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.Plot.Plot.update_plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>update plot</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -175,8 +175,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.logger.plot.Plot.Plot.view_update">
-<code class="sig-name descname"><span class="pre">view_update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.Plot.Plot.view_update" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.Plot.Plot.view_update">
+<code class="sig-name descname"><span class="pre">view_update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.Plot.Plot.view_update" title="Permalink to this definition">¶</a></dt>
 <dd><p>update fig
 :return:</p>
 </dd></dl>
@@ -184,8 +184,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt id="ProductionSimulation.logger.plot.Plot.random">
-<code class="sig-prename descclassname"><span class="pre">ProductionSimulation.logger.plot.Plot.</span></code><code class="sig-name descname"><span class="pre">random</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">x</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">interval</span> <span class="pre">[0,</span> <span class="pre">1).</span><a class="headerlink" href="#ProductionSimulation.logger.plot.Plot.random" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.Plot.random">
+<code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.logger.plot.Plot.</span></code><code class="sig-name descname"><span class="pre">random</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">x</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">interval</span> <span class="pre">[0,</span> <span class="pre">1).</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.Plot.random" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <div class="admonition note">
@@ -193,21 +193,21 @@
 <p>to determine the unit a <code class="docutils literal notranslate"><span class="pre">y_lookup_table.ini</span></code> was created. New KPIs must be entered in this table</p>
 </div>
 </div>
-<div class="section" id="module-ProductionSimulation.logger.plot.plot_test">
-<span id="plot-test"></span><h1>Plot test<a class="headerlink" href="#module-ProductionSimulation.logger.plot.plot_test" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.logger.plot.plot_test">
+<span id="plot-test"></span><h1>Plot test<a class="headerlink" href="#module-ontologysim.ProductionSimulation.logger.plot.plot_test" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.logger.plot.plot_test.Window">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.logger.plot.plot_test.</span></code><code class="sig-name descname"><span class="pre">Window</span></code><a class="headerlink" href="#ProductionSimulation.logger.plot.plot_test.Window" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.plot_test.Window">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.logger.plot.plot_test.</span></code><code class="sig-name descname"><span class="pre">Window</span></code><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.plot_test.Window" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>depreciated, only used for setting up the Plot class</p>
 <dl class="py method">
-<dt id="ProductionSimulation.logger.plot.plot_test.Window.update">
-<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.plot_test.Window.update" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.plot_test.Window.update">
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.plot_test.Window.update" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.logger.plot.plot_test.Window.update_figure_with_new_value">
-<code class="sig-name descname"><span class="pre">update_figure_with_new_value</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yval</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.logger.plot.plot_test.Window.update_figure_with_new_value" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.logger.plot.plot_test.Window.update_figure_with_new_value">
+<code class="sig-name descname"><span class="pre">update_figure_with_new_value</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yval</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.logger.plot.plot_test.Window.update_figure_with_new_value" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

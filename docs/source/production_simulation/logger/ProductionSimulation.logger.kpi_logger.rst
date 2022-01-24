@@ -2,7 +2,7 @@
 Logger
 -----------------------------------------
 
-.. automodule:: ProductionSimulation.logger.Logger
+.. automodule:: ontologysim.ProductionSimulation.logger.Logger
    :members:
    :undoc-members:
    :show-inheritance:
@@ -10,7 +10,7 @@ Logger
 Sub logger
 --------------------------------------------------------
 
-.. automodule:: ProductionSimulation.logger.SubLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.SubLogger
    :members:
    :undoc-members:
    :show-inheritance:
@@ -29,7 +29,7 @@ Machine logger
    * - Basic
      - ["A", "AE", "TE", "UE", "SeR, E, OEE, NEE"]
 
-.. automodule:: ProductionSimulation.logger.MachineLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.MachineLogger
    :members:
    :undoc-members:
    :show-inheritance:
@@ -49,7 +49,7 @@ Transporter logger
    * - Basic
      - []
 
-.. automodule:: ProductionSimulation.logger.TransporterLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.TransporterLogger
    :members:
    :undoc-members:
    :show-inheritance:
@@ -68,7 +68,7 @@ Product analyse logger
    * - Basic
      - ["TR"]
 
-.. automodule:: ProductionSimulation.logger.ProductAnalyseLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.ProductAnalyseLogger
    :members:
    :undoc-members:
    :show-inheritance:
@@ -87,7 +87,7 @@ Queue fill level logger
    * - Basic
      - []
 
-.. automodule:: ProductionSimulation.logger.QueueFillLevelLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.QueueFillLevelLogger
    :members:
    :undoc-members:
    :show-inheritance:
@@ -106,7 +106,7 @@ Simulation logger
    * - Basic
      - ["AR", "PR"]
 
-.. automodule:: ProductionSimulation.logger.SimLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.SimLogger
    :members:
    :undoc-members:
    :show-inheritance:
@@ -115,7 +115,7 @@ Transporter distribution logger
 --------------------------------------------------------
 
 
-.. automodule:: ProductionSimulation.logger.TransporterDistributionLogger
+.. automodule:: ontologysim.ProductionSimulation.logger.TransporterDistributionLogger
    :members:
    :undoc-members:
    :show-inheritance:

@@ -57,7 +57,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../simulation.html#all-around-sim-core">All around sim core</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../simulation.html#product-related">Product related</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Product</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-ProductionSimulation.sim.ProductType">Product type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ontologysim.ProductionSimulation.sim.ProductType">Product type</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../simulation.html#transporter">Transporter</a></li>
@@ -110,16 +110,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.sim.Product">
-<span id="product"></span><h1>Product<a class="headerlink" href="#module-ProductionSimulation.sim.Product" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.sim.Product">
+<span id="product"></span><h1>Product<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.Product" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.Product.Product">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.Product.</span></code><code class="sig-name descname"><span class="pre">Product</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.Product.</span></code><code class="sig-name descname"><span class="pre">Product</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>handles the product onto</p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.createProduct">
-<code class="sig-name descname"><span class="pre">createProduct</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.createProduct" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.createProduct">
+<code class="sig-name descname"><span class="pre">createProduct</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.createProduct" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates product in onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -132,8 +132,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.endBlockForTransporter">
-<code class="sig-name descname"><span class="pre">endBlockForTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.endBlockForTransporter" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.endBlockForTransporter">
+<code class="sig-name descname"><span class="pre">endBlockForTransporter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.endBlockForTransporter" title="Permalink to this definition">¶</a></dt>
 <dd><p>when a product is set to a deadlock queue, it gets blocked for transportation. this method removes the transporter blocking.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -143,8 +143,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.evaluateFinishedProduct">
-<code class="sig-name descname"><span class="pre">evaluateFinishedProduct</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.evaluateFinishedProduct" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.evaluateFinishedProduct">
+<code class="sig-name descname"><span class="pre">evaluateFinishedProduct</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.evaluateFinishedProduct" title="Permalink to this definition">¶</a></dt>
 <dd><p>handles the finishing of a product, triggers a order release process</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -154,8 +154,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.getNextProcess">
-<code class="sig-name descname"><span class="pre">getNextProcess</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.getNextProcess" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.getNextProcess">
+<code class="sig-name descname"><span class="pre">getNextProcess</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.getNextProcess" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates the next process in the pnml-net</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -168,8 +168,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.getSuitableAndAvailableMachine">
-<code class="sig-name descname"><span class="pre">getSuitableAndAvailableMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">process_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.getSuitableAndAvailableMachine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.getSuitableAndAvailableMachine">
+<code class="sig-name descname"><span class="pre">getSuitableAndAvailableMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">process_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.getSuitableAndAvailableMachine" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates all suitabel machines</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -182,14 +182,14 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.init_number_of_products">
-<code class="sig-name descname"><span class="pre">init_number_of_products</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.init_number_of_products" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.init_number_of_products">
+<code class="sig-name descname"><span class="pre">init_number_of_products</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.init_number_of_products" title="Permalink to this definition">¶</a></dt>
 <dd><p>calculates the start number of products and the logging number of product</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.setStartTime">
-<code class="sig-name descname"><span class="pre">setStartTime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.setStartTime" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.setStartTime">
+<code class="sig-name descname"><span class="pre">setStartTime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.setStartTime" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets start of production</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -202,8 +202,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Product.Product.transformToDict">
-<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Product.Product.transformToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Product.Product.transformToDict">
+<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Product.Product.transformToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform to dict
 :param id: string, one label or “all”
 :return:</p>
@@ -212,16 +212,16 @@
 </dd></dl>
 
 </div>
-<div class="section" id="module-ProductionSimulation.sim.ProductType">
-<span id="product-type"></span><h1>Product type<a class="headerlink" href="#module-ProductionSimulation.sim.ProductType" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ontologysim.ProductionSimulation.sim.ProductType">
+<span id="product-type"></span><h1>Product type<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.ProductType" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.ProductType.ProductType">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.ProductType.</span></code><code class="sig-name descname"><span class="pre">ProductType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.ProductType.</span></code><code class="sig-name descname"><span class="pre">ProductType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>handles the petri nets and the production process onto</p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.createProductType">
-<code class="sig-name descname"><span class="pre">createProductType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.createProductType" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.createProductType">
+<code class="sig-name descname"><span class="pre">createProductType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.createProductType" title="Permalink to this definition">¶</a></dt>
 <dd><p>create product type and the product tree
 :param product_type_config:
 :param process_config:
@@ -229,16 +229,16 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.getCompleteProductTypePath">
-<code class="sig-name descname"><span class="pre">getCompleteProductTypePath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.getCompleteProductTypePath" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.getCompleteProductTypePath">
+<code class="sig-name descname"><span class="pre">getCompleteProductTypePath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.getCompleteProductTypePath" title="Permalink to this definition">¶</a></dt>
 <dd><p>get complete product type path for api
 :param label: string
 :return: dict</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.getProdProcessId">
-<code class="sig-name descname"><span class="pre">getProdProcessId</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.getProdProcessId" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.getProdProcessId">
+<code class="sig-name descname"><span class="pre">getProdProcessId</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.getProdProcessId" title="Permalink to this definition">¶</a></dt>
 <dd><p>all process ids in the pnml net</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -248,39 +248,39 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.init_percentage_dict">
-<code class="sig-name descname"><span class="pre">init_percentage_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.init_percentage_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.init_percentage_dict">
+<code class="sig-name descname"><span class="pre">init_percentage_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.init_percentage_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>initialize percentage dict of how far the product is processed, given a state
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.iterateAverageProductTree">
-<code class="sig-name descname"><span class="pre">iterateAverageProductTree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.iterateAverageProductTree" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.iterateAverageProductTree">
+<code class="sig-name descname"><span class="pre">iterateAverageProductTree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.iterateAverageProductTree" title="Permalink to this definition">¶</a></dt>
 <dd><p>get the average product tree length
 :param state: onto
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.iterateMaxProductTree">
-<code class="sig-name descname"><span class="pre">iterateMaxProductTree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.iterateMaxProductTree" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.iterateMaxProductTree">
+<code class="sig-name descname"><span class="pre">iterateMaxProductTree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.iterateMaxProductTree" title="Permalink to this definition">¶</a></dt>
 <dd><p>get max product tree
 :param state:
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.iterateMinProductTree">
-<code class="sig-name descname"><span class="pre">iterateMinProductTree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.iterateMinProductTree" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.iterateMinProductTree">
+<code class="sig-name descname"><span class="pre">iterateMinProductTree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.iterateMinProductTree" title="Permalink to this definition">¶</a></dt>
 <dd><p>get the min product type tree
 :param state: onto
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.loadPetrNetFromString">
-<code class="sig-name descname"><span class="pre">loadPetrNetFromString</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.loadPetrNetFromString" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.loadPetrNetFromString">
+<code class="sig-name descname"><span class="pre">loadPetrNetFromString</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.loadPetrNetFromString" title="Permalink to this definition">¶</a></dt>
 <dd><p>deprecated
 when loading an existing owl file, then the data from the onto are added to the dict</p>
 <dl class="field-list simple">
@@ -294,8 +294,8 @@ when loading an existing owl file, then the data from the onto are added to the 
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.loadPetriNet">
-<code class="sig-name descname"><span class="pre">loadPetriNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.loadPetriNet" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.loadPetriNet">
+<code class="sig-name descname"><span class="pre">loadPetriNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.loadPetriNet" title="Permalink to this definition">¶</a></dt>
 <dd><p>depreciated
 loads petri net from path (pnml-file) and adds the date to product type onto
 checks the pnml net
@@ -311,8 +311,8 @@ saves the net in the dict variable, for faster acess</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.plotPetriNet">
-<code class="sig-name descname"><span class="pre">plotPetriNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">net</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_marking</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_marking</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.plotPetriNet" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.plotPetriNet">
+<code class="sig-name descname"><span class="pre">plotPetriNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">net</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_marking</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_marking</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.plotPetriNet" title="Permalink to this definition">¶</a></dt>
 <dd><p>deprecated
 method for plotting the pnml</p>
 <dl class="field-list simple">
@@ -330,8 +330,8 @@ method for plotting the pnml</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.ProductType.ProductType.transformToDict">
-<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.ProductType.ProductType.transformToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.ProductType.ProductType.transformToDict">
+<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.ProductType.ProductType.transformToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform to dict
 :param id: string one label or “all”
 :return:</p>

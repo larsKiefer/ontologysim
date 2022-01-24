@@ -109,16 +109,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.sim.Machine">
-<span id="machine"></span><h1>Machine<a class="headerlink" href="#module-ProductionSimulation.sim.Machine" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.sim.Machine">
+<span id="machine"></span><h1>Machine<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.Machine" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.Machine.Machine">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.Machine.</span></code><code class="sig-name descname"><span class="pre">Machine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.Machine.</span></code><code class="sig-name descname"><span class="pre">Machine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>python instance which handles the machine onto</p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.addMachineController">
-<code class="sig-name descname"><span class="pre">addMachineController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineController</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.addMachineController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.addMachineController">
+<code class="sig-name descname"><span class="pre">addMachineController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineController</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.addMachineController" title="Permalink to this definition">¶</a></dt>
 <dd><p>connects machine instance with controller</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -128,8 +128,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.addProcess">
-<code class="sig-name descname"><span class="pre">addProcess</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.addProcess" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.addProcess">
+<code class="sig-name descname"><span class="pre">addProcess</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.addProcess" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds a process to machine onto, creates process onto, each machine has it’S own process onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -143,8 +143,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.addProcessQueue">
-<code class="sig-name descname"><span class="pre">addProcessQueue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue_process_id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.addProcessQueue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.addProcessQueue">
+<code class="sig-name descname"><span class="pre">addProcessQueue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue_process_id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.addProcessQueue" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds (not create) the process queue to machine onto, place where the part is processed</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -157,8 +157,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.addQueue">
-<code class="sig-name descname"><span class="pre">addQueue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue_input_id_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue_output_id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.addQueue" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.addQueue">
+<code class="sig-name descname"><span class="pre">addQueue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue_input_id_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue_output_id_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.addQueue" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding queue to machine onto, queues must be already created, it does not create new queues</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -172,8 +172,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.addSetup">
-<code class="sig-name descname"><span class="pre">addSetup</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_up_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.addSetup" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.addSetup">
+<code class="sig-name descname"><span class="pre">addSetup</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machineInstance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_up_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.addSetup" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds setup to machine onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -186,8 +186,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.add_defect">
-<code class="sig-name descname"><span class="pre">add_defect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.add_defect" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.add_defect">
+<code class="sig-name descname"><span class="pre">add_defect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.add_defect" title="Permalink to this definition">¶</a></dt>
 <dd><p>add a defect onto to machine onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -200,8 +200,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.createMachine">
-<code class="sig-name descname"><span class="pre">createMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_config_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.createMachine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.createMachine">
+<code class="sig-name descname"><span class="pre">createMachine</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_config_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.createMachine" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a machine onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -217,8 +217,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.createWait">
-<code class="sig-name descname"><span class="pre">createWait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waiting_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.createWait" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.createWait">
+<code class="sig-name descname"><span class="pre">createWait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">waiting_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.createWait" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -234,8 +234,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.create_process">
-<code class="sig-name descname"><span class="pre">create_process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_onto_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.create_process" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.create_process">
+<code class="sig-name descname"><span class="pre">create_process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_onto_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">process_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.create_process" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -251,8 +251,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.create_set_up">
-<code class="sig-name descname"><span class="pre">create_set_up</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">process_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.create_set_up" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.create_set_up">
+<code class="sig-name descname"><span class="pre">create_set_up</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">process_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.create_set_up" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -267,8 +267,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.evaluateDefect">
-<code class="sig-name descname"><span class="pre">evaluateDefect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.evaluateDefect" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.evaluateDefect">
+<code class="sig-name descname"><span class="pre">evaluateDefect</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.evaluateDefect" title="Permalink to this definition">¶</a></dt>
 <dd><p>checks if the machine is defect, than the machine service event is created, otherwise,
 the given event will be processed</p>
 <dl class="field-list simple">
@@ -282,8 +282,8 @@ the given event will be processed</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.getAllMachine">
-<code class="sig-name descname"><span class="pre">getAllMachine</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.getAllMachine" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.getAllMachine">
+<code class="sig-name descname"><span class="pre">getAllMachine</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.getAllMachine" title="Permalink to this definition">¶</a></dt>
 <dd><p>list of all machines, better way would be to use the class central and save their machines</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -293,8 +293,8 @@ the given event will be processed</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.process">
-<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.process" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.process">
+<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.process" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>event_onto</strong> – </p>
@@ -303,8 +303,8 @@ the given event will be processed</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.setNextDefectTime">
-<code class="sig-name descname"><span class="pre">setNextDefectTime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.setNextDefectTime" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.setNextDefectTime">
+<code class="sig-name descname"><span class="pre">setNextDefectTime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.setNextDefectTime" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets the next defect time to the machine onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -317,8 +317,8 @@ the given event will be processed</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.set_up">
-<code class="sig-name descname"><span class="pre">set_up</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.set_up" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.set_up">
+<code class="sig-name descname"><span class="pre">set_up</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.set_up" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>event_onto</strong> – </p>
@@ -327,16 +327,16 @@ the given event will be processed</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.transformToDict">
-<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.transformToDict" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.transformToDict">
+<code class="sig-name descname"><span class="pre">transformToDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.transformToDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>transform to dict of one machine, or all
 :param id: label string
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.transform_process_id_into_process">
-<code class="sig-name descname"><span class="pre">transform_process_id_into_process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">process_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.transform_process_id_into_process" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.transform_process_id_into_process">
+<code class="sig-name descname"><span class="pre">transform_process_id_into_process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">process_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">machine_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.transform_process_id_into_process" title="Permalink to this definition">¶</a></dt>
 <dd><p>given label finds the suitable process onto</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -352,8 +352,8 @@ the given event will be processed</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.Machine.Machine.wait">
-<code class="sig-name descname"><span class="pre">wait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.Machine.Machine.wait" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.Machine.Machine.wait">
+<code class="sig-name descname"><span class="pre">wait</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.Machine.Machine.wait" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>event_onto</strong> – </p>

@@ -1,7 +1,7 @@
 Order release
 --------------------------------------------
 
-.. automodule:: ProductionSimulation.sim.OrderRelease
+.. automodule:: ontologysim.ProductionSimulation.sim.OrderRelease
    :members:
    :undoc-members:
    :show-inheritance:

@@ -14,7 +14,7 @@ The way how defects are handled:
 Repair service
 ------------------------------
 
-.. automodule:: ProductionSimulation.sim.RepairService.RepairService
+.. automodule:: ontologysim.ProductionSimulation.sim.RepairService.RepairService
    :members:
    :undoc-members:
    :show-inheritance:
@@ -22,7 +22,7 @@ Repair service
 Repair Service Machine
 ------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.sim.RepairService.RepairServiceMachine
+.. automodule:: ontologysim.ProductionSimulation.sim.RepairService.RepairServiceMachine
    :members:
    :undoc-members:
    :show-inheritance:
@@ -30,7 +30,7 @@ Repair Service Machine
 Repair Service Transporter
 ----------------------------------------------------------------------
 
-.. automodule:: ProductionSimulation.sim.RepairService.RepairServiceTransporter
+.. automodule:: ontologysim.ProductionSimulation.sim.RepairService.RepairServiceTransporter
    :members:
    :undoc-members:
    :show-inheritance:
@@ -38,7 +38,7 @@ Repair Service Transporter
 Defect
 --------------------------------------
 
-.. automodule:: ProductionSimulation.sim.Defect
+.. automodule:: ontologysim.ProductionSimulation.sim.Defect
    :members:
    :undoc-members:
    :show-inheritance:

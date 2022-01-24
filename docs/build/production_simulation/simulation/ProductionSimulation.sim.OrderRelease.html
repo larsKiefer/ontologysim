@@ -109,16 +109,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-ProductionSimulation.sim.OrderRelease">
-<span id="order-release"></span><h1>Order release<a class="headerlink" href="#module-ProductionSimulation.sim.OrderRelease" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-ontologysim.ProductionSimulation.sim.OrderRelease">
+<span id="order-release"></span><h1>Order release<a class="headerlink" href="#module-ontologysim.ProductionSimulation.sim.OrderRelease" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="ProductionSimulation.sim.OrderRelease.OrderRelease">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ProductionSimulation.sim.OrderRelease.</span></code><code class="sig-name descname"><span class="pre">OrderRelease</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.OrderRelease.OrderRelease" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ontologysim.ProductionSimulation.sim.OrderRelease.</span></code><code class="sig-name descname"><span class="pre">OrderRelease</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simCore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>handles the order release process at the starting queues</p>
 <dl class="py method">
-<dt id="ProductionSimulation.sim.OrderRelease.OrderRelease.addOrderReleaseController">
-<code class="sig-name descname"><span class="pre">addOrderReleaseController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">orderReleaseController</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.OrderRelease.OrderRelease.addOrderReleaseController" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.addOrderReleaseController">
+<code class="sig-name descname"><span class="pre">addOrderReleaseController</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">orderReleaseController</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.addOrderReleaseController" title="Permalink to this definition">¶</a></dt>
 <dd><p>combines Order release controller with controller</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -128,8 +128,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.OrderRelease.OrderRelease.create_release">
-<code class="sig-name descname"><span class="pre">create_release</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_parts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.OrderRelease.OrderRelease.create_release" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.create_release">
+<code class="sig-name descname"><span class="pre">create_release</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_onto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_parts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.create_release" title="Permalink to this definition">¶</a></dt>
 <dd><p>creating a release event and reduces the number of todos in task</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -143,8 +143,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.OrderRelease.OrderRelease.release">
-<code class="sig-name descname"><span class="pre">release</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.OrderRelease.OrderRelease.release" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.release">
+<code class="sig-name descname"><span class="pre">release</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_onto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.release" title="Permalink to this definition">¶</a></dt>
 <dd><p>adding parts to the start queue</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -154,8 +154,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="ProductionSimulation.sim.OrderRelease.OrderRelease.setMaxNumber">
-<code class="sig-name descname"><span class="pre">setMaxNumber</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">percent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProductionSimulation.sim.OrderRelease.OrderRelease.setMaxNumber" title="Permalink to this definition">¶</a></dt>
+<dt id="ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.setMaxNumber">
+<code class="sig-name descname"><span class="pre">setMaxNumber</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">percent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ontologysim.ProductionSimulation.sim.OrderRelease.OrderRelease.setMaxNumber" title="Permalink to this definition">¶</a></dt>
 <dd><p>given a percentage of the fill level of the production the max number of parts are getting calculated
 the start and end queues are not considered, the process queue positions, were count</p>
 <dl class="field-list simple">

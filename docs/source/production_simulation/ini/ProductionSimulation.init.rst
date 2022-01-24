@@ -3,7 +3,7 @@
 Initializer
 --------------------------------------------
 
-.. automodule:: ProductionSimulation.init.Initializer
+.. automodule:: ontologysim.ProductionSimulation.init.Initializer
    :members:
    :undoc-members:
    :show-inheritance:
@@ -11,7 +11,7 @@ Initializer
 Transform Logger ini
 --------------------------------------------
 
-.. automodule:: ProductionSimulation.init.TransformLoggerIni
+.. automodule:: ontologysim.ProductionSimulation.init.TransformLoggerIni
    :members:
    :undoc-members:
    :show-inheritance:
@@ -19,7 +19,7 @@ Transform Logger ini
 Transform Production ini
 --------------------------------------------
 
-.. automodule:: ProductionSimulation.init.TransformProductionIni
+.. automodule:: ontologysim.ProductionSimulation.init.TransformProductionIni
    :members:
    :undoc-members:
    :show-inheritance:
@@ -27,7 +27,7 @@ Transform Production ini
 Petrinet generator
 --------------------------------------------
 
-.. automodule:: ProductionSimulation.init.petrinet_generator
+.. automodule:: ontologysim.ProductionSimulation.init.petrinet_generator
    :members:
    :undoc-members:
    :show-inheritance:
@@ -37,7 +37,7 @@ Petrinet generator
 API: Initializer Producttype
 --------------------------------------------
 
-.. automodule:: ProductionSimulation.init.API.IntitializerProducttypeAPI
+.. automodule:: ontologysim.ProductionSimulation.init.API.IntitializerProducttypeAPI
    :members:
    :undoc-members:
    :show-inheritance:
