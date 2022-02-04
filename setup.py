@@ -18,12 +18,12 @@ assert len(install_requires) > 0
 
 setup(
     name='ontologysim',
-    version='1.0.1',
     license='GPLv3',
     author="Lars Kiefer, Marvin Carl May",
     author_email='lars.kiefer@alumni.kit.edu',
     packages=find_packages( exclude=("tests","example","ontologysim/testPlayground")),
     package_dir={"ontologysim":"ontologysim"},
+    package_data={'': ['*.ini'],},
     url='https://github.com/larsKiefer/ontologysim',
     description='',
     project_urls ={

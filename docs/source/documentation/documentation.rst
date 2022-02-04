@@ -25,3 +25,11 @@ SwaggerUI
 -----------
 
 For Flask, swaggerUI was also set up. All swaggerUI json files are saved in ```/Flask/static``
+
+Pypi
+-----
+
+.. code-block:: bash
+
+    python setup.py sdist
+    twine upload dist/*

@@ -54,7 +54,7 @@ class Plot:
         else:
             return
 
-        axis_config_path = PathTest.check_file_path(self.y_lookup_tabel)
+        axis_config_path = PathTest.check_file_path_libary(self.y_lookup_tabel)
 
         # Read from Configuration File
         axis_conf = init_utilities.Init(axis_config_path)
@@ -101,42 +101,47 @@ class Plot:
             self.logger_data.append(
                 {'sub_logger': sub_logger, 'type': setting["type"], 'x': [0], 'y': [0], 'y_type': "",
                  'object_name': setting['object_name'], 'kpi': setting['kpi'], 'axis': None, 'line': ''})
-
+            listEmpty=False
             if not setting['kpi'] in self.logger_data[-1]['sub_logger'].kpi_list and not setting['kpi'] in \
                                                                                          self.logger_data[-1][
                                                                                              'sub_logger'].basic_kpi_list:
-                raise Exception("kpi not found " + str(setting['object_name']) + " " + str(setting['kpi']) + " " + str(
+                listEmpty = True
+                raise Warning("kpi not found " + str(setting['object_name']) + " " + str(setting['kpi']) + " " + str(
                     setting['type']))
 
             if not setting['object_name'] in list(self.logger_data[-1]['sub_logger'].time_kpis.keys()):
-                raise Exception("kpi not found " + str(setting['object_name']) + " " + str(setting['kpi']) + " " + str(
+                listEmpty = True
+                raise Warning("evaluation2: kpi not found " + str(setting['object_name']) + " " + str(setting['kpi']) + " " + str(
                     setting['type']))
 
-
-
-            if setting['kpi'] in self.number_time_kpis:
-                if number_time_axis == None and number_of_axis == 0:
-                    number_time_axis = self.fig.add_subplot(111)
-                    number_time_axis.grid()
-                elif number_time_axis == None:
-                    number_time_axis = percentage_axis.twinx()
-                self.logger_data[-1]['axis'] = number_time_axis
-                self.logger_data[-1]['y_type'] = "time"
-
-            elif setting['kpi'] in self.percentage_kpis:
-
-                if percentage_axis == None and number_of_axis == 0:
-                    percentage_axis = self.fig.add_subplot(111)
-                    percentage_axis.grid()
-
-                elif percentage_axis == None:
-                    percentage_axis = number_time_axis.twinx()
-                self.logger_data[-1]['axis'] = percentage_axis
-                self.logger_data[-1]['y_type'] = "percentage"
-
+            if(listEmpty):
+                pass
             else:
-                raise Exception(setting['kpi'] + " not defined in y_lookup_tabel.ini")
-            number_of_axis += 1
+
+
+                if setting['kpi'] in self.number_time_kpis:
+                    if number_time_axis == None and number_of_axis == 0:
+                        number_time_axis = self.fig.add_subplot(111)
+                        number_time_axis.grid()
+                    elif number_time_axis == None:
+                        number_time_axis = percentage_axis.twinx()
+                    self.logger_data[-1]['axis'] = number_time_axis
+                    self.logger_data[-1]['y_type'] = "time"
+
+                elif setting['kpi'] in self.percentage_kpis:
+
+                    if percentage_axis == None and number_of_axis == 0:
+                        percentage_axis = self.fig.add_subplot(111)
+                        percentage_axis.grid()
+
+                    elif percentage_axis == None:
+                        percentage_axis = number_time_axis.twinx()
+                    self.logger_data[-1]['axis'] = percentage_axis
+                    self.logger_data[-1]['y_type'] = "percentage"
+
+                else:
+                    raise Exception(setting['kpi'] + " not defined in y_lookup_tabel.ini")
+                number_of_axis += 1
 
 
     def startPlot(self,time):

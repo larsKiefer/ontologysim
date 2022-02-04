@@ -20,15 +20,20 @@ from ontologysim.Flask.FlaskApp import FlaskAppWrapper
 from ontologysim.ProductionSimulation.init.Initializer import Initializer;
 
 
-init=Initializer(current_dir)
 
-production_config_path="/ontologysim/Flask/Assets/DefaultFiles/production_config_lvl3.ini"
-owl_config_path="/ontologysim/Flask/Assets/DefaultFiles/owl_config.ini"
-controller_config_path="/ontologysim/Flask/Assets/DefaultFiles/controller_config.ini"
-logger_config_path="/ontologysim/Flask/Assets/DefaultFiles/logger_config_lvl3.ini"
 
-if( __name__ == "__main__"):
+def main():
+    init = Initializer(current_dir)
 
-    a = FlaskAppWrapper('wrap',init,{'production':production_config_path,'owl':owl_config_path,'controller':controller_config_path,'logger':logger_config_path})
+    production_config_path = "/ontologysim/Flask/Assets/DefaultFiles/production_config_lvl3.ini"
+    owl_config_path = "/ontologysim/Flask/Assets/DefaultFiles/owl_config.ini"
+    controller_config_path = "/ontologysim/Flask/Assets/DefaultFiles/controller_config.ini"
+    logger_config_path = "/ontologysim/Flask/Assets/DefaultFiles/logger_config_lvl3.ini"
+    a = FlaskAppWrapper('wrap', init, {'production': production_config_path, 'owl': owl_config_path,
+                                       'controller': controller_config_path, 'logger': logger_config_path})
     a.addSwaggerUI()
     a.run()
+
+if( __name__ == "__main__"):
+    main()
+

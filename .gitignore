@@ -18,3 +18,4 @@ ci/*
 /run.log
 /tests/run.log
 /ontologysim/Flask/run.log
+/configFolder/

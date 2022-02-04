@@ -78,7 +78,7 @@ class Plot:
 
         #look up file to get information about the type (percentage, number..) of the kpi
         self.y_lookup_tabel = "/ontologysim/ProductionSimulation/logger/plot/y_lookup_tabel.ini"
-        axis_config_path = PathTest.check_file_path(self.y_lookup_tabel)
+        axis_config_path = PathTest.check_file_path_libary(self.y_lookup_tabel)
 
         # Read from Configuration File
         axis_conf = init_utilities.Init(axis_config_path)
