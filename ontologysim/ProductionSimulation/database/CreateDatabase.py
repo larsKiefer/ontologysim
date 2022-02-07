@@ -37,11 +37,11 @@ PathTest.current_main_dir = current_dir
 dbPath = "sqlite:///ontologysim/ProductionSimulation/database/SimulationRun.db"
 
 
-db = DataBase(dbPath)
+db = DataBase(dbPath,createDB=True)
 
 Base.metadata.create_all(db.db_engine)
 
-defaultUserPath = PathTest.check_file_path("/ontologysim/ProductionSimulation/database/defaultUser.json")
+defaultUserPath = PathTest.check_file_path("./ontologysim/ProductionSimulation/database/defaultUser.json")
 with open(defaultUserPath,"r") as f:
     userJSON=ast.literal_eval(f.read())
 
@@ -54,4 +54,4 @@ if not user:
    db.session.add(user)
    db.session.commit()
 
-
+print("DB creation successfull")

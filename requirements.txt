@@ -20,3 +20,4 @@ pyjwt
 bcrypt
 sphinx_rtd_theme
 sphinx-markdown-tables
+sqlalchemy_utils

@@ -8,7 +8,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 # Global Variables
 from sqlalchemy.orm import sessionmaker
-
+from sqlalchemy import create_engine
+from sqlalchemy_utils import database_exists, create_database
 from ontologysim.ProductionSimulation.database.models.Base import Base
 from ontologysim.ProductionSimulation.utilities.path_utilities import PathTest
 
@@ -24,7 +25,7 @@ class DataBase:
     database object for creating methadata and session
     """
 
-    def __init__(self, dataBaseURL, username='', password='', dbname=''):
+    def __init__(self, dataBaseURL, username='', password='', dbname='',createDB=False):
         """
         create session and metadata
         :param dataBaseURL:
@@ -36,6 +37,18 @@ class DataBase:
         self.db_engine = None
         self.metadata = None
         self.session = None
+        if(createDB):
+            dataBaseURL = dataBaseURL.replace("sqlite://", "")
+            dataBaseURL = PathTest.check_dir_path(dataBaseURL)
+            if os.name == 'nt':
+                dataBaseURL = "sqlite:////"+os.path.normpath(os.path.join(*(os.path.abspath(dataBaseURL).split(os.path.sep)[1:])))
+            else:
+                dataBaseURL="sqlite:///"+dataBaseURL
+            engine = db.create_engine(dataBaseURL)
+            if not database_exists(engine.url):
+                create_database(engine.url)
+
+
         if dataBaseURL != "":
             dataBaseURL = dataBaseURL.replace("sqlite://","")
 
