@@ -35,6 +35,7 @@ class ProductionAction(APIAction):
         if (len(requestBody) ==0):
             return self.response400BadRequest("request body is not correct")
         requestDict =json.loads(requestBody)
+
         if("data" in requestDict.keys()):
 
             productionData=requestDict["data"]
@@ -50,7 +51,7 @@ class ProductionAction(APIAction):
             simCore = initializer.s
             try:
 
-                sim_conf = init_utilities.IniDict(productionData)
+                sim_conf = init_utilities.IniString(productionData)
 
                 sim_conf.read_ini_file()
 
@@ -65,6 +66,7 @@ class ProductionAction(APIAction):
 
                 self.response = self.response200OK(json.dumps(responseDict))
             except Exception as err:
+
                 self.response = self.response400BadRequest(str(err))
 
         else:

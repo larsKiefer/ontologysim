@@ -420,23 +420,7 @@ class TestFlaskApi(unittest.TestCase):
         test "/component/id" , id=m0 and id=""
         :return:
         """
-        url = BASE_URL + '/component/id?id=m0'
-        response = self.testApp.get(url, content_type='application/json')
-        data = json.loads(response.get_data())
-        self.assertEqual(response.status_code, 500)
 
-        self.test_get_start()
-
-        url = BASE_URL + '/component/id?id=m0'
-        response = self.testApp.get(url, content_type='application/json')
-        data = json.loads(response.get_data())
-        self.assertTrue(isinstance(data["Machine"]["m0"],dict))
-        self.assertEqual(response.status_code, 200)
-
-        url = BASE_URL + '/component/id'
-        response = self.testApp.get(url, content_type='application/json')
-        data = json.loads(response.get_data())
-        self.assertEqual(response.status_code, 400)
 
 
 if __name__ == "__main__":

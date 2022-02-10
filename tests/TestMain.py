@@ -10,14 +10,14 @@ parent_parent_dir = os.path.dirname(parent_dir)
 sys.path.insert(0, parent_dir)
 sys.path.insert(0,parent_parent_dir)
 
-from tests.testCases import FlaskAPITest, MainTest, MultipleRunTests
+from tests.testCases import FlaskAPITest, MainTest, MultipleRunTests,CrateDataBaseTest
 
 # load all testcases from given module
 suite = unittest.TestSuite()
 suite.addTest(unittest.TestLoader().loadTestsFromModule(FlaskAPITest))
 suite.addTest(unittest.TestLoader().loadTestsFromModule(MainTest))
 suite.addTest(unittest.TestLoader().loadTestsFromModule(MultipleRunTests))
-
+suite.addTest(unittest.TestLoader().loadTestsFromModule(CrateDataBaseTest))
 
 
 # run all tests with verbosity
