@@ -106,7 +106,7 @@ the following types are defined: machine, transporter, queue, product, transport
     plot=False
     number_of_points_x=15
     #max 3 values
-    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUIT','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
+    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUITp','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
 
 
 Save
@@ -244,7 +244,7 @@ the following types are defined: machine, transporter, queue, product, transport
     plot=False
     number_of_points_x=15
     #max 3 values
-    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUIT','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
+    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUITp','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
 
 Save
 ++++++++++
@@ -315,7 +315,7 @@ this file is available in ``example/config/logger_config_3.ini``
     plot=False
     number_of_points_x=15
     #max 3 values
-    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUIT','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
+    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUITp','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
 
     [Save]
     csv = True
@@ -347,7 +347,7 @@ this file is available in ``example/config/logger_config_2.ini``
     plot=False
     number_of_points_x=15
     #max 3 values
-    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUIT','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
+    data=[{'object_name':'all','kpi':'AE','type':'machine'},{'object_name':'all','kpi':'AUITp','type':'transporter'},{'object_name':'all','kpi':'AOET','type':'product'}]
 
 
     [Save]

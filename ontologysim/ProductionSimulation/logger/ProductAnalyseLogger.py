@@ -153,7 +153,7 @@ class ProductAnalyseLogger(SubLogger.SubLogger):
         time_index = int(math.floor(time / self.logger.time_intervall) - self.start_logging_multiple)
 
         if(self.isTimeLogging()):
-            if len(self.time_kpis["time"]) < math.ceil(time / self.logger.time_intervall) - math.floor(
+            if len(self.time_kpis["time"]) <= math.ceil(time / self.logger.time_intervall) - math.floor(
                     self.logger.start_time_logging / self.logger.time_intervall):
                 product_type_list = [product_type.name for product_type in
                                      self.logger.simCore.onto.search(type=self.logger.simCore.central.product_type_class)]
@@ -282,8 +282,10 @@ class ProductAnalyseLogger(SubLogger.SubLogger):
             # if time - dict_element["AOET"] < self.logger.start_time_logging:
             #    dict_element["AOET"] = time - self.logger.start_time_logging
             if (self.isTimeLogging()):
+                #print("before addTimeElement",time,time_index,self.product_kpis[product_name]["ProductType"])
                 self.addTimeElement(self.product_kpis[product_name]["ProductType"], ['AOET'], time, dict_element["AOET"])
-
+                #print("time_index",time_index,self.product_kpis[product_name]["ProductType"])
+                #print("len",len(self.number_of_products_time[self.product_kpis[product_name]["ProductType"]]))
                 self.number_of_products_time[self.product_kpis[product_name]["ProductType"]][time_index] += 1
                 self.number_of_products_time['all'][time_index] += 1
 

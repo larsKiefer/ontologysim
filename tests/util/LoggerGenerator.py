@@ -26,9 +26,10 @@ class LoggerGenerator(Generator):
         logger_config = configparser.ConfigParser()
         lvl="lvl3"
         logger_config["Type"] = self.addType(lvl)
-        logger_config['KPIs'] = self.addKPIs()
+        addKpis = self.addKPIs()
+        logger_config['KPIs'] = addKpis
         logger_config["ConfigIni"] = self.addConfigIni()
-        logger_config["Plot"] = self.addPlot()
+        logger_config["Plot"] = self.addPlot(addKpis)
         logger_config["Save"] = self.addSave()
 
         return logger_config
@@ -62,19 +63,21 @@ class LoggerGenerator(Generator):
 
         return config
 
-    def addPlot(self):
+    def addPlot(self,kpiConfig):
         """
         define plot settings
 
         :return: dict
         """
         config = {}
-
-        config["plot"] = True if self.randomDistribution.random()>0.5 else False
+        if(kpiConfig["log_time"]==True):
+            config["plot"] = True if self.randomDistribution.random()>0.7 else False
+        else:
+            config["plot"] = False
         config["number_of_points_x"] = 15
         # max 3 values
         config["data"] = [{'object_name': 'all', 'kpi': 'AE', 'type': 'machine'},
-                {'object_name': 'all', 'kpi': 'AUIT', 'type': 'transporter'},
+                {'object_name': 'all', 'kpi': 'AUITp', 'type': 'transporter'},
                 {'object_name': 'all', 'kpi': 'AOET', 'type': 'product'}]
 
         return config
