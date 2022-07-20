@@ -6,14 +6,16 @@ import sys
 
 from owlready2 import get_ontology
 
-from ontologysim.Flask.Actions.UtilMethods.StateStorage import StateStorage
-from ontologysim.ProductionSimulation.database.DataBase import DataBase
-from ontologysim.ProductionSimulation.sim.Position import Position
+
 
 
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
+
+from ontologysim.Flask.Actions.UtilMethods.StateStorage import StateStorage
+from ontologysim.ProductionSimulation.database.DataBase import DataBase
+from ontologysim.ProductionSimulation.sim.Position import Position
 
 from ontologysim.ProductionSimulation.init.TransformProductionIni import TransformProductionIni
 from ontologysim.ProductionSimulation.init.TransformLoggerIni import TransformLoggerIni

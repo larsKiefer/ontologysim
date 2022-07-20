@@ -1,0 +1,1071 @@
+INFO:root:30.03.2022 18:02:42
+ERROR:root:{"number": 0, "message": "[\"{'production': '/tests/iniFiles/process1/production.ini', 'config': '/tests/iniFiles/process1/owl.ini', 'controller': '/tests/iniFiles/process1/controller.ini', 'logger': '/tests/iniFiles/process1/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.0, 'state3': 0.33333333333333337, 'state4': 0.6666666666666667, 'state5': 0.33333333333333337, 'state6': 0.6666666666666667}, 'p_t1': {'sink': 1.0, 'source': 0, 'state9': 0.25, 'state10': 0.5, 'state11': 0.75}, 'p_t2': {'sink': 1.0, 'source': 0, 'state14': 0.5}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 110, in initPlot\r\n    setting['type']))\r\nWarning: kpi not found all AUIT transporter\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process1/production.ini', 'config': '/tests/iniFiles/process1/owl.ini', 'controller': '/tests/iniFiles/process1/controller.ini', 'logger': '/tests/iniFiles/process1/logger.ini'}\""}
+INFO:root:simulation run 0 finished
+ERROR:root:{"number": 1, "message": "[\"{'production': '/tests/iniFiles/process2/production.ini', 'config': '/tests/iniFiles/process2/owl.ini', 'controller': '/tests/iniFiles/process2/controller.ini', 'logger': '/tests/iniFiles/process2/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.33333333333333337, 'state3': 0.6666666666666667}, 'p_t1': {'sink': 1.0, 'source': 0, 'state6': 0.5, 'state7': 0.5}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process2/production.ini', 'config': '/tests/iniFiles/process2/owl.ini', 'controller': '/tests/iniFiles/process2/controller.ini', 'logger': '/tests/iniFiles/process2/logger.ini'}\""}
+INFO:root:simulation run 1 finished
+ERROR:root:{"number": 2, "message": "[\"{'production': '/tests/iniFiles/process3/production.ini', 'config': '/tests/iniFiles/process3/owl.ini', 'controller': '/tests/iniFiles/process3/controller.ini', 'logger': '/tests/iniFiles/process3/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.25, 'state3': 0.5, 'state4': 0.75}, 'p_t1': {'sink': 1.0, 'source': 0, 'state7': 0.25, 'state8': 0.5, 'state9': 0.75}, 'p_t2': {'sink': 1.0, 'source': 0, 'state12': 0.5}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process3/production.ini', 'config': '/tests/iniFiles/process3/owl.ini', 'controller': '/tests/iniFiles/process3/controller.ini', 'logger': '/tests/iniFiles/process3/logger.ini'}\""}
+INFO:root:simulation run 2 finished
+ERROR:root:{"number": 3, "message": "[\"{'production': '/tests/iniFiles/process4/production.ini', 'config': '/tests/iniFiles/process4/owl.ini', 'controller': '/tests/iniFiles/process4/controller.ini', 'logger': '/tests/iniFiles/process4/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.5, 'state3': 0.0, 'state4': 0.5}, 'p_t1': {'sink': 1.0, 'source': 0, 'state7': 0.25, 'state8': 0.5, 'state9': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process4/production.ini', 'config': '/tests/iniFiles/process4/owl.ini', 'controller': '/tests/iniFiles/process4/controller.ini', 'logger': '/tests/iniFiles/process4/logger.ini'}\""}
+INFO:root:simulation run 3 finished
+ERROR:root:{"number": 4, "message": "[\"{'production': '/tests/iniFiles/process5/production.ini', 'config': '/tests/iniFiles/process5/owl.ini', 'controller': '/tests/iniFiles/process5/controller.ini', 'logger': '/tests/iniFiles/process5/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.5, 'state3': -0.5, 'state4': 0.0, 'state5': 0.5}, 'p_t1': {'sink': 1.0, 'source': 0, 'state8': 0.25, 'state9': 0.5, 'state10': 0.75}, 'p_t2': {'sink': 1.0, 'source': 0, 'state13': 0.0, 'state14': 0.5, 'state15': 0.5}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process5/production.ini', 'config': '/tests/iniFiles/process5/owl.ini', 'controller': '/tests/iniFiles/process5/controller.ini', 'logger': '/tests/iniFiles/process5/logger.ini'}\""}
+INFO:root:simulation run 4 finished
+ERROR:root:{"number": 5, "message": "[\"{'production': '/tests/iniFiles/process6/production.ini', 'config': '/tests/iniFiles/process6/owl.ini', 'controller': '/tests/iniFiles/process6/controller.ini', 'logger': '/tests/iniFiles/process6/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.33333333333333337, 'state3': 0.6666666666666667, 'state4': 0.0, 'state5': 0.33333333333333337, 'state6': 0.6666666666666667}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 110, in initPlot\r\n    setting['type']))\r\nWarning: kpi not found all AUIT transporter\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process6/production.ini', 'config': '/tests/iniFiles/process6/owl.ini', 'controller': '/tests/iniFiles/process6/controller.ini', 'logger': '/tests/iniFiles/process6/logger.ini'}\""}
+INFO:root:simulation run 5 finished
+ERROR:root:{"number": 6, "message": "[\"{'production': '/tests/iniFiles/process7/production.ini', 'config': '/tests/iniFiles/process7/owl.ini', 'controller': '/tests/iniFiles/process7/controller.ini', 'logger': '/tests/iniFiles/process7/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.0, 'state3': 0.33333333333333337, 'state4': 0.6666666666666667, 'state5': 0.33333333333333337, 'state6': 0.6666666666666667}, 'p_t1': {'sink': 1.0, 'source': 0, 'state9': 0.33333333333333337, 'state10': 0.6666666666666667}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process7/production.ini', 'config': '/tests/iniFiles/process7/owl.ini', 'controller': '/tests/iniFiles/process7/controller.ini', 'logger': '/tests/iniFiles/process7/logger.ini'}\""}
+INFO:root:simulation run 6 finished
+INFO:root:simulation run 7 finished
+INFO:root:simulation run 8 finished
+ERROR:root:{"number": 9, "message": "[\"{'production': '/tests/iniFiles/process10/production.ini', 'config': '/tests/iniFiles/process10/owl.ini', 'controller': '/tests/iniFiles/process10/controller.ini', 'logger': '/tests/iniFiles/process10/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.25, 'state3': 0.5, 'state4': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process10/production.ini', 'config': '/tests/iniFiles/process10/owl.ini', 'controller': '/tests/iniFiles/process10/controller.ini', 'logger': '/tests/iniFiles/process10/logger.ini'}\""}
+INFO:root:simulation run 9 finished
+ERROR:root:{"number": 10, "message": "[\"{'production': '/tests/iniFiles/process11/production.ini', 'config': '/tests/iniFiles/process11/owl.ini', 'controller': '/tests/iniFiles/process11/controller.ini', 'logger': '/tests/iniFiles/process11/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.25, 'state3': 0.5, 'state4': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 110, in initPlot\r\n    setting['type']))\r\nWarning: kpi not found all AUIT transporter\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process11/production.ini', 'config': '/tests/iniFiles/process11/owl.ini', 'controller': '/tests/iniFiles/process11/controller.ini', 'logger': '/tests/iniFiles/process11/logger.ini'}\""}
+INFO:root:simulation run 10 finished
+ERROR:root:{"number": 11, "message": "[\"{'production': '/tests/iniFiles/process12/production.ini', 'config': '/tests/iniFiles/process12/owl.ini', 'controller': '/tests/iniFiles/process12/controller.ini', 'logger': '/tests/iniFiles/process12/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.5, 'state3': 0.0, 'state4': 0.5}, 'p_t1': {'sink': 1.0, 'source': 0, 'state7': 0.25, 'state8': 0.5, 'state9': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process12/production.ini', 'config': '/tests/iniFiles/process12/owl.ini', 'controller': '/tests/iniFiles/process12/controller.ini', 'logger': '/tests/iniFiles/process12/logger.ini'}\""}
+INFO:root:simulation run 11 finished
+INFO:root:simulation run 12 finished
+ERROR:root:{"number": 13, "message": "[\"{'production': '/tests/iniFiles/process14/production.ini', 'config': '/tests/iniFiles/process14/owl.ini', 'controller': '/tests/iniFiles/process14/controller.ini', 'logger': '/tests/iniFiles/process14/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.25, 'state3': 0.5, 'state4': 0.75}, 'p_t1': {'sink': 1.0, 'source': 0, 'state7': 0.33333333333333337, 'state8': 0.6666666666666667, 'state9': 0.0, 'state10': 0.33333333333333337, 'state11': 0.6666666666666667}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 110, in initPlot\r\n    setting['type']))\r\nWarning: kpi not found all AUIT transporter\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process14/production.ini', 'config': '/tests/iniFiles/process14/owl.ini', 'controller': '/tests/iniFiles/process14/controller.ini', 'logger': '/tests/iniFiles/process14/logger.ini'}\""}
+INFO:root:simulation run 13 finished
+ERROR:root:{"number": 14, "message": "[\"{'production': '/tests/iniFiles/process15/production.ini', 'config': '/tests/iniFiles/process15/owl.ini', 'controller': '/tests/iniFiles/process15/controller.ini', 'logger': '/tests/iniFiles/process15/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.25, 'state3': 0.5, 'state4': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process15/production.ini', 'config': '/tests/iniFiles/process15/owl.ini', 'controller': '/tests/iniFiles/process15/controller.ini', 'logger': '/tests/iniFiles/process15/logger.ini'}\""}
+INFO:root:simulation run 14 finished
+INFO:root:30.03.2022 18:11:51
+INFO:root:simulation run 0 finished
+ERROR:root:{"number": 1, "message": "[\"{'production': '/tests/iniFiles/process2/production.ini', 'config': '/tests/iniFiles/process2/owl.ini', 'controller': '/tests/iniFiles/process2/controller.ini', 'logger': '/tests/iniFiles/process2/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.33333333333333337, 'state3': 0.6666666666666667}, 'p_t1': {'sink': 1.0, 'source': 0, 'state6': 0.5, 'state7': 0.5}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process2/production.ini', 'config': '/tests/iniFiles/process2/owl.ini', 'controller': '/tests/iniFiles/process2/controller.ini', 'logger': '/tests/iniFiles/process2/logger.ini'}\""}
+INFO:root:simulation run 1 finished
+ERROR:root:{"number": 2, "message": "[\"{'production': '/tests/iniFiles/process3/production.ini', 'config': '/tests/iniFiles/process3/owl.ini', 'controller': '/tests/iniFiles/process3/controller.ini', 'logger': '/tests/iniFiles/process3/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.25, 'state3': 0.5, 'state4': 0.75}, 'p_t1': {'sink': 1.0, 'source': 0, 'state7': 0.25, 'state8': 0.5, 'state9': 0.75}, 'p_t2': {'sink': 1.0, 'source': 0, 'state12': 0.5}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process3/production.ini', 'config': '/tests/iniFiles/process3/owl.ini', 'controller': '/tests/iniFiles/process3/controller.ini', 'logger': '/tests/iniFiles/process3/logger.ini'}\""}
+INFO:root:simulation run 2 finished
+ERROR:root:{"number": 3, "message": "[\"{'production': '/tests/iniFiles/process4/production.ini', 'config': '/tests/iniFiles/process4/owl.ini', 'controller': '/tests/iniFiles/process4/controller.ini', 'logger': '/tests/iniFiles/process4/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.5, 'state3': 0.0, 'state4': 0.5}, 'p_t1': {'sink': 1.0, 'source': 0, 'state7': 0.25, 'state8': 0.5, 'state9': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process4/production.ini', 'config': '/tests/iniFiles/process4/owl.ini', 'controller': '/tests/iniFiles/process4/controller.ini', 'logger': '/tests/iniFiles/process4/logger.ini'}\""}
+INFO:root:simulation run 3 finished
+ERROR:root:{"number": 4, "message": "[\"{'production': '/tests/iniFiles/process5/production.ini', 'config': '/tests/iniFiles/process5/owl.ini', 'controller': '/tests/iniFiles/process5/controller.ini', 'logger': '/tests/iniFiles/process5/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.5, 'state3': -0.5, 'state4': 0.0, 'state5': 0.5}, 'p_t1': {'sink': 1.0, 'source': 0, 'state8': 0.25, 'state9': 0.5, 'state10': 0.75}, 'p_t2': {'sink': 1.0, 'source': 0, 'state13': 0.0, 'state14': 0.5, 'state15': 0.5}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process5/production.ini', 'config': '/tests/iniFiles/process5/owl.ini', 'controller': '/tests/iniFiles/process5/controller.ini', 'logger': '/tests/iniFiles/process5/logger.ini'}\""}
+INFO:root:simulation run 4 finished
+INFO:root:simulation run 5 finished
+ERROR:root:{"number": 6, "message": "[\"{'production': '/tests/iniFiles/process7/production.ini', 'config': '/tests/iniFiles/process7/owl.ini', 'controller': '/tests/iniFiles/process7/controller.ini', 'logger': '/tests/iniFiles/process7/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.0, 'state3': 0.33333333333333337, 'state4': 0.6666666666666667, 'state5': 0.33333333333333337, 'state6': 0.6666666666666667}, 'p_t1': {'sink': 1.0, 'source': 0, 'state9': 0.33333333333333337, 'state10': 0.6666666666666667}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process7/production.ini', 'config': '/tests/iniFiles/process7/owl.ini', 'controller': '/tests/iniFiles/process7/controller.ini', 'logger': '/tests/iniFiles/process7/logger.ini'}\""}
+INFO:root:simulation run 6 finished
+INFO:root:simulation run 7 finished
+INFO:root:simulation run 8 finished
+ERROR:root:{"number": 9, "message": "[\"{'production': '/tests/iniFiles/process10/production.ini', 'config': '/tests/iniFiles/process10/owl.ini', 'controller': '/tests/iniFiles/process10/controller.ini', 'logger': '/tests/iniFiles/process10/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.25, 'state3': 0.5, 'state4': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process10/production.ini', 'config': '/tests/iniFiles/process10/owl.ini', 'controller': '/tests/iniFiles/process10/controller.ini', 'logger': '/tests/iniFiles/process10/logger.ini'}\""}
+INFO:root:simulation run 9 finished
+INFO:root:simulation run 10 finished
+ERROR:root:{"number": 11, "message": "[\"{'production': '/tests/iniFiles/process12/production.ini', 'config': '/tests/iniFiles/process12/owl.ini', 'controller': '/tests/iniFiles/process12/controller.ini', 'logger': '/tests/iniFiles/process12/logger.ini'}\"]\r\n{'p_t0': {'sink': 1.0, 'source': 0, 'state2': 0.5, 'state3': 0.0, 'state4': 0.5}, 'p_t1': {'sink': 1.0, 'source': 0, 'state7': 0.25, 'state8': 0.5, 'state9': 0.75}}\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 55, in <module>\r\n    main()\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py\", line 45, in main\r\n    init.addLoggerAndDataBasePathGiven(logger_config_path)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 518, in addLoggerAndDataBasePathGiven\r\n    self.addLogger(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\init\\Initializer.py\", line 557, in addLogger\r\n    self.s.logger.plot.initPlot(log_conf)\r\n  File \"C:\\Users\\larsk\\Development\\wbk\\ontologysim\\ontologysim\\ProductionSimulation\\logger\\plot\\Plot.py\", line 115, in initPlot\r\n    setting['type']))\r\nWarning: evaluation2: kpi not found all AE machine\r\n", "cmd": "python C:\\Users\\larsk\\Development\\wbk\\ontologysim/tests/processes/MainProcess.py  \"{'production': '/tests/iniFiles/process12/production.ini', 'config': '/tests/iniFiles/process12/owl.ini', 'controller': '/tests/iniFiles/process12/controller.ini', 'logger': '/tests/iniFiles/process12/logger.ini'}\""}
+INFO:root:simulation run 11 finished
+INFO:root:simulation run 12 finished
+INFO:root:30.03.2022 18:20:43
+ERROR:root:log_time
+INFO:root:simulation run 0 finished
+ERROR:root:log_time
+INFO:root:simulation run 1 finished
+ERROR:root:log_time
+INFO:root:simulation run 2 finished
+ERROR:root:log_time
+INFO:root:simulation run 3 finished
+ERROR:root:log_time
+INFO:root:simulation run 4 finished
+ERROR:root:log_time
+INFO:root:simulation run 5 finished
+ERROR:root:log_time
+INFO:root:simulation run 6 finished
+ERROR:root:log_time
+INFO:root:simulation run 7 finished
+ERROR:root:log_time
+INFO:root:simulation run 8 finished
+ERROR:root:log_time
+INFO:root:simulation run 9 finished
+ERROR:root:log_time
+INFO:root:simulation run 10 finished
+ERROR:root:log_time
+INFO:root:simulation run 11 finished
+ERROR:root:log_time
+INFO:root:simulation run 12 finished
+ERROR:root:log_time
+INFO:root:simulation run 13 finished
+ERROR:root:log_time
+INFO:root:simulation run 14 finished
+ERROR:root:log_time
+INFO:root:simulation run 15 finished
+ERROR:root:log_time
+INFO:root:simulation run 16 finished
+ERROR:root:log_time
+INFO:root:simulation run 17 finished
+ERROR:root:log_time
+INFO:root:simulation run 18 finished
+ERROR:root:log_time
+INFO:root:simulation run 19 finished
+ERROR:root:log_time
+INFO:root:simulation run 20 finished
+ERROR:root:log_time
+INFO:root:simulation run 21 finished
+ERROR:root:log_time
+INFO:root:simulation run 22 finished
+ERROR:root:log_time
+INFO:root:simulation run 23 finished
+ERROR:root:log_time
+INFO:root:simulation run 24 finished
+ERROR:root:log_time
+INFO:root:simulation run 25 finished
+ERROR:root:log_time
+INFO:root:simulation run 26 finished
+ERROR:root:log_time
+INFO:root:simulation run 27 finished
+ERROR:root:log_time
+INFO:root:simulation run 28 finished
+ERROR:root:log_time
+INFO:root:simulation run 29 finished
+ERROR:root:log_time
+INFO:root:simulation run 30 finished
+ERROR:root:log_time
+INFO:root:simulation run 31 finished
+ERROR:root:log_time
+INFO:root:simulation run 32 finished
+ERROR:root:log_time
+INFO:root:simulation run 33 finished
+ERROR:root:log_time
+INFO:root:simulation run 34 finished
+ERROR:root:log_time
+INFO:root:simulation run 35 finished
+ERROR:root:log_time
+INFO:root:simulation run 36 finished
+ERROR:root:log_time
+INFO:root:simulation run 37 finished
+ERROR:root:log_time
+INFO:root:simulation run 38 finished
+ERROR:root:log_time
+INFO:root:simulation run 39 finished
+ERROR:root:log_time
+INFO:root:simulation run 40 finished
+ERROR:root:log_time
+INFO:root:simulation run 41 finished
+ERROR:root:log_time
+INFO:root:simulation run 42 finished
+ERROR:root:log_time
+INFO:root:simulation run 43 finished
+ERROR:root:log_time
+INFO:root:simulation run 44 finished
+ERROR:root:log_time
+INFO:root:simulation run 45 finished
+ERROR:root:log_time
+INFO:root:simulation run 46 finished
+ERROR:root:log_time
+INFO:root:simulation run 47 finished
+ERROR:root:log_time
+INFO:root:simulation run 48 finished
+ERROR:root:log_time
+INFO:root:simulation run 49 finished
+ERROR:root:log_time
+INFO:root:simulation run 50 finished
+ERROR:root:log_time
+INFO:root:simulation run 51 finished
+ERROR:root:log_time
+INFO:root:simulation run 52 finished
+ERROR:root:log_time
+INFO:root:simulation run 53 finished
+ERROR:root:log_time
+INFO:root:simulation run 54 finished
+ERROR:root:log_time
+INFO:root:simulation run 55 finished
+ERROR:root:log_time
+INFO:root:simulation run 56 finished
+ERROR:root:log_time
+INFO:root:simulation run 57 finished
+ERROR:root:log_time
+INFO:root:simulation run 58 finished
+ERROR:root:log_time
+INFO:root:simulation run 59 finished
+ERROR:root:log_time
+INFO:root:simulation run 60 finished
+ERROR:root:log_time
+INFO:root:simulation run 61 finished
+ERROR:root:log_time
+INFO:root:simulation run 62 finished
+ERROR:root:log_time
+INFO:root:simulation run 63 finished
+ERROR:root:log_time
+INFO:root:simulation run 64 finished
+ERROR:root:log_time
+INFO:root:simulation run 65 finished
+ERROR:root:log_time
+INFO:root:simulation run 66 finished
+ERROR:root:log_time
+INFO:root:simulation run 67 finished
+ERROR:root:log_time
+INFO:root:simulation run 68 finished
+ERROR:root:log_time
+INFO:root:simulation run 69 finished
+ERROR:root:log_time
+INFO:root:simulation run 70 finished
+ERROR:root:log_time
+INFO:root:simulation run 71 finished
+ERROR:root:log_time
+INFO:root:simulation run 72 finished
+ERROR:root:log_time
+INFO:root:simulation run 73 finished
+ERROR:root:log_time
+INFO:root:simulation run 74 finished
+ERROR:root:log_time
+INFO:root:simulation run 75 finished
+ERROR:root:log_time
+INFO:root:simulation run 76 finished
+ERROR:root:log_time
+INFO:root:simulation run 77 finished
+ERROR:root:log_time
+INFO:root:simulation run 78 finished
+ERROR:root:log_time
+INFO:root:simulation run 79 finished
+ERROR:root:log_time
+INFO:root:simulation run 80 finished
+ERROR:root:log_time
+INFO:root:simulation run 81 finished
+ERROR:root:log_time
+INFO:root:simulation run 82 finished
+ERROR:root:log_time
+INFO:root:simulation run 83 finished
+ERROR:root:log_time
+INFO:root:simulation run 84 finished
+ERROR:root:log_time
+INFO:root:simulation run 85 finished
+ERROR:root:log_time
+INFO:root:simulation run 86 finished
+ERROR:root:log_time
+INFO:root:simulation run 87 finished
+ERROR:root:log_time
+INFO:root:simulation run 88 finished
+ERROR:root:log_time
+INFO:root:simulation run 89 finished
+ERROR:root:log_time
+INFO:root:simulation run 90 finished
+ERROR:root:log_time
+INFO:root:simulation run 91 finished
+ERROR:root:log_time
+INFO:root:simulation run 92 finished
+ERROR:root:log_time
+INFO:root:simulation run 93 finished
+ERROR:root:log_time
+INFO:root:simulation run 94 finished
+ERROR:root:log_time
+INFO:root:simulation run 95 finished
+ERROR:root:log_time
+INFO:root:simulation run 96 finished
+ERROR:root:log_time
+INFO:root:simulation run 97 finished
+ERROR:root:log_time
+INFO:root:simulation run 98 finished
+ERROR:root:log_time
+INFO:root:simulation run 99 finished
+INFO:root:30.03.2022 18:20:43
+ERROR:root:log_time
+INFO:root:simulation run 0 finished
+ERROR:root:log_time
+INFO:root:simulation run 1 finished
+ERROR:root:log_time
+INFO:root:simulation run 2 finished
+ERROR:root:log_time
+INFO:root:simulation run 3 finished
+ERROR:root:log_time
+INFO:root:simulation run 4 finished
+ERROR:root:log_time
+INFO:root:simulation run 5 finished
+ERROR:root:log_time
+INFO:root:simulation run 6 finished
+ERROR:root:log_time
+INFO:root:simulation run 7 finished
+ERROR:root:log_time
+INFO:root:simulation run 8 finished
+ERROR:root:log_time
+INFO:root:simulation run 9 finished
+ERROR:root:log_time
+INFO:root:simulation run 10 finished
+ERROR:root:log_time
+INFO:root:simulation run 11 finished
+ERROR:root:log_time
+INFO:root:simulation run 12 finished
+ERROR:root:log_time
+INFO:root:simulation run 13 finished
+ERROR:root:log_time
+INFO:root:simulation run 14 finished
+ERROR:root:log_time
+INFO:root:simulation run 15 finished
+ERROR:root:log_time
+INFO:root:simulation run 16 finished
+ERROR:root:log_time
+INFO:root:simulation run 17 finished
+ERROR:root:log_time
+INFO:root:simulation run 18 finished
+ERROR:root:log_time
+INFO:root:simulation run 19 finished
+ERROR:root:log_time
+INFO:root:simulation run 20 finished
+ERROR:root:log_time
+INFO:root:simulation run 21 finished
+ERROR:root:log_time
+INFO:root:simulation run 22 finished
+ERROR:root:log_time
+INFO:root:simulation run 23 finished
+ERROR:root:log_time
+INFO:root:simulation run 24 finished
+ERROR:root:log_time
+INFO:root:simulation run 25 finished
+ERROR:root:log_time
+INFO:root:simulation run 26 finished
+ERROR:root:log_time
+INFO:root:simulation run 27 finished
+ERROR:root:log_time
+INFO:root:simulation run 28 finished
+ERROR:root:log_time
+INFO:root:simulation run 29 finished
+ERROR:root:log_time
+INFO:root:simulation run 30 finished
+ERROR:root:log_time
+INFO:root:simulation run 31 finished
+ERROR:root:log_time
+INFO:root:simulation run 32 finished
+ERROR:root:log_time
+INFO:root:simulation run 33 finished
+ERROR:root:log_time
+INFO:root:simulation run 34 finished
+ERROR:root:log_time
+INFO:root:simulation run 35 finished
+ERROR:root:log_time
+INFO:root:simulation run 36 finished
+ERROR:root:log_time
+INFO:root:simulation run 37 finished
+ERROR:root:log_time
+INFO:root:simulation run 38 finished
+ERROR:root:log_time
+INFO:root:simulation run 39 finished
+ERROR:root:log_time
+INFO:root:simulation run 40 finished
+ERROR:root:log_time
+INFO:root:simulation run 41 finished
+ERROR:root:log_time
+INFO:root:simulation run 42 finished
+ERROR:root:log_time
+INFO:root:simulation run 43 finished
+ERROR:root:log_time
+INFO:root:simulation run 44 finished
+ERROR:root:log_time
+INFO:root:simulation run 45 finished
+ERROR:root:log_time
+INFO:root:simulation run 46 finished
+ERROR:root:log_time
+INFO:root:simulation run 47 finished
+ERROR:root:log_time
+INFO:root:simulation run 48 finished
+ERROR:root:log_time
+INFO:root:simulation run 49 finished
+ERROR:root:log_time
+INFO:root:simulation run 50 finished
+ERROR:root:log_time
+INFO:root:simulation run 51 finished
+ERROR:root:log_time
+INFO:root:simulation run 52 finished
+ERROR:root:log_time
+INFO:root:simulation run 53 finished
+ERROR:root:log_time
+INFO:root:simulation run 54 finished
+ERROR:root:log_time
+INFO:root:simulation run 55 finished
+ERROR:root:log_time
+INFO:root:simulation run 56 finished
+ERROR:root:log_time
+INFO:root:simulation run 57 finished
+ERROR:root:log_time
+INFO:root:simulation run 58 finished
+ERROR:root:log_time
+INFO:root:simulation run 59 finished
+ERROR:root:log_time
+INFO:root:simulation run 60 finished
+ERROR:root:log_time
+INFO:root:simulation run 61 finished
+ERROR:root:log_time
+INFO:root:simulation run 62 finished
+ERROR:root:log_time
+INFO:root:simulation run 63 finished
+ERROR:root:log_time
+INFO:root:simulation run 64 finished
+ERROR:root:log_time
+INFO:root:simulation run 65 finished
+ERROR:root:log_time
+INFO:root:simulation run 66 finished
+ERROR:root:log_time
+INFO:root:simulation run 67 finished
+ERROR:root:log_time
+INFO:root:simulation run 68 finished
+ERROR:root:log_time
+INFO:root:simulation run 69 finished
+ERROR:root:log_time
+INFO:root:simulation run 70 finished
+ERROR:root:log_time
+INFO:root:simulation run 71 finished
+ERROR:root:log_time
+INFO:root:simulation run 72 finished
+ERROR:root:log_time
+INFO:root:simulation run 73 finished
+ERROR:root:log_time
+INFO:root:simulation run 74 finished
+ERROR:root:log_time
+INFO:root:simulation run 75 finished
+ERROR:root:log_time
+INFO:root:simulation run 76 finished
+ERROR:root:log_time
+INFO:root:simulation run 77 finished
+ERROR:root:log_time
+INFO:root:simulation run 78 finished
+ERROR:root:log_time
+INFO:root:simulation run 79 finished
+ERROR:root:log_time
+INFO:root:simulation run 80 finished
+ERROR:root:log_time
+INFO:root:simulation run 81 finished
+ERROR:root:log_time
+INFO:root:simulation run 82 finished
+ERROR:root:log_time
+INFO:root:simulation run 83 finished
+ERROR:root:log_time
+INFO:root:simulation run 84 finished
+ERROR:root:log_time
+INFO:root:simulation run 85 finished
+ERROR:root:log_time
+INFO:root:simulation run 86 finished
+ERROR:root:log_time
+INFO:root:simulation run 87 finished
+ERROR:root:log_time
+INFO:root:simulation run 88 finished
+ERROR:root:log_time
+INFO:root:simulation run 89 finished
+ERROR:root:log_time
+INFO:root:simulation run 90 finished
+ERROR:root:log_time
+INFO:root:simulation run 91 finished
+ERROR:root:log_time
+INFO:root:simulation run 92 finished
+ERROR:root:log_time
+INFO:root:simulation run 93 finished
+ERROR:root:log_time
+INFO:root:simulation run 94 finished
+ERROR:root:log_time
+INFO:root:simulation run 95 finished
+ERROR:root:log_time
+INFO:root:simulation run 96 finished
+ERROR:root:log_time
+INFO:root:simulation run 97 finished
+ERROR:root:log_time
+INFO:root:simulation run 98 finished
+ERROR:root:log_time
+INFO:root:simulation run 99 finished
+INFO:root:30.03.2022 18:20:56
+ERROR:root:log_time
+INFO:root:simulation run 0 finished
+ERROR:root:log_time
+INFO:root:simulation run 1 finished
+ERROR:root:log_time
+INFO:root:simulation run 2 finished
+ERROR:root:log_time
+INFO:root:simulation run 3 finished
+ERROR:root:log_time
+INFO:root:simulation run 4 finished
+ERROR:root:log_time
+INFO:root:simulation run 5 finished
+ERROR:root:log_time
+INFO:root:simulation run 6 finished
+ERROR:root:log_time
+INFO:root:simulation run 7 finished
+ERROR:root:log_time
+INFO:root:simulation run 8 finished
+ERROR:root:log_time
+INFO:root:simulation run 9 finished
+ERROR:root:log_time
+INFO:root:simulation run 10 finished
+ERROR:root:log_time
+INFO:root:simulation run 11 finished
+ERROR:root:log_time
+INFO:root:simulation run 12 finished
+ERROR:root:log_time
+INFO:root:simulation run 13 finished
+ERROR:root:log_time
+INFO:root:simulation run 14 finished
+ERROR:root:log_time
+INFO:root:simulation run 15 finished
+ERROR:root:log_time
+INFO:root:simulation run 16 finished
+ERROR:root:log_time
+INFO:root:simulation run 17 finished
+ERROR:root:log_time
+INFO:root:simulation run 18 finished
+ERROR:root:log_time
+INFO:root:simulation run 19 finished
+ERROR:root:log_time
+INFO:root:simulation run 20 finished
+ERROR:root:log_time
+INFO:root:simulation run 21 finished
+ERROR:root:log_time
+INFO:root:simulation run 22 finished
+ERROR:root:log_time
+INFO:root:simulation run 23 finished
+ERROR:root:log_time
+INFO:root:simulation run 24 finished
+ERROR:root:log_time
+INFO:root:simulation run 25 finished
+ERROR:root:log_time
+INFO:root:simulation run 26 finished
+ERROR:root:log_time
+INFO:root:simulation run 27 finished
+ERROR:root:log_time
+INFO:root:simulation run 28 finished
+ERROR:root:log_time
+INFO:root:simulation run 29 finished
+ERROR:root:log_time
+INFO:root:simulation run 30 finished
+ERROR:root:log_time
+INFO:root:simulation run 31 finished
+ERROR:root:log_time
+INFO:root:simulation run 32 finished
+ERROR:root:log_time
+INFO:root:simulation run 33 finished
+ERROR:root:log_time
+INFO:root:simulation run 34 finished
+ERROR:root:log_time
+INFO:root:simulation run 35 finished
+ERROR:root:log_time
+INFO:root:simulation run 36 finished
+ERROR:root:log_time
+INFO:root:simulation run 37 finished
+ERROR:root:log_time
+INFO:root:simulation run 38 finished
+ERROR:root:log_time
+INFO:root:simulation run 39 finished
+ERROR:root:log_time
+INFO:root:simulation run 40 finished
+ERROR:root:log_time
+INFO:root:simulation run 41 finished
+ERROR:root:log_time
+INFO:root:simulation run 42 finished
+ERROR:root:log_time
+INFO:root:simulation run 43 finished
+ERROR:root:log_time
+INFO:root:simulation run 44 finished
+ERROR:root:log_time
+INFO:root:simulation run 45 finished
+ERROR:root:log_time
+INFO:root:simulation run 46 finished
+ERROR:root:log_time
+INFO:root:simulation run 47 finished
+ERROR:root:log_time
+INFO:root:simulation run 48 finished
+ERROR:root:log_time
+INFO:root:simulation run 49 finished
+ERROR:root:log_time
+INFO:root:simulation run 50 finished
+ERROR:root:log_time
+INFO:root:simulation run 51 finished
+ERROR:root:log_time
+INFO:root:simulation run 52 finished
+ERROR:root:log_time
+INFO:root:simulation run 53 finished
+ERROR:root:log_time
+INFO:root:simulation run 54 finished
+ERROR:root:log_time
+INFO:root:simulation run 55 finished
+ERROR:root:log_time
+INFO:root:simulation run 56 finished
+ERROR:root:log_time
+INFO:root:simulation run 57 finished
+ERROR:root:log_time
+INFO:root:simulation run 58 finished
+ERROR:root:log_time
+INFO:root:simulation run 59 finished
+ERROR:root:log_time
+INFO:root:simulation run 60 finished
+ERROR:root:log_time
+INFO:root:simulation run 61 finished
+ERROR:root:log_time
+INFO:root:simulation run 62 finished
+ERROR:root:log_time
+INFO:root:simulation run 63 finished
+ERROR:root:log_time
+INFO:root:simulation run 64 finished
+ERROR:root:log_time
+INFO:root:simulation run 65 finished
+ERROR:root:log_time
+INFO:root:simulation run 66 finished
+ERROR:root:log_time
+INFO:root:simulation run 67 finished
+ERROR:root:log_time
+INFO:root:simulation run 68 finished
+ERROR:root:log_time
+INFO:root:simulation run 69 finished
+ERROR:root:log_time
+INFO:root:simulation run 70 finished
+ERROR:root:log_time
+INFO:root:simulation run 71 finished
+ERROR:root:log_time
+INFO:root:simulation run 72 finished
+ERROR:root:log_time
+INFO:root:simulation run 73 finished
+ERROR:root:log_time
+INFO:root:simulation run 74 finished
+ERROR:root:log_time
+INFO:root:simulation run 75 finished
+ERROR:root:log_time
+INFO:root:simulation run 76 finished
+ERROR:root:log_time
+INFO:root:simulation run 77 finished
+ERROR:root:log_time
+INFO:root:simulation run 78 finished
+ERROR:root:log_time
+INFO:root:simulation run 79 finished
+ERROR:root:log_time
+INFO:root:simulation run 80 finished
+ERROR:root:log_time
+INFO:root:simulation run 81 finished
+ERROR:root:log_time
+INFO:root:simulation run 82 finished
+ERROR:root:log_time
+INFO:root:simulation run 83 finished
+ERROR:root:log_time
+INFO:root:simulation run 84 finished
+ERROR:root:log_time
+INFO:root:simulation run 85 finished
+ERROR:root:log_time
+INFO:root:simulation run 86 finished
+ERROR:root:log_time
+INFO:root:simulation run 87 finished
+ERROR:root:log_time
+INFO:root:simulation run 88 finished
+ERROR:root:log_time
+INFO:root:simulation run 89 finished
+ERROR:root:log_time
+INFO:root:simulation run 90 finished
+ERROR:root:log_time
+INFO:root:simulation run 91 finished
+ERROR:root:log_time
+INFO:root:simulation run 92 finished
+ERROR:root:log_time
+INFO:root:simulation run 93 finished
+ERROR:root:log_time
+INFO:root:simulation run 94 finished
+ERROR:root:log_time
+INFO:root:simulation run 95 finished
+ERROR:root:log_time
+INFO:root:simulation run 96 finished
+ERROR:root:log_time
+INFO:root:simulation run 97 finished
+ERROR:root:log_time
+INFO:root:simulation run 98 finished
+ERROR:root:log_time
+INFO:root:simulation run 99 finished
+INFO:root:30.03.2022 18:21:14
+ERROR:root:log_time
+INFO:root:simulation run 0 finished
+ERROR:root:log_time
+INFO:root:simulation run 1 finished
+ERROR:root:log_time
+INFO:root:simulation run 2 finished
+ERROR:root:log_time
+INFO:root:simulation run 3 finished
+ERROR:root:log_time
+INFO:root:simulation run 4 finished
+ERROR:root:log_time
+INFO:root:simulation run 5 finished
+ERROR:root:log_time
+INFO:root:simulation run 6 finished
+ERROR:root:log_time
+INFO:root:simulation run 7 finished
+ERROR:root:log_time
+INFO:root:simulation run 8 finished
+ERROR:root:log_time
+INFO:root:simulation run 9 finished
+ERROR:root:log_time
+INFO:root:simulation run 10 finished
+ERROR:root:log_time
+INFO:root:simulation run 11 finished
+ERROR:root:log_time
+INFO:root:simulation run 12 finished
+ERROR:root:log_time
+INFO:root:simulation run 13 finished
+ERROR:root:log_time
+INFO:root:simulation run 14 finished
+ERROR:root:log_time
+INFO:root:simulation run 15 finished
+ERROR:root:log_time
+INFO:root:simulation run 16 finished
+ERROR:root:log_time
+INFO:root:simulation run 17 finished
+ERROR:root:log_time
+INFO:root:simulation run 18 finished
+ERROR:root:log_time
+INFO:root:simulation run 19 finished
+ERROR:root:log_time
+INFO:root:simulation run 20 finished
+ERROR:root:log_time
+INFO:root:simulation run 21 finished
+ERROR:root:log_time
+INFO:root:simulation run 22 finished
+ERROR:root:log_time
+INFO:root:simulation run 23 finished
+ERROR:root:log_time
+INFO:root:simulation run 24 finished
+ERROR:root:log_time
+INFO:root:simulation run 25 finished
+ERROR:root:log_time
+INFO:root:simulation run 26 finished
+ERROR:root:log_time
+INFO:root:simulation run 27 finished
+ERROR:root:log_time
+INFO:root:simulation run 28 finished
+ERROR:root:log_time
+INFO:root:simulation run 29 finished
+ERROR:root:log_time
+INFO:root:simulation run 30 finished
+ERROR:root:log_time
+INFO:root:simulation run 31 finished
+ERROR:root:log_time
+INFO:root:simulation run 32 finished
+ERROR:root:log_time
+INFO:root:simulation run 33 finished
+ERROR:root:log_time
+INFO:root:simulation run 34 finished
+ERROR:root:log_time
+INFO:root:simulation run 35 finished
+ERROR:root:log_time
+INFO:root:simulation run 36 finished
+ERROR:root:log_time
+INFO:root:simulation run 37 finished
+ERROR:root:log_time
+INFO:root:simulation run 38 finished
+ERROR:root:log_time
+INFO:root:simulation run 39 finished
+ERROR:root:log_time
+INFO:root:simulation run 40 finished
+ERROR:root:log_time
+INFO:root:simulation run 41 finished
+ERROR:root:log_time
+INFO:root:simulation run 42 finished
+ERROR:root:log_time
+INFO:root:simulation run 43 finished
+ERROR:root:log_time
+INFO:root:simulation run 44 finished
+ERROR:root:log_time
+INFO:root:simulation run 45 finished
+ERROR:root:log_time
+INFO:root:simulation run 46 finished
+ERROR:root:log_time
+INFO:root:simulation run 47 finished
+ERROR:root:log_time
+INFO:root:simulation run 48 finished
+ERROR:root:log_time
+INFO:root:simulation run 49 finished
+ERROR:root:log_time
+INFO:root:simulation run 50 finished
+ERROR:root:log_time
+INFO:root:simulation run 51 finished
+ERROR:root:log_time
+INFO:root:simulation run 52 finished
+ERROR:root:log_time
+INFO:root:simulation run 53 finished
+ERROR:root:log_time
+INFO:root:simulation run 54 finished
+ERROR:root:log_time
+INFO:root:simulation run 55 finished
+ERROR:root:log_time
+INFO:root:simulation run 56 finished
+ERROR:root:log_time
+INFO:root:simulation run 57 finished
+ERROR:root:log_time
+INFO:root:simulation run 58 finished
+ERROR:root:log_time
+INFO:root:simulation run 59 finished
+ERROR:root:log_time
+INFO:root:simulation run 60 finished
+ERROR:root:log_time
+INFO:root:simulation run 61 finished
+ERROR:root:log_time
+INFO:root:simulation run 62 finished
+ERROR:root:log_time
+INFO:root:simulation run 63 finished
+ERROR:root:log_time
+INFO:root:simulation run 64 finished
+ERROR:root:log_time
+INFO:root:simulation run 65 finished
+ERROR:root:log_time
+INFO:root:simulation run 66 finished
+ERROR:root:log_time
+INFO:root:simulation run 67 finished
+ERROR:root:log_time
+INFO:root:simulation run 68 finished
+ERROR:root:log_time
+INFO:root:simulation run 69 finished
+ERROR:root:log_time
+INFO:root:simulation run 70 finished
+ERROR:root:log_time
+INFO:root:simulation run 71 finished
+ERROR:root:log_time
+INFO:root:simulation run 72 finished
+ERROR:root:log_time
+INFO:root:simulation run 73 finished
+ERROR:root:log_time
+INFO:root:simulation run 74 finished
+ERROR:root:log_time
+INFO:root:simulation run 75 finished
+ERROR:root:log_time
+INFO:root:simulation run 76 finished
+ERROR:root:log_time
+INFO:root:simulation run 77 finished
+ERROR:root:log_time
+INFO:root:simulation run 78 finished
+ERROR:root:log_time
+INFO:root:simulation run 79 finished
+ERROR:root:log_time
+INFO:root:simulation run 80 finished
+ERROR:root:log_time
+INFO:root:simulation run 81 finished
+ERROR:root:log_time
+INFO:root:simulation run 82 finished
+ERROR:root:log_time
+INFO:root:simulation run 83 finished
+ERROR:root:log_time
+INFO:root:simulation run 84 finished
+ERROR:root:log_time
+INFO:root:simulation run 85 finished
+ERROR:root:log_time
+INFO:root:simulation run 86 finished
+ERROR:root:log_time
+INFO:root:simulation run 87 finished
+ERROR:root:log_time
+INFO:root:simulation run 88 finished
+ERROR:root:log_time
+INFO:root:simulation run 89 finished
+ERROR:root:log_time
+INFO:root:simulation run 90 finished
+ERROR:root:log_time
+INFO:root:simulation run 91 finished
+ERROR:root:log_time
+INFO:root:simulation run 92 finished
+ERROR:root:log_time
+INFO:root:simulation run 93 finished
+ERROR:root:log_time
+INFO:root:simulation run 94 finished
+ERROR:root:log_time
+INFO:root:simulation run 95 finished
+ERROR:root:log_time
+INFO:root:simulation run 96 finished
+ERROR:root:log_time
+INFO:root:simulation run 97 finished
+ERROR:root:log_time
+INFO:root:simulation run 98 finished
+ERROR:root:log_time
+INFO:root:simulation run 99 finished
+INFO:root:30.03.2022 18:21:14
+ERROR:root:log_time
+INFO:root:simulation run 0 finished
+ERROR:root:log_time
+INFO:root:simulation run 1 finished
+ERROR:root:log_time
+INFO:root:simulation run 2 finished
+ERROR:root:log_time
+INFO:root:simulation run 3 finished
+ERROR:root:log_time
+INFO:root:simulation run 4 finished
+ERROR:root:log_time
+INFO:root:simulation run 5 finished
+ERROR:root:log_time
+INFO:root:simulation run 6 finished
+ERROR:root:log_time
+INFO:root:simulation run 7 finished
+ERROR:root:log_time
+INFO:root:simulation run 8 finished
+ERROR:root:log_time
+INFO:root:simulation run 9 finished
+ERROR:root:log_time
+INFO:root:simulation run 10 finished
+ERROR:root:log_time
+INFO:root:simulation run 11 finished
+ERROR:root:log_time
+INFO:root:simulation run 12 finished
+ERROR:root:log_time
+INFO:root:simulation run 13 finished
+ERROR:root:log_time
+INFO:root:simulation run 14 finished
+ERROR:root:log_time
+INFO:root:simulation run 15 finished
+ERROR:root:log_time
+INFO:root:simulation run 16 finished
+ERROR:root:log_time
+INFO:root:simulation run 17 finished
+ERROR:root:log_time
+INFO:root:simulation run 18 finished
+ERROR:root:log_time
+INFO:root:simulation run 19 finished
+ERROR:root:log_time
+INFO:root:simulation run 20 finished
+ERROR:root:log_time
+INFO:root:simulation run 21 finished
+ERROR:root:log_time
+INFO:root:simulation run 22 finished
+ERROR:root:log_time
+INFO:root:simulation run 23 finished
+ERROR:root:log_time
+INFO:root:simulation run 24 finished
+ERROR:root:log_time
+INFO:root:simulation run 25 finished
+ERROR:root:log_time
+INFO:root:simulation run 26 finished
+ERROR:root:log_time
+INFO:root:simulation run 27 finished
+ERROR:root:log_time
+INFO:root:simulation run 28 finished
+ERROR:root:log_time
+INFO:root:simulation run 29 finished
+ERROR:root:log_time
+INFO:root:simulation run 30 finished
+ERROR:root:log_time
+INFO:root:simulation run 31 finished
+ERROR:root:log_time
+INFO:root:simulation run 32 finished
+ERROR:root:log_time
+INFO:root:simulation run 33 finished
+ERROR:root:log_time
+INFO:root:simulation run 34 finished
+ERROR:root:log_time
+INFO:root:simulation run 35 finished
+ERROR:root:log_time
+INFO:root:simulation run 36 finished
+ERROR:root:log_time
+INFO:root:simulation run 37 finished
+ERROR:root:log_time
+INFO:root:simulation run 38 finished
+ERROR:root:log_time
+INFO:root:simulation run 39 finished
+ERROR:root:log_time
+INFO:root:simulation run 40 finished
+ERROR:root:log_time
+INFO:root:simulation run 41 finished
+ERROR:root:log_time
+INFO:root:simulation run 42 finished
+ERROR:root:log_time
+INFO:root:simulation run 43 finished
+ERROR:root:log_time
+INFO:root:simulation run 44 finished
+ERROR:root:log_time
+INFO:root:simulation run 45 finished
+ERROR:root:log_time
+INFO:root:simulation run 46 finished
+ERROR:root:log_time
+INFO:root:simulation run 47 finished
+ERROR:root:log_time
+INFO:root:simulation run 48 finished
+ERROR:root:log_time
+INFO:root:simulation run 49 finished
+ERROR:root:log_time
+INFO:root:simulation run 50 finished
+ERROR:root:log_time
+INFO:root:simulation run 51 finished
+ERROR:root:log_time
+INFO:root:simulation run 52 finished
+ERROR:root:log_time
+INFO:root:simulation run 53 finished
+ERROR:root:log_time
+INFO:root:simulation run 54 finished
+ERROR:root:log_time
+INFO:root:simulation run 55 finished
+ERROR:root:log_time
+INFO:root:simulation run 56 finished
+ERROR:root:log_time
+INFO:root:simulation run 57 finished
+ERROR:root:log_time
+INFO:root:simulation run 58 finished
+ERROR:root:log_time
+INFO:root:simulation run 59 finished
+ERROR:root:log_time
+INFO:root:simulation run 60 finished
+ERROR:root:log_time
+INFO:root:simulation run 61 finished
+ERROR:root:log_time
+INFO:root:simulation run 62 finished
+ERROR:root:log_time
+INFO:root:simulation run 63 finished
+ERROR:root:log_time
+INFO:root:simulation run 64 finished
+ERROR:root:log_time
+INFO:root:simulation run 65 finished
+ERROR:root:log_time
+INFO:root:simulation run 66 finished
+ERROR:root:log_time
+INFO:root:simulation run 67 finished
+ERROR:root:log_time
+INFO:root:simulation run 68 finished
+ERROR:root:log_time
+INFO:root:simulation run 69 finished
+ERROR:root:log_time
+INFO:root:simulation run 70 finished
+ERROR:root:log_time
+INFO:root:simulation run 71 finished
+ERROR:root:log_time
+INFO:root:simulation run 72 finished
+ERROR:root:log_time
+INFO:root:simulation run 73 finished
+ERROR:root:log_time
+INFO:root:simulation run 74 finished
+ERROR:root:log_time
+INFO:root:simulation run 75 finished
+ERROR:root:log_time
+INFO:root:simulation run 76 finished
+ERROR:root:log_time
+INFO:root:simulation run 77 finished
+ERROR:root:log_time
+INFO:root:simulation run 78 finished
+ERROR:root:log_time
+INFO:root:simulation run 79 finished
+ERROR:root:log_time
+INFO:root:simulation run 80 finished
+ERROR:root:log_time
+INFO:root:simulation run 81 finished
+ERROR:root:log_time
+INFO:root:simulation run 82 finished
+ERROR:root:log_time
+INFO:root:simulation run 83 finished
+ERROR:root:log_time
+INFO:root:simulation run 84 finished
+ERROR:root:log_time
+INFO:root:simulation run 85 finished
+ERROR:root:log_time
+INFO:root:simulation run 86 finished
+ERROR:root:log_time
+INFO:root:simulation run 87 finished
+ERROR:root:log_time
+INFO:root:simulation run 88 finished
+ERROR:root:log_time
+INFO:root:simulation run 89 finished
+ERROR:root:log_time
+INFO:root:simulation run 90 finished
+ERROR:root:log_time
+INFO:root:simulation run 91 finished
+ERROR:root:log_time
+INFO:root:simulation run 92 finished
+ERROR:root:log_time
+INFO:root:simulation run 93 finished
+ERROR:root:log_time
+INFO:root:simulation run 94 finished
+ERROR:root:log_time
+INFO:root:simulation run 95 finished
+ERROR:root:log_time
+INFO:root:simulation run 96 finished
+ERROR:root:log_time
+INFO:root:simulation run 97 finished
+ERROR:root:log_time
+INFO:root:simulation run 98 finished
+ERROR:root:log_time
+INFO:root:simulation run 99 finished
+INFO:root:30.03.2022 18:21:31
+INFO:root:simulation run 0 finished
+INFO:root:simulation run 1 finished
+INFO:root:simulation run 2 finished
+INFO:root:simulation run 3 finished
+INFO:root:simulation run 4 finished
+INFO:root:simulation run 5 finished
+INFO:root:simulation run 6 finished
+INFO:root:simulation run 7 finished
+INFO:root:simulation run 8 finished
+INFO:root:simulation run 9 finished
+INFO:root:simulation run 10 finished
+INFO:root:simulation run 11 finished
+INFO:root:simulation run 12 finished
+INFO:root:simulation run 13 finished
+INFO:root:simulation run 14 finished
+INFO:root:27.06.2022 17:28:20
