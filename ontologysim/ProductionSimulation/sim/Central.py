@@ -29,6 +29,7 @@ class Central:
         self.process_class = None
         self.state_class = None
         self.prod_process_class = None
+        self.prod_type_process_class = None
         self.merge_process_class=None
         self.combine_process_data = None
         self.product_class = None
@@ -167,7 +168,7 @@ class Central:
         self.simCore.machine_id = len(self.simCore.onto.search(type=self.simCore.central.machine_class))
         self.simCore.queue_id = len(self.simCore.onto.search(type=self.simCore.central.queue_class))
         self.simCore.position_id = len(self.simCore.onto.search(type=self.simCore.central.position_class))
-        self.simCore.prod_process_id = len(self.simCore.onto.search(type=self.simCore.central.prodProcess_class))
+        self.simCore.prod_process_id = len(self.simCore.onto.search(type=self.simCore.central.prod_process_class))
         self.simCore.prod_type_process_id = len(self.simCore.onto.search(type=self.simCore.central.prod_type_process_class))
         self.simCore.combine_process_data = len(self.simCore.onto.search(type=self.simCore.central.combine_process_data_class))
 
