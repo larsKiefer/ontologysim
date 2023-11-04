@@ -1,4 +1,3 @@
-from distutils.util import strtobool
 
 from flask import Flask, Response, json, request
 from owlready2 import destroy_entity

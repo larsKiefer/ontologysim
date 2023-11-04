@@ -1,5 +1,5 @@
 
-from numpy.random.mt19937 import MT19937
+from numpy.random import MT19937
 from numpy.random.mtrand import RandomState
 
 

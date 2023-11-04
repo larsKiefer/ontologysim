@@ -6,13 +6,13 @@ import sys
 from os import listdir
 from os.path import isfile
 
-from ProductionSimulation.utilities.path_utilities import PathTest
 
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 parent_parent_dir = os.path.dirname(parent_dir)
 sys.path.insert(0, parent_dir)
 sys.path.insert(0,parent_parent_dir)
+from ontologysim.ProductionSimulation.utilities.path_utilities import PathTest
 
 
 from ontologysim.ProductionSimulation.utilities import init_utilities

@@ -21,7 +21,7 @@ class SimCore:
         """
 
         """
-        self.onto = owlready2.get_ontology("http://test.org/onto.owl")
+        self.onto = owlready2.get_ontology("http://example.org/my_ontology#")
 
         self.currentRunID = ""
         self.data_base = None
@@ -937,7 +937,8 @@ class SimCore:
         """
         sync reasoning of owlready2
         """
-        owlready2.sync_reasoner(self.onto)
+        pass
+        #owlready2.sync_reasoner(self.onto)
 
     def createEventList(self):
         """

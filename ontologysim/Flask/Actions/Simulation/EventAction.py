@@ -1,5 +1,3 @@
-from distutils.util import strtobool
-
 from flask import Flask, Response, json, request
 from owlready2 import destroy_entity
 
@@ -25,7 +23,7 @@ class EventAction(APIAction):
         full_data = request.args.get('full', default="True", type=str)
         production_included = request.args.get('production', default="True", type=str)
 
-        self.flaskApp.simCore.changeStorageState=strtobool(production_included)
+        self.flaskApp.simCore.changeStorageState=bool(production_included)
 
         if(self.flaskApp.startAlready):
             even_onto_list = []
@@ -39,7 +37,7 @@ class EventAction(APIAction):
                 for i in range(number):
 
                     event_list = self.flaskApp.simCore.runNextEvent()
-                    if strtobool(full_data):
+                    if bool(full_data):
                         even_onto_list.append(self.flaskApp.simCore.event_utilities.transformEventListToFullDict(event_list))
                     else:
                         even_onto_list.append(self.flaskApp.simCore.event_utilities.transformEventListToDict(event_list))
